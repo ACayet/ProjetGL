@@ -1,6 +1,6 @@
 # ProjetGL
 
-## Prérequis ([Voir le wiki pour l'installation](/ACayet/ProjetGL/wiki)) :
+## Prérequis ([Voir le wiki pour l'installation](/../../wiki)) :
 
 * PHP 7.1 ou superieur
 * Composer
