@@ -47,9 +47,9 @@ class Utilisateur
     private $ville;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @ORM\Column(type="boolean", options={"default" : false})
      */
-    private $password;
+    private $admin;
 
     public function getId(): ?int
     {
@@ -128,14 +128,14 @@ class Utilisateur
         return $this;
     }
 
-    public function getPassword(): ?bool
+    public function getAdmin(): ?bool
     {
-        return $this->password;
+        return $this->admin;
     }
 
-    public function setPassword(bool $password): self
+    public function setAdmin(bool $admin): self
     {
-        $this->password = $password;
+        $this->admin = $admin;
 
         return $this;
     }
