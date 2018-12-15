@@ -6,15 +6,26 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Produit;
+use App\Repository\ProduitRepository;
+use Doctrine\Common\Persistence\ObjectManager;
 
 
 class PropertyController extends AbstractController {
 
+    /**
+     * @var ProduitRepository
+     */
     private $repository;
+    
+    /**
+     * @Var ObjectManager
+     */
+    private $em;
 
-    public function __construct()
+    public function __construct(ProduitRepository $repository, ObjectManager $em)
     {
-        $this->$repository = $repository;
+        $this->repository = $repository;
+        $this->em = $em;
     }
 
     /**
@@ -23,9 +34,6 @@ class PropertyController extends AbstractController {
      */
     public function index():Response
     {
-        $produit = $this->repository->findAll();
-        dump($produit);
-
         return $this->render("property/index.html.twig", [
         "current_menu" => 'properties'
         ]);
