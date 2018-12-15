@@ -27,7 +27,7 @@ class Produit
     private $description;
 
     /**
-     * @ORM\Column(type="decimal", precision=5, scale=6)
+     * @ORM\Column(type="decimal", precision=5, scale=2)
      */
     private $prix;
 
