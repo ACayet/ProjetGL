@@ -32,6 +32,11 @@ class Produit
     private $prix;
 
     /**
+     * @ORM\Column(type="boolean", options={"default" : false})
+     */
+    private $vendu;
+
+    /**
      * @ORM\Column(type="integer")
      */
     private $stock;
