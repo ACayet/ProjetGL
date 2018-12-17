@@ -37,9 +37,9 @@ class Produit
      */
     private $stock;
 
-    public function getId(): int
+    public function getIdProduit(): int
     {
-        return $this->id;
+        return $this->idProduit;
     }
 
     public function getNomProduit(): string
@@ -77,7 +77,7 @@ class Produit
 
         return $this;
     }
-
+    
     public function getStock(): ?int
     {
         return $this->stock;
