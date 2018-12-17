@@ -31,22 +31,18 @@ class Produit
      */
     private $prix;
 
-    /**
-     * @ORM\Column(type="boolean", options={"default" : false})
-     */
-    private $vendu;
 
     /**
      * @ORM\Column(type="integer")
      */
     private $stock;
 
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
 
-    public function getNomProduit(): ?string
+    public function getNomProduit(): string
     {
         return $this->nomProduit;
     }
