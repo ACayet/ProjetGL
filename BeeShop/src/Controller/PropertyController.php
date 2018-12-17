@@ -34,8 +34,11 @@ class PropertyController extends AbstractController {
      */
     public function index():Response
     {
-        return $this->render("property/index.html.twig", [
-        "current_menu" => 'properties'
+        $prod = $this-> repository ->produitsDispo();
+        dump($prod);
+        return $this->render("produits/index.html.twig", [
+        "current_menu" => 'properties',
+        "produits" => $prod
         ]);
     }
 }

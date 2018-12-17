@@ -24,7 +24,7 @@ class ProduitRepository extends ServiceEntityRepository
      */
     public function produitsDispo(): array
      {   return $this->createQueryBuilder('p')
-            ->where('p.vendu = false')
+            ->where('p.stock > 0')
             ->getQuery()
             ->getResult();
     
