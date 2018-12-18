@@ -20,12 +20,12 @@ class PropertyController extends AbstractController {
     /**
      * @Var ObjectManager
      */
-    private $em;
+    //private $em;
 
-    public function __construct(ProduitRepository $repository, ObjectManager $em)
+    public function __construct(ProduitRepository $repository/*, ObjectManager $em*/)
     {
         $this->repository = $repository;
-        $this->em = $em;
+      //  $this->em = $em;
     }
 
     /**
