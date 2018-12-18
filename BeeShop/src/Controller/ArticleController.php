@@ -6,21 +6,16 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-
 class ArticleController extends AbstractController{
     
-    public function __construct()
-    {
-        
-    }
     /**
-     * @Route("/articles", name="article.index")
+     * @Route("/blog", name="article.index", methods={"GET","HEAD"})
      * @return Response
-     */
+     * */
     public function index():Response
     {
         return $this->render("blog/article.html.twig", [
-        "current_menu" => 'blog'
+        "current_menu" => 'articles'
         ]);
     }
 }
