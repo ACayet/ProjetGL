@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Cocur\Slugify\Slugify;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ProduitRepository")
@@ -20,6 +21,7 @@ class Produit
      * @ORM\Column(type="string", length=255)
      */
     private $nomProduit;
+
 
     /**
      * @ORM\Column(type="text", nullable=true)
@@ -45,6 +47,11 @@ class Produit
     public function getNomProduit(): string
     {
         return $this->nomProduit;
+    }
+
+    public function getSlug():string
+    {
+        return (new Slugify())->slugify($this->nomProduit);
     }
 
     public function setNomProduit(string $nomProduit): self

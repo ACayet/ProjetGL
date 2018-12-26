@@ -1,7 +1,13 @@
 home:
   path: /
   controller : App\Controller\HomeController::index
-  
+
+# property.show:
+#   path: /produits/{slug}-{id}
+#   default: App\Controller\PropertyController::show
+#   type: annotation
+#   prefix: /produits
+
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index

@@ -9,23 +9,23 @@ use App\Entity\Produit;
 use App\Repository\ProduitRepository;
 use Doctrine\Common\Persistence\ObjectManager;
 
-
 class PropertyController extends AbstractController {
 
     /**
-     * @var ProduitRepository
+     * @Var ProduitRepository
      */
     private $repository;
     
     /**
      * @Var ObjectManager
      */
-    //private $em;
+    private $em;
 
-    public function __construct(ProduitRepository $repository/*, ObjectManager $em*/)
+    
+    public function __construct(ProduitRepository $repository, ObjectManager $em)
     {
         $this->repository = $repository;
-      //  $this->em = $em;
+        $this->em = $em;
     }
 
     /**
@@ -41,5 +41,18 @@ class PropertyController extends AbstractController {
         "produits" => $prod
         ]);
     }
+
+    // /**
+    //  * @Route("/produits/{slug}-{id}", name="prop.show", requirements={"slug":"[a-z0-9\-]*"})
+    //  * @return Response
+    //  */
+    // public function show($slug, $id):Response
+    // {
+    //     $prop = $this->repository->find($id);
+    //     return $this->render("produits/show.html.twig",[
+    //         'property' => $prop,
+    //         'current_menu' => "properties"
+    //     ]);
+    // }
 }
     
