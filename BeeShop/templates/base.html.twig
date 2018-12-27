@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html>
       <head>
           <!-- Basic -->
@@ -19,19 +19,19 @@
 
           <!-- Site Icons -->
           <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}" type="image/x-icon" />
-          <link rel="apple-touch-icon" href="{{asset('images/apple-touch-icon.png')}}" >
+          <link rel="apple-touch-icon" href="{{asset('images/apple-touch-icon.png')}}" />
 
           <!-- Bootstrap CSS -->
-          <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+          <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
           <!-- Site CSS -->
           <link rel="stylesheet" href="{{asset('style.css')}}">
           <!-- Responsive CSS -->
-          <link rel="stylesheet" href="{{asset('css/responsive.css')}}" >
+          <link rel="stylesheet" href="{{asset('css/responsive.css')}}" />
           <!-- Custom CSS -->
-          <link rel="stylesheet" href="{{asset('css/custom.css')}}">
+          <link rel="stylesheet" href="{{asset('css/custom.css')}}" />
 
           <!-- Modernizer for Portfolio -->
-          <script src="{{ asset('js/modernizer.js"') }}></script>
+          <script src="{{ asset('js/modernizer.js') }}"> </script>
 
           <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -39,23 +39,23 @@
           <![endif]-->
 
           {% block stylesheets %}{% endblock %}
-            </head>
+        </head>
 
-          <body>
-              <header class="header header_style_01">
-              <nav class="megamenu navbar navbar-expand-lg navbar-light bg-light">
-                  <div class="container">
-                      <div class="navbar-header">
-                        <a class="navbar-brand" href="{{path('home')}}"><img src="images/logos/bee93.jpg" alt="image"></a>
-                          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="sr-only">soso</span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                          </button>
-                      </div>
+        <body>
+            <header class="header header_style_01">           
+                <nav class="megamenu navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="{{path('home')}}"><img src="images/logos/bee93.jpg" alt="image"></a>
+                                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="sr-only">soso</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                        </div>
 
-                      <div class="collapse navbar-collapse" id="navbar">
+                        <div class="collapse navbar-collapse" id="navbar">
                           <ul class="navbar-nav ml-auto">
                               <li><a class="active" href="{{path('home')}}">Accueil</a></li>
                               <li><a href="about-us.html">Blog</a></li>
@@ -63,125 +63,114 @@
                               <li><a href="about-us.html">Connexion</a></li>
                               <li><a href="services.html">Inscription</a></li>
                               <li><a href="contact.html">Contact</a></li>
-                  
                           </ul>
                       </div>
                   </div>
               </nav>
           </header>
 
-
-
-
         {% block body %}{% endblock %}
 
+        {% block footer %}  
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="widget clearfix">
+                                <div class="widget-title">
+                                    <img src="{{asset('images/logos/bee93.jpg')}}" alt="" />
+                                </div>
+                                <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>                        
+                            </div> <!-- end clearfix -->
+                        </div> <!-- end col -->
 
-        {% block footer %} 
-        <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <img src="{{asset('images/logos/bee93.jpg')}}" alt="" />
-                        </div>
-                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>                        
-                    </div> <!-- end clearfix -->
-                </div> <!-- end col -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="widget clearfix">
+                                <div class="widget-title">
+                                    <h3>Liens utiles</h3>
+                                </div>
 
-				<div class="col-md-6 col-lg-3">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3>Liens utiles</h3>
-                        </div>
+                                <ul class="footer-links hov">
+                                    <li><a href="#">Home <span class="icon icon-arrow-right2"></span></a></li>
+                                    <li><a href="#">Blog <span class="icon icon-arrow-right2"></span></a></li>
+                                    <li><a {% if (current_menu is defined and current_menu == 'properties') %} active {% endif %} href="{{path('property.index')}}" >Produit <span class="icon icon-arrow-right2"></span></a></li>                                    
+                                    <li><a href="#">Contact <span class="icon icon-arrow-right2"></span></a></li>
+                                </ul><!-- end links -->
+                            </div><!-- end clearfix -->
+                       </div><!-- end col -->
+                    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-recent clearfix">
+                                <div class="widget-title">
+                                    <h3>Article récent</h3>
+                                </div>
+                                
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        <span>Publié par  : Consectetur cupidatat </span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span> Heure: 1h du mat sa race </span>
+                                        <h2>Consectetur cupidatat aliqua nulla magna in pariatur deserunt nulla </h2>
+                                    </li>
 
-                        <ul class="footer-links hov">
-                            <li><a href="#">Home <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">Blog <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a {% if (current_menu is defined and current_menu == 'properties') %} active {% endif %} href="{{path('property.index')}}" >Produit <span class="icon icon-arrow-right2"></span></a></li>
-							
-							<li><a href="#">Contact <span class="icon icon-arrow-right2"></span></a></li>
-                        </ul><!-- end links -->
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
-				
-                <div class="col-md-6 col-lg-3">
-                    <div class="footer-recent clearfix">
-                        <div class="widget-title">
-                            <h3>Article récent</h3>
-                        </div>
-						
-						<ul>
-							<li>
-								<i class="fa fa-user" aria-hidden="true"></i>
-								<span>Publié par  : Consectetur cupidatat </span>
-								<i class="fa fa-clock-o" aria-hidden="true"></i>
-								<span> Heure: 1h du mat sa race </span>
-								<h2>Consectetur cupidatat aliqua nulla magna in pariatur deserunt nulla </h2>
-							</li>
-							<li>
-								<i class="fa fa-user" aria-hidden="true"></i>
-								<span>Publié par  : Consectetur cupidatat</span>
-								<i class="fa fa-clock-o" aria-hidden="true"></i>
-								<span> Heure: 1h du mat sa race </span>
-								<h2>Consectetur cupidatat aliqua nulla magna in pariatur deserunt nulla in s</h2>
-							</li>
+                                    <li>
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        <span>Publié par  : Consectetur cupidatat</span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span> Heure: 1h du mat sa race </span>
+                                        <h2>Consectetur cupidatat aliqua nulla magna in pariatur deserunt nulla in s</h2>
+                                    </li>
 
-						    <li>
-								<i class="fa fa-user" aria-hidden="true"></i>
-								<span> Publié par  : Consectetur cupidatat</span>
-								<i class="fa fa-clock-o" aria-hidden="true"></i>
-								<span> Heure: 1h du mat sa race </span>
-								<h2>Consectetur cupidatat aliqua nulla magna in pariatur deserunt nulla in s</h2>
-							</li>
-						</ul>
-						                       
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
+                                    <li>
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        <span> Publié par  : Consectetur cupidatat</span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span> Heure: 1h du mat sa race </span>
+                                        <h2>Consectetur cupidatat aliqua nulla magna in pariatur deserunt nulla in s</h2>
+                                    </li>
+                                </ul>                    
+                            </div><!-- end clearfix -->
+                        </div><!-- end col -->
 
-				<div class="col-md-6 col-lg-3">
-					<div class="widget footer-contact clearfix">
-						<div class="widget-title">
-                        <h3>Nous-Contacter</h3>
-                    </div>
-						
-					<ul>
-						<li>Adresse: 143 avenue de Versailles</li>
-						<li>Téléphone: <a href="#">+336 383768080  </a></li>
-						<li>Email: <a href="#">info@Beeshop.com </a></li>
-					</ul>
-					<ul class="social-list">
-						<li><a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="https://plus.google.com/" class="googlePlus"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-						
-				</div>
-			</div>
-				
-				
-				
-            </div> <!-- end row -->
-        </div> <!-- end container -->
-    </footer> <!-- end footer -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="widget footer-contact clearfix">
+                                <div class="widget-title">
+                                <h3>Nous-Contacter</h3>
+                            </div>
+                                
+                            <ul>
+                                <li>Adresse: 143 avenue de Versailles</li>
+                                <li>Téléphone: <a href="#">+336 383768080  </a></li>
+                                <li>Email: <a href="#">info@Beeshop.com </a></li>
+                            </ul>
+
+                            <ul class="social-list">
+                                <li><a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://plus.google.com/" class="googlePlus"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>                          
+                          </div>
+                      </div> 
+                    </div> <!-- end row -->
+                </div> <!-- end container -->
+            </footer> <!-- end footer -->
           
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
-
-    <!-- ALL JS FILES -->
-    <script src="{{asset('js/all.js')}}"></script>
-
-    <!-- ALL PLUGINS -->
-    <script src="{{asset('js/custom.js')}}"></script>
-    <script src="{{asset('js/portfolio.js')}}"></script>
-    <script src="{{asset('js/hoverdir.js')}}"></script>    
+            <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
         
-    {% endblock %}
-        {% block javascripts %}
-
         {% endblock %}
 
+        {% block javascripts %}
+            <!-- ALL JS FILES -->
+            <script src="{{asset('js/all.js')}}"></script>
 
-          </body>
-    </html>
+            <!-- ALL PLUGINS -->
+            <script src="{{asset('js/custom.js')}}"></script>
+            <script src="{{asset('js/portfolio.js')}}"></script>
+            <script src="{{asset('js/hoverdir.js')}}"></script>    
+        {% endblock %}
+        
+    </body>
+</html>
