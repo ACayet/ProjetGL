@@ -44,11 +44,18 @@ class PropertyController extends AbstractController {
 
     /**
      * @Route("/produits/{slug}-{id}", name="prop.show", requirements={"slug":"[a-z0-9\-]*"})
+     * @param Produit $prop
      * @return Response
      */
-    public function show($slug, $id):Response
+    public function show(Produit $prop, string $slug):Response
     {
-        $prop = $this->repository->find($id);
+        if ($prop->getSlug() !== $slug){
+            return $this->redirectToRoute('prop.show',[
+                'id'=> $prop->getIdProduit(),
+                'slug'=> $prop->getSlug(),
+            ],301);
+        }
+
         return $this->render("produits/show.html.twig",[
             'property' => $prop,
             'current_menu' => "properties"
