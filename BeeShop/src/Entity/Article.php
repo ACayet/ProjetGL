@@ -3,7 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
+use Cocur\Slugify\Slugify;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ArticleRepository")
  */
@@ -39,6 +39,11 @@ class Article
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getSlug():string
+    {
+        return (new Slugify())->slugify($this->titre);
     }
 
     public function getTitre(): ?string
