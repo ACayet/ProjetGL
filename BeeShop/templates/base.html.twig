@@ -57,7 +57,7 @@
                         <div class="collapse navbar-collapse" id="navbar">
                           <ul class="navbar-nav ml-auto">
                               <li><a class="active" href="{{path('home')}}">Accueil</a></li>
-                              <li><a href="about-us.html">Blog</a></li>
+                              <li><a href="{{path('blog')}}">Blog</a></li>
                               <li><a {% if (current_menu is defined and current_menu == 'properties') %} active {% endif %} href="{{path('property.index')}}">Produit</a></li>
                               <li><a href="about-us.html">Connexion</a></li>
                               <li><a href="services.html">Inscription</a></li>
@@ -90,8 +90,8 @@
                                 </div>
 
                                 <ul class="footer-links hov">
-                                    <li><a href="#">Home <span class="icon icon-arrow-right2"></span></a></li>
-                                    <li><a href="#">Blog <span class="icon icon-arrow-right2"></span></a></li>
+                                    <li><a href="{{path('home')}}">Home <span class="icon icon-arrow-right2"></span></a></li>
+                                    <li><a href="{{path('blog')}}">Blog <span class="icon icon-arrow-right2"></span></a></li>
                                     <li><a {% if (current_menu is defined and current_menu == 'properties') %} active {% endif %} href="{{path('property.index')}}" >Produit <span class="icon icon-arrow-right2"></span></a></li>                                    
                                     <li><a href="#">Contact <span class="icon icon-arrow-right2"></span></a></li>
                                 </ul><!-- end links -->

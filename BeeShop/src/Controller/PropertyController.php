@@ -42,17 +42,17 @@ class PropertyController extends AbstractController {
         ]);
     }
 
-    // /**
-    //  * @Route("/produits/{slug}-{id}", name="prop.show", requirements={"slug":"[a-z0-9\-]*"})
-    //  * @return Response
-    //  */
-    // public function show($slug, $id):Response
-    // {
-    //     $prop = $this->repository->find($id);
-    //     return $this->render("produits/show.html.twig",[
-    //         'property' => $prop,
-    //         'current_menu' => "properties"
-    //     ]);
-    // }
+    /**
+     * @Route("/produits/{slug}-{id}", name="prop.show", requirements={"slug":"[a-z0-9\-]*"})
+     * @return Response
+     */
+    public function show($slug, $id):Response
+    {
+        $prop = $this->repository->find($id);
+        return $this->render("produits/show.html.twig",[
+            'property' => $prop,
+            'current_menu' => "properties"
+        ]);
+    }
 }
     
