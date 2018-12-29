@@ -57,7 +57,7 @@
                         <div class="collapse navbar-collapse" id="navbar">
                           <ul class="navbar-nav ml-auto">
                               <li><a class="active" href="{{path('home')}}">Accueil</a></li>
-                              <li><a href="{{path('blog')}}">Blog</a></li>
+                              <li><a {% if (current_menu is defined and current_menu == 'articles') %} active {% endif %} href="{{path('blog')}}">Blog</a></li>
                               <li><a {% if (current_menu is defined and current_menu == 'properties') %} active {% endif %} href="{{path('property.index')}}">Produit</a></li>
                               <li><a href="about-us.html">Connexion</a></li>
                               <li><a href="services.html">Inscription</a></li>
