@@ -16,12 +16,9 @@ class BlogController extends AbstractController
      */
     private $repository;
     
-
-    
     public function __construct(ArticleRepository $repository)
     {
         $this->repository = $repository;
- 
     }
 
     /**
@@ -55,16 +52,4 @@ class BlogController extends AbstractController
             'current_menu' => "articles"
         ]);
     }
-
-    // /**
-    //  * @Route("/blog", name="blog")
-    //  */
-    // public function index()
-    // {
-    //     return $this->render('blog/index.html.twig', [
-    //         'controller_name' => 'BlogController',
-    //     ]);
-    // }
-
-   
 }
