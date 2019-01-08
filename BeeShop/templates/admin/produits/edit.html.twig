@@ -2,9 +2,12 @@
 
 {% block title 'Gérer la boutique '%}
 
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
 {% block body %}
     <div class="container mt-4">
         <h1>Editer le bien </h1>
+
         {{ form_start(form) }}
         {{ form_widget(form) }}
         <button class="btn btn-primary">Sauvegarder</button>
