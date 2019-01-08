@@ -22,7 +22,7 @@ class ArticleRepository extends ServiceEntityRepository
     /**
      * @return Article[]
      */
-    public function articlesPublies():array
+    public function articlesPublished():array
     {
         return $this->createQueryBuilder('a')
         ->where('a.id > 0')
