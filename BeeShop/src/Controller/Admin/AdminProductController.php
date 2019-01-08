@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Response;
 use App\Entity\Produit;
 use App\Form\ProduitType;
 
-class AdminPropertyController extends AbstractController
+class AdminProductController extends AbstractController
 
 {
     /**

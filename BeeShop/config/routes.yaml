@@ -4,7 +4,7 @@ home:
 
 # property.show:
 #   path: /produits/{slug}-{id}
-#   default: App\Controller\PropertyController::show
+#   default: App\Controller\ProductController::show
 #   type: annotation
 #   prefix: /produits
 
