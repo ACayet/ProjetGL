@@ -29,8 +29,6 @@
                                             {{prop.nomProduit}} 
                                         </a>
                                     </h2>
-                                    <p class="card-text">{{prop.description}}</p>
-
                                     <p class="card-text">{{prop.prix}} €</p>
                                 </div>
                             </div> 
@@ -39,27 +37,5 @@
                 </div>
             </div>            
         </section>
-
-            {# <div class = "container">
-
-                <h2> Les produits disponibles </h2>
-
-                <div class="row flex">
-                    {% for prop in produits %}
-                        <div class="col-3">
-                            <div clas="card">
-                                <div clas="card-body">
-                                    <h5 clas="card-title">
-                                        <a href="{{ path('prop.show', {id: prop.idProduit, slug: prop.slug}) }}"> {{prop.nomProduit}} </a>
-                                        {# <a href="#"> {{prop.nomProduit}} </a> #}
-                                    {# </h5>
-                                    <p class="card-text"> {{prop.description }} </p>
-                                    <div class="text-primary">{{prop.prix}} €</div>
-                                </div>
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div> #} 
     </body>
 {% endblock %}
