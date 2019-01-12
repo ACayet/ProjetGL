@@ -62,7 +62,7 @@
                               <li><a {% if (current_menu is defined and current_menu == 'articles') %} class="active" {% endif %} href="{{path('blog')}}">Blog</a></li>
                               <li><a {% if (current_menu is defined and current_menu == 'properties') %} class="active" {% endif %} href="{{path('property.index')}}">Produit</a></li>
                               <li><a href="about-us.html">Connexion</a></li>
-                              <li><a href="services.html">Inscription</a></li>
+                              <li><a href="{{path('security_registration')}}">Inscription</a></li>
                               <li><a href="contact.html">Contact</a></li>
                           </ul>
                       </div>

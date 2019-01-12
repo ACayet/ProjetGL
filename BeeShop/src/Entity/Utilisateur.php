@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UtilisateurRepository")
@@ -32,7 +33,18 @@ class Utilisateur
     private $email;
 
     /**
-     * @ORM\Column(type="integer", nullable=true)
+     * @ORM\Column(type="string", length=255)
+     * @Assert\Length(min="5", minMessage="Votre mot de passe doit faire minimum 5 caractères")
+     */
+    private $password;
+
+    /**
+     * @Assert\EqualTo(propertyPath="password", message="Vous n'avez pas tapé le même mot de passe !")
+     */
+    public $passwordConf;
+
+    /**
+     * @ORM\Column(type="string", length=255)
      */
     private $telephone;
 
@@ -47,7 +59,7 @@ class Utilisateur
     private $ville;
 
     /**
-     * @ORM\Column(type="boolean", options={"default" : false})
+     * @ORM\Column(type="boolean", nullable=true, options={"default" : false})
      */
     private $admin;
 
@@ -92,12 +104,24 @@ class Utilisateur
         return $this;
     }
 
-    public function getTelephone(): ?int
+    public function getPassword(): ?string
+    {
+        return $this->password;
+    }
+
+    public function setPassword(string $password): self
+    {
+        $this->password = $password;
+
+        return $this;
+    }
+
+    public function getTelephone(): ?string
     {
         return $this->telephone;
     }
 
-    public function setTelephone(?int $telephone): self
+    public function setTelephone(?string $telephone): self
     {
         $this->telephone = $telephone;
 
