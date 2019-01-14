@@ -57,6 +57,7 @@ class AdminProductController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $this->em->persist($prop);
             $this->em->flush();
+            $this->addFlash('success', "Produit ajouté avec succès");
             return $this->redirectToRoute('admin.produit.index');
         }
 
@@ -67,7 +68,7 @@ class AdminProductController extends AbstractController
     }
 
     /**
-     * @Route("/admin/{id}", name="admin.produit.edit")
+     * @Route("/admin/{id}", name="admin.produit.edit", methods="GET|POST")
      * @param Produit $prop
      * @param Request $request
      * @return Response
@@ -79,6 +80,7 @@ class AdminProductController extends AbstractController
 
         if ($form->isSubmitted()&& $form->isValid()) {
             $this->em->flush();
+            $this->addFlash('success', "Produit modifié avec succès");
             return $this->redirectToRoute("admin.produit.index");
         }
         return $this->render('admin/produits/edit.html.twig', [
@@ -86,5 +88,19 @@ class AdminProductController extends AbstractController
             'form' => $form->createView()
         ]);
 
+    }
+
+    /**
+     * @Route("/admin/{id}", name="admin.produit.delete", methods="DELETE")
+     */
+    public function delete(Produit $produit, Request $request){
+        dump('suppression');
+        // if($this->isCsrfTokenValid('delete' - $produit->getidProduit(), $request->get('_token'))) {
+             $this->em->remove($produit);
+             $this->em->flush();
+            $this->addFlash('success', "Produit supprimé avec succès");
+            // return new Response('suppresion');
+        // }
+        return $this->redirect($this->generateUrl('admin.produit.index'));
     }
 }

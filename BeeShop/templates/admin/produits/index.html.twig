@@ -12,16 +12,28 @@
                             <h2>Gestion de la boutique </h2>
                         </div>
 
+                        {% for message in app.flashes('success') %}
+                            <div class="alert alert-success">
+                                {{message}}
+                            </div>
+                        {% endfor %}
+                        
                         <table class="table table-striped">
-           
                             <tbody>
-                            <tr>
                                 {% for prop in produits %}
-                                    <td> {{prop.nomProduit }} </td>
-                                    <td>
-                                        <a href="{{ path('admin.produit.edit', {id: prop.idProduit}) }}" class="btn btn-secondary"> Editer </a> 
-                                    </td>        
-                            </tr>
+                                    <tr>
+                                        <td> {{prop.nomProduit }} </td>
+
+                                        <td>
+                                            <a href="{{ path('admin.produit.edit', {id: prop.idProduit}) }}" class="btn btn-secondary"> Editer </a> 
+                                            <form method="post" action="{{ path('admin.produit.delete', {id:prop.idProduit}) }}" 
+                                                style="display: inline-block" onsubmit="return confirm('Êtes-vous sûr de supprimer ?')">
+                                                <input type="hidden" name="_method" value="DELETE"/>
+                                                {# <input type="hidden" name="_token" value="{{ csrf_token('delete' - prop.idProduit) }}"/> #}
+                                                <button class="btn btn-danger"> Supprimer</button
+                                            </form
+                                        </td>        
+                                    </tr>
                                 {% endfor %}
                             </tbody>
 
