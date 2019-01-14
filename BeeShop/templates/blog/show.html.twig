@@ -1,0 +1,14 @@
+{% extends 'base.html.twig'%}
+
+{% block title article.titre %}
+
+
+{% block body %}
+    <div class="container">
+        
+        <h1>{{article.titre}}</h1> écrit le {{ article.date|date('Y-m-d') }}
+        <p>{{article.contenu}}</p>
+      
+    </div>
+    
+{% endblock %}

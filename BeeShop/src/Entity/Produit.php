@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Cocur\Slugify\Slugify;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ProduitRepository")
@@ -21,6 +22,7 @@ class Produit
      */
     private $nomProduit;
 
+
     /**
      * @ORM\Column(type="text", nullable=true)
      */
@@ -37,6 +39,11 @@ class Produit
      */
     private $stock;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $quantite;
+
     public function getIdProduit(): int
     {
         return $this->idProduit;
@@ -45,6 +52,11 @@ class Produit
     public function getNomProduit(): string
     {
         return $this->nomProduit;
+    }
+
+    public function getSlug():string
+    {
+        return (new Slugify())->slugify($this->nomProduit);
     }
 
     public function setNomProduit(string $nomProduit): self
@@ -86,6 +98,18 @@ class Produit
     public function setStock(int $stock): self
     {
         $this->stock = $stock;
+
+        return $this;
+    }
+
+    public function getQuantite(): ?int
+    {
+        return $this->quantite;
+    }
+
+    public function setQuantite(int $quantite): self
+    {
+        $this->quantite = $quantite;
 
         return $this;
     }

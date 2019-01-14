@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} BeeBlog {% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+
+    <div class="container">
+        <h1>Bienvenue sur BeeBlog</h1>
+
+        <p>Ci-dessous vous trouverez les articles :
+            {% for art in articles %}
+                <h3> <a href="{{ path('art.show', {id: art.id, slug: art.slug}) }}"> {{art.titre}} </a> </h3>
+                                
+            {% endfor %}
+        </p>    
+    </div>
+    
+    
+</div>
+{% endblock %}

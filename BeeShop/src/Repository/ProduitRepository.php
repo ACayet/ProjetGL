@@ -22,7 +22,7 @@ class ProduitRepository extends ServiceEntityRepository
     /**
      * @return Produit[]
      */
-    public function produitsDispo(): array
+    public function productsAvailable(): array
      {   return $this->createQueryBuilder('p')
             ->where('p.stock > 0')
             ->getQuery()
