@@ -3,17 +3,31 @@
 {% block title %} BeeBlog {% endblock %}
 
 {% block body %}
-
-<div class="example-wrapper">
-
-    <div class="container">
-        <h1>Bienvenue sur BeeBlog</h1>
-
-        <p>Ci-dessous vous trouverez les articles :
-            {% for art in articles %}
-                <h3> <a href="{{ path('art.show', {id: art.id, slug: art.slug}) }}"> {{art.titre}} </a> </h3>
-                                
-            {% endfor %}
+<section id="fiche-produit">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="liste-title">
+                         <h2>Bienvenue sur le blog</h2>
+                    </div>
+                     <div class="liste-description">
+						<h3> Retrouvez tous nos articles ci-dessous : </h3>
+					</div>    
+                
+                    {% for art in articles %}
+                        <div class="card col-sm-3">
+                            <div class="card-body">
+                                <h2 class="card-title"><a href="{{ path('art.show', {id: art.id, slug: art.slug}) }}" > {{art.titre}}</a></h2>
+                                <p class="card-text"><a href="{{ path('art.show', {id: art.id, slug: art.slug}) }}">{{ art.date|date('Y-m-d') }}</a></p>
+                            </div>
+                        </div>
+                    {% endfor %}
+      	    	</div>
+			</div>
+		</div>
+	</section>
+            
+                      
         </p>    
     </div>
     
