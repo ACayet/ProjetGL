@@ -4,11 +4,19 @@
 
 
 {% block body %}
-    <div class="container">
-        
-        <h1>{{article.titre}}</h1> écrit le {{ article.date|date('Y-m-d') }}
-        <p>{{article.contenu}}</p>
-      
-    </div>
+
+    <section id="fiche-article">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+                    <div class="message-box">
+                        <h2>{{article.titre}}</h2>
+                        <p class="maj-date"> écrit le {{ article.date|date('Y-m-d') }} par {{article.auteur}}</p>
+                        <p class="lead">{{article.contenu}}</p>
+                    </div><!-- end messagebox -->
+				</div>
+			</div>
+		</div>
+	</section>
     
 {% endblock %}

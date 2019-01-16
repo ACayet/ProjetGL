@@ -16,9 +16,13 @@ class ProduitType extends AbstractType
                 'label' => "Nom du produit"
             ])
             ->add('description')
-            ->add('prix')
+            ->add('prix', null, [
+                'label' => "Prix en €"
+            ] )
             ->add('stock')
-            ->add('quantite')
+            ->add('quantite', null, [
+                'label' => "Quantité en mL"
+            ])
         ;
     }
 

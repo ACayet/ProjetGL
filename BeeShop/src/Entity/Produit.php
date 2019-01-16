@@ -20,7 +20,7 @@ class Produit
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $nomProduit;
+    private $nomProduit="";
 
 
     /**
