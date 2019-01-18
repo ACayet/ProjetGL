@@ -91,7 +91,7 @@ class AdminBlogController extends AbstractController
     }
 
     /**
-     * @Route("/admin/{id}", name="admin.blog.delete", methods="DELETE")
+     * @Route("/admin/blog/{id}", name="admin.blog.delete", methods="DELETE")
      */
     public function delete(Article $article, Request $request){
         dump('suppression');
