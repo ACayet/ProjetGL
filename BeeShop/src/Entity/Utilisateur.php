@@ -39,7 +39,7 @@ class Utilisateur
     private $password;
 
     /**
-     * @Assert\EqualTo(propertyPath="password", message="Vous n'avez pas tapé le même mot de passe !")
+     * @Assert\EqualTo(produitPath="password", message="Vous n'avez pas tapé le même mot de passe !")
      */
     public $passwordConf;
 

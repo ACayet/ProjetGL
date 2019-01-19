@@ -24,7 +24,7 @@ class ProductController extends AbstractController
     }
 
     /**
-     * @Route("/produits", name="property.index")
+     * @Route("/produits", name="produit.index")
      * @return Response
      */
     public function index(): Response
@@ -52,7 +52,7 @@ class ProductController extends AbstractController
         }
 
         return $this->render("produits/show.html.twig", [
-            'property' => $prop,
+            'produit' => $prop,
             'current_menu' => "properties",
         ]);
     }

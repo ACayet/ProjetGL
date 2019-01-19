@@ -2,7 +2,7 @@ home:
   path: /
   controller : App\Controller\HomeController::index
 
-# property.show:
+# produit.show:
 #   path: /produits/{slug}-{id}
 #   default: App\Controller\ProductController::show
 #   type: annotation
