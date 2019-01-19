@@ -9,10 +9,28 @@ class HomeControllerTest extends WebTestCase
 
 {
     /** @test */
-    public function showHomePage(){
+    public function index(){
         $client = static::createClient();
         $client->request('GET', '/');
+
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
+        $crawler = $client->request('GET', '/');
+
+        $this->assertGreaterThan(
+            0,
+            $crawler->filter('html:contains("Bienvenue")')->count()
+        );
+      
+    }
+
+
+    public function testPageSuccessful()
+    {
+        $client = self::createClient();
+        $client->request('GET', '/');
+
+        $this->assertTrue($client->getResponse()->isSuccessful());
+
     }
 
 }
