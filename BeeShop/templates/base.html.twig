@@ -62,9 +62,17 @@
                               <li><a href="{{path('home')}}">Accueil</a></li>
                               <li><a {% if (current_menu is defined and current_menu == 'articles') %} class="active" {% endif %} href="{{path('blog')}}">Blog</a></li>
                               <li><a {% if (current_menu is defined and current_menu == 'properties') %} class="active" {% endif %} href="{{path('produit.index')}}">Produit</a></li>
-                              <li><a href="about-us.html">Connexion</a></li>
+
+                            
+                            {% if not app.user %}
+                              <li><a href="{{path('security_login')}}">Connexion</a></li>
                               <li><a href="{{path('security_registration')}}">Inscription</a></li>
-                              <li><a href="contact.html">Contact</a></li>
+                            {% else %}
+                              <li><a href="{{path('security_logout')}}">Déconnexion</a></li>
+                              <h1 style="color:red">Bonjour {{ app.user.username }} </h1>
+                            {% endif %}
+
+
                           </ul>
                       </div>
                   </div>
