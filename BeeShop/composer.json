@@ -6,6 +6,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "cocur/slugify": "^3.1",
+        "fabpot/goutte": "^3.2",
         "sensio/framework-extra-bundle": "^5.2",
         "symfony/apache-pack": "^1.0",
         "symfony/asset": "4.2.*",

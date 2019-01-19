@@ -93,7 +93,7 @@ class ProductControllerTest extends WebTestCase
             
         );
 
-        $crawler = $client->request('GET', '/blog/miel-de-manuka-14');
+        $crawler = $client->request('GET', '/produits/miel-de-manuka-14');
         $this->assertGreaterThan(
             0,
             $crawler->filter('html:contains("Description")')->count()
