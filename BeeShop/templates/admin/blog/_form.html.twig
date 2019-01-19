@@ -1,0 +1,23 @@
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+<div class="container mt-4">
+
+{{ form_start(form) }}
+
+        <div class="row">
+            <div class="col-md-6" > {{ form_row(form.titre) }}</div>
+            <div class="col-md-4"> {{form_row(form.auteur)}} </div>
+        </div>  
+
+        <div class="row">
+            
+            <div class="col-md-12"> {{ form_row(form.contenu) }}</div>
+        </div> 
+        {{ form_widget(form) }}
+
+        <br/>    
+        <button class="btn btn-primary">Sauvegarder</button>
+        
+{{ form_end(form) }}
+
+</div>

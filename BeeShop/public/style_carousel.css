@@ -1271,7 +1271,6 @@ section {padding: 50px 0;}
 #fiche-produit > .container > .row > .titles h2 i {margin-left: 5px; color: #FFD700;}
 #fiche-produit .titles h2 span {font-size: 16px;}
 
-
 /* LISTE produit */
 
 .liste-title {margin-left: 5px; color: #FFD700;}
@@ -1279,6 +1278,11 @@ section {padding: 50px 0;}
 .liste-description {padding: 30px 0;}
 #fiche-produit .card {margin-left:20px; margin-bottom:20px; width: 18rem; display: inline-block;}
 
+/* Liste article */
+#fiche-article{margin-left: 174.500px;}
+#fiche-article h2 {text-align: center; font-size: 2.5rem;}
+#fiche-article p {margin-top: 20px; }
+#fiche-article .maj-date {font-size: 0.8rem; text-align: center; }
 
 
 

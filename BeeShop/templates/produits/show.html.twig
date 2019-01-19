@@ -1,7 +1,6 @@
 {% extends 'base.html.twig'%}
 
-{% block title property.nomProduit %}
-
+{% block title produit.nomProduit %}
 
 {% block body %}
     <body>
@@ -14,17 +13,17 @@
 				
 				<div class="col-md-6">
 					<div class="titles">
-						<h2>{{property.nomProduit}}</h2>
+						<h2>{{produit.nomProduit}}</h2>
 					</div>
 					<div class="col-md-offset-1">
 						<div class="panel post-panel">
 							<p> Description du produit : </p>
-							<p> {{property.description}} </p>
-                            <p> Quantité : {{property.quantite}} mL </p>            
+							<p> {{produit.description}} </p>
+                            <p> Quantité : {{produit.quantite}} mL </p>            
                         </div>
 
 						<div class="panel post-panel">
-							<h2> Prix :  {{property.prix}} €</h2>
+							<h2> Prix :  {{produit.prix}} €</h2>
 							<button type="button" class="btn btn-primary btn-lg active">Acheter</button>
 						</div>
 					</div>

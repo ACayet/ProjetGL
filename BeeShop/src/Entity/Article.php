@@ -2,13 +2,21 @@
 
 namespace App\Entity;
 
+use Symfony\Component\Validator\Constraints  as Assert;
 use Doctrine\ORM\Mapping as ORM;
 use Cocur\Slugify\Slugify;
+use Symfony\Component\Validator\Constraints\DateTime;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ArticleRepository")
  */
 class Article
 {
+
+    public function __construct()
+    {
+        $this->date = new \DateTimeImmutable();
+    }
+    
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
@@ -28,6 +36,7 @@ class Article
 
     /**
      * @ORM\Column(type="datetime")
+     * @var string A "Y-m-d H:i:s" formatted value
      */
     private $date;
 
@@ -70,6 +79,7 @@ class Article
         return $this;
     }
 
+  
     public function getDate(): ?\DateTimeInterface
     {
         return $this->date;

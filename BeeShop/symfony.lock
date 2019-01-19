@@ -80,11 +80,23 @@
     "egulias/email-validator": {
         "version": "2.1.7"
     },
+    "fabpot/goutte": {
+        "version": "v3.2.3"
+    },
     "facebook/webdriver": {
         "version": "1.6.0"
     },
     "fig/link-util": {
         "version": "1.0.0"
+    },
+    "guzzlehttp/guzzle": {
+        "version": "6.3.3"
+    },
+    "guzzlehttp/promises": {
+        "version": "v1.3.1"
+    },
+    "guzzlehttp/psr7": {
+        "version": "1.5.2"
     },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
@@ -113,6 +125,9 @@
     "psr/container": {
         "version": "1.0.0"
     },
+    "psr/http-message": {
+        "version": "1.0.1"
+    },
     "psr/link": {
         "version": "1.0.0"
     },
@@ -121,6 +136,9 @@
     },
     "psr/simple-cache": {
         "version": "1.0.1"
+    },
+    "ralouphie/getallheaders": {
+        "version": "2.0.5"
     },
     "sensio/framework-extra-bundle": {
         "version": "5.2",
@@ -293,14 +311,14 @@
     "symfony/process": {
         "version": "v4.2.1"
     },
+    "symfony/produit-access": {
+        "version": "v4.2.1"
+    },
+    "symfony/produit-info": {
+        "version": "v4.2.1"
+    },
     "symfony/profiler-pack": {
         "version": "v1.0.3"
-    },
-    "symfony/property-access": {
-        "version": "v4.2.1"
-    },
-    "symfony/property-info": {
-        "version": "v4.2.1"
     },
     "symfony/routing": {
         "version": "4.2",
