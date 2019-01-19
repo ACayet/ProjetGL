@@ -1,6 +1,6 @@
 {% extends 'base.html.twig'%}
 
-{% block title 'Gérer la boutique '%}
+{% block title 'Gérer le blog '%}
 
 {% block body %}
     <body>
@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="liste-title">
-                            <h2>Gestion de la boutique </h2>
+                            <h2>Gestion du blog </h2>
                         </div>
 
                         {% for message in app.flashes('success') %}
@@ -20,13 +20,13 @@
                         
                         <table class="table table-striped">
                             <tbody>
-                                {% for prop in produits %}
+                                {% for art in articles %}
                                     <tr>
-                                        <td> {{prop.nomProduit }} </td>
+                                        <td> {{art.titre }} </td>
 
                                         <td>
-                                            <a href="{{ path('admin.produit.edit', {id: prop.idProduit}) }}" class="btn btn-secondary"> Editer </a> 
-                                            <form method="post" action="{{ path('admin.produit.delete', {id: prop.idProduit}) }}" 
+                                            <a href="{{ path('admin.blog.edit', {id: art.id}) }}" class="btn btn-secondary"> Editer </a> 
+                                             <form method="post" action="{{ path('admin.blog.delete', {id: art.id}) }}" 
                                                 style="display: inline-block" onsubmit="return confirm('Êtes-vous sûr de supprimer ?')">
                                                 <input type="hidden" name="_method" value="DELETE"/>
                                                 <input type="hidden" name="_token" value="{{ csrf_token('delete') }}"/>
@@ -40,7 +40,7 @@
                         </table>
 
                         <div class="text-right">
-                            <a href="{{ path('admin.produit.new') }}" class="btn btn-primary"> Créer un nouveau produit </a>
+                            <a href="{{ path('admin.blog.new') }}" class="btn btn-primary"> Créer un nouvel article </a>
                         </div>
 
                     </div>

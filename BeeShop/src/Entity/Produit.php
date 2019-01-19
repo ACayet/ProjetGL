@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 use Cocur\Slugify\Slugify;
 
@@ -30,6 +31,7 @@ class Produit
 
     /**
      * @ORM\Column(type="decimal", precision=5, scale=2)
+     * @Assert\GreaterThan(0)
      */
     private $prix;
 
@@ -41,6 +43,7 @@ class Produit
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\GreaterThan(0)
      */
     private $quantite;
 
