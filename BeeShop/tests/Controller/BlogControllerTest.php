@@ -4,6 +4,7 @@ namespace App\tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\DomCrawler\Crawler;
 
 class BlogControllerTest extends WebTestCase
 {
@@ -31,14 +32,32 @@ class BlogControllerTest extends WebTestCase
     {
         $client = static::createClient();
         $client->request('GET', '/blog/quels-sont-les-bienfaits-du-miel-4');
+        $fake = static::createClient();
+        $fake->request('GET', '/blog/a-fake-url-to-test-99');
 
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
-        $crawler = $client->request('GET', '/blog/quels-sont-les-bienfaits-du-miel-4');
+        $this->assertFalse($client->getResponse()->isNotFound());
+        $this->assertTrue($fake->getResponse()->isNotFound());
 
+        $this->assertRegExp(
+            '/blog(a-fake-url-to-test-99)?/', 
+            $client->getResponse()->getContent()
+            
+        );
+
+        
+        $this->assertRegExp(
+            '/blog(quels-sont-les-bienfaits-du-miel-4)?/', 
+            $client->getResponse()->getContent()
+            
+        );
+        
+        $crawler = $client->request('GET', '/blog/quels-sont-les-bienfaits-du-miel-4');
         $this->assertGreaterThan(
             0,
             $crawler->filter('html:contains("écrit")')->count()
         );
+
     }
 
     /**
