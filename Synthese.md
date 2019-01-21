@@ -24,7 +24,7 @@ Nous avons donc créé des sous-groupes :
   `<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />`
   
   <br/>
-* une personne gérant la documentation et le Git.
+* une personne gérant la documentation, les merges Git ainsi que l'hébergement sur Internet.
 
 BackEnd | FrontEnd | Documentation et Git
 - |:-:|-:
@@ -44,3 +44,15 @@ Le site comporte des points améliorables : toutes les fonctions que nous avions
 De plus, l'interface (le HTML/CSS) peut être également améliorées : rendre le site plus ergonomique, améliorer et faciliter la navigation...  
 
 ## Retour personnel sur le module 
+
+###### Aurélie DIEP
+Ce projet a été formateur : j'ai pu, pour la première fois dans un projet, participer à la réalisation des fonctionnalités du site (du "back").
+Ne maîtrisant pas le PHP et le framework Symfony.
+
+Ce projet n'a cependant pas été de tout repos : en plus d'un nouveau langage à apprendre à apprendre, il a fallu s'organiser et respecter les deadlines imposés. Côté Back, nous avons particulièrement ressenti ces difficultés de manipulation du PHP : j'ai notamment rencontré de nombreux "bugs", des syntaxes un peu particulièrement à respecter, le cache PHP à vider... Ces erreurs n'étaient pas faciles à débuguer car les erreurs n'étaient pas forcément apparents.
+
+A refaire, il y a plusieurs points que j'aurais fait différemment : 
+  * dans un premier temps, le choix du langage : j'aurais préféré réaliser un tel projet dans un langage tel que le Java, en utilisant Spring par exemple. En effet, il s'agit d'un langage que je maîtrise davantage et qui, d'un point de vue personnel, me servirait plus (et que j'utilise en entreprise notamment).   
+  * l'organisation du travail et du temps : le temps qu'on a mis (plusieurs semaines) à mettre en place un répertoire Git fonctionnel et le nombre de personnes à travailler sur le BackEnd, insuffisant. 
+
+ 
