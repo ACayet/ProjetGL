@@ -26,10 +26,10 @@ Nous avons donc créé des sous-groupes :
   <br/>
 * une personne gérant la documentation, les merges Git ainsi que l'hébergement sur Internet.
 
-BackEnd | FrontEnd | Documentation / Git / hébergement
-- |:-:|-:
-|Aurélie DIEP| Martin BRUGER|Arthur CAYET
-|Jérémy BERNAUDON| Soufiane OTMANE|
+|BackEnd         | FrontEnd       | Documentation / Git / hébergement|
+|:-              |:-:             |-:                                |
+|Aurélie DIEP    | Martin BRUGER  |Arthur CAYET                      |
+|Jérémy BERNAUDON| Soufiane OTMANE|                                  |
 
 
 ## Lien entre la théorie et la pratique
