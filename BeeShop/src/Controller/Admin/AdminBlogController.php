@@ -94,7 +94,7 @@ class AdminBlogController extends AbstractController
      * @Route("/admin/blog/{id}", name="admin.blog.delete", methods="DELETE")
      */
     public function delete(Article $article, Request $request){
-        dump('suppression');
+       // dump('suppression');
         if($this->isCsrfTokenValid('delete', $request->get('_token'))) {
             $this->em->remove($article);
             $this->em->flush();
