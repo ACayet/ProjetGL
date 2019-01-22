@@ -99,6 +99,8 @@ class AdminBlogController extends AbstractController
             $this->em->remove($article);
             $this->em->flush();
             $this->addFlash('success', "Article supprimé avec succès");
+        }else{
+            $this->addFlash('error', "Erreur token invalide");
         }
         return $this->redirectToRoute('admin.blog.index');
     }

@@ -15,7 +15,8 @@
             <div class="col-md-4"> {{form_row(form.quantite)}} </div>
         </div> 
         {{ form_widget(form) }}
-
+        <input type="hidden" name="token" value="{{ csrf_token('delete') }}" />
+        
         <br/>    
         <button class="btn btn-primary">Sauvegarder</button>
         

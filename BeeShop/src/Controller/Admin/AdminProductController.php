@@ -11,6 +11,7 @@ use App\Entity\Produit;
 use App\Form\ProduitType;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Form\FormTypeInterface;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class AdminProductController extends AbstractController 
 {
@@ -55,6 +56,9 @@ class AdminProductController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            // $hash = $encoder->encodePassword($prop,$prop->getSlug());
+            // $prop->setSlug($hash);
+
             $this->em->persist($prop);
             $this->em->flush();
             $this->addFlash('success', "Produit ajouté avec succès");
@@ -99,6 +103,8 @@ class AdminProductController extends AbstractController
             $this->em->remove($produit);
             $this->em->flush();
             $this->addFlash('success', "Produit supprimé avec succès");
+        }else{
+            $this->addFlash('error', "Erreur token invalide");
         }
         return $this->redirectToRoute('admin.produit.index');
     }

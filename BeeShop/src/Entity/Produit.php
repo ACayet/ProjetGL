@@ -5,6 +5,7 @@ namespace App\Entity;
 use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 use Cocur\Slugify\Slugify;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ProduitRepository")
@@ -47,6 +48,26 @@ class Produit
      */
     private $quantite;
 
+    private $slug;
+
+    public function getSlug():string
+    {
+        return $this->slug = (new Slugify())->slugify($this->nomProduit);
+    }
+
+    // public function getSlug()
+    // {
+    //     return $this->slug;
+    // }
+
+    // public function setSlug(String $slug): self
+    // {
+    //     $this->slug = $slug;
+
+    //     return $this;
+    // }
+    
+
     public function getIdProduit(): int
     {
         return $this->idProduit;
@@ -57,10 +78,7 @@ class Produit
         return $this->nomProduit;
     }
 
-    public function getSlug():string
-    {
-        return (new Slugify())->slugify($this->nomProduit);
-    }
+
 
     public function setNomProduit(string $nomProduit): self
     {
