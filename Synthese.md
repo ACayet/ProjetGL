@@ -1,4 +1,4 @@
-#Synthèse :
+# Synthèse :
 
 Ce projet a été très formateur : cela a été l'opportunité pour nous de réaliser un projet "from scratch" comme nous avons peu pu le faire au cours de notre formation.
 
@@ -12,7 +12,7 @@ Ce projet nous a amené à travailler en groupe de cinq. Il a donc fallu nous or
 Nous avons donc créé des sous-groupes : 
 
 * un groupe FrontEnd qui réalise le design du site : rendre les pages ergonomiques, esthétiques en HTML et CSS avec le framework Bootstrap 4.   
-<br/>
+
 * un groupe BackEnd qui a pour tâche de réaliser toutes les fonctionnalités, les accès à la base de données du site. Le moteur de template pour le langage de PHP étant le twig, l'équipe BackEnd se chargait également d'adapter les pages de HTML et CSS faites par l'équipe Front, en twig.    
   <br/>
   _Par exemple_ : l'équipe Front fournit la page d'accueil avec des liens _href_ et imports _link_     
