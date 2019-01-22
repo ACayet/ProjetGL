@@ -28,7 +28,7 @@ class BlogController extends AbstractController
     public function index():Response
     {
         $article = $this-> repository ->articlesPublished();
-        dump($article);
+        //dump($article);
         return $this->render("blog/index.html.twig", [
         'current_menu' => "articles",
         'articles' => $article

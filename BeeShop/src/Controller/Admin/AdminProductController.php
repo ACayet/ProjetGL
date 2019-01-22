@@ -94,7 +94,7 @@ class AdminProductController extends AbstractController
      * @Route("/admin/produit/{id}", name="admin.produit.delete", methods="DELETE")
      */
     public function delete(Produit $produit, Request $request){
-        dump('suppression');
+        //dump('suppression');
         if($this->isCsrfTokenValid('delete', $request->get('_token'))) {
             $this->em->remove($produit);
             $this->em->flush();
