@@ -982,7 +982,7 @@ ul, li, ol{
 }
 
 .footer {
-    padding: 90px 0 80px !important;
+    padding: 30px 0 30px !important;
     color: #999;
     background-color: #393939;
 }
@@ -1898,7 +1898,7 @@ ul, li, ol{
 
 
 .banner-bg-1{
-	background: url(uploads/fotolia-miel.jpeg);
+	background: url(images/fotolia-miel.jpeg);
 	padding: 120px 0;	
 	background-clip: initial;
 	background-color: rgba(0, 0, 0, 0);

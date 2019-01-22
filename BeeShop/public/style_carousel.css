@@ -150,21 +150,14 @@ ul, li, ol{margin: 0px;padding: 0px;list-style: none;}
 -------------------------------------------------------------------*/
 
 .slider-bg-one {
-    background-image: url("uploads/miel.jpg");
+    background-image: url("images/miel.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .slider-bg-two {
-    background-image: url("uploads/slider_02.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.slider-bg-three {
-    background-image: url("uploads/slider_02.jpg");
+    background-image: url("images/MielWallpaper.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -815,7 +808,7 @@ ul, li, ol{margin: 0px;padding: 0px;list-style: none;}
 }
 
 .footer {
-    padding: 90px 0 80px !important;
+    padding: 30px 0 20px !important;
     color: #999;
     background-color: #393939;
 }
@@ -1257,7 +1250,7 @@ ul, li, ol{margin: 0px;padding: 0px;list-style: none;}
     height: 0;
 }
 
-img {width: 40%; height: 90%;}
+img {width: 60%; height: 90%;}
 
 /* SECTION */
 section {padding: 50px 0;}
@@ -1283,6 +1276,11 @@ section {padding: 50px 0;}
 #fiche-article h2 {text-align: center; font-size: 2.5rem;}
 #fiche-article p {margin-top: 20px; }
 #fiche-article .maj-date {font-size: 0.8rem; text-align: center; }
+
+/* Page connexion */
+
+.ficheconnection  {margin-top: 200px;}
+
 
 
 
