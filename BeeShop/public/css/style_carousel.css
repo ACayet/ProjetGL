@@ -41,7 +41,7 @@
 -------------------------------------------------------------------*/
 
 body {
-    color: #999;
+    color: #333;
     font-size: 15px;
     font-family: 'Rubik', sans-serif;
     line-height: 1.80857;
@@ -468,10 +468,7 @@ ul, li, ol{
 }
 
 
-.btn11:hover{
-    border: 1px solid #transparent;
-	color: black;
-}
+
 .btn11::before {
     content: '';
     width: 100%;
@@ -543,7 +540,6 @@ ul, li, ol{
     overflow: hidden;
     position: relative;
     background-position: center center;
-    vertical-align: sub;
     width: 100%;
     z-index: 2;
 }
@@ -637,7 +633,7 @@ ul, li, ol{
 }
 
 .section-title p {
-    color: #999;
+    color: #333;
     font-weight: 400;
     font-size: 18px;
     line-height: 33px;
@@ -977,8 +973,7 @@ ul, li, ol{
     margin: 0;
     font-weight: 400;
     font-size: 20px;
-    text-transform: capitalize;
-    line-height: !important;
+
 }
 
 .footer {
@@ -1069,7 +1064,7 @@ ul, li, ol{
     border-right: 1px dashed rgba(255, 255, 255, 0.1);
 }
 
-.footer-recent ul{}
+
 .footer-recent ul li{
 	margin: 0px;
 	margin-bottom: 10px;
@@ -1088,7 +1083,7 @@ ul, li, ol{
 	padding-top: 12px;
 }
 
-.footer-contact{}
+
 .footer-contact ul li{
 	margin-bottom: 10px;
 }
@@ -1236,9 +1231,9 @@ ul, li, ol{
 
 
 
-.cont-btn{
+
 	
-}
+
 .cont-btn button{
 	border: none;
 	margin: 0px 15px;
@@ -1423,9 +1418,3 @@ ul, li, ol{
     width: 0;
     height: 0;
 }
-
-
-
-
-
-

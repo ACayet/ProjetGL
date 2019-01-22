@@ -6,7 +6,7 @@
 html {height: 100%;}
 body {font-family: Montserrat, sans-serif; font-weight: 500; background-color: #fff; height: 100%;}
 
-a {}
+
 a:focus, a:hover {text-decoration: none;}
 ul {margin: 0; padding: 0;}
 ul li {list-style: none;}
@@ -17,7 +17,7 @@ img {width: 100%; height: 90%;}
 /* SECTION */
 section {padding: 200px 0;}
 .panel {border: 1px solid #eee; border-bottom: 10px solid #eee; border-radius: 0; min-height: 200px; padding: 15px; background-color: #fdfdfd; margin-top: 20px; margin-bottom: 30px;}
-.panel h6, .panel button {vertical-align: middle; display: block; margin: auto; text-align: center; margin-top: 5%;}
+.panel h6, .panel button {vertical-align: middle; margin: auto; text-align: center; margin-top: 5%;}
 
 /* FICHE produit */
 
@@ -33,4 +33,11 @@ section {padding: 200px 0;}
 .liste-title h5 {font-size: 30px; text-align: center;}
 .liste-description {padding: 30px 0;}
 #fiche-produit .card {margin-left:20px; margin-bottom:20px; width: 18rem; display: inline-block;}
+
+/* Liste article */
+#fiche-article{margin-left: 174.500px;}
+#fiche-article h2 {text-align: center; font-size: 2.5rem;}
+#fiche-article p {margin-top: 20px; }
+#fiche-article .maj-date {font-size: 0.8rem; text-align: center;}
+
 
