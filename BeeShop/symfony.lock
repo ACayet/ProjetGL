@@ -320,6 +320,12 @@
     "symfony/profiler-pack": {
         "version": "v1.0.3"
     },
+    "symfony/property-access": {
+        "version": "v4.2.2"
+    },
+    "symfony/property-info": {
+        "version": "v4.2.2"
+    },
     "symfony/routing": {
         "version": "4.2",
         "recipe": {

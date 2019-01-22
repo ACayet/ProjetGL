@@ -2,12 +2,20 @@
 
 {% block title 'Gérer la boutique '%}
 
-
 {% block body %}
+
+{% if app.user.admin %}
 
     <div class="container mt-4">
         <h1>Editer l'article </h1>
     </div>
         {{ include('admin/blog/_form.html.twig', {button:'Editer'})}}       
     <br/>
+
+{% else %}
+    <div class="container mt-4">
+        <h1>Vous n'avez pas les droits pour accèder à cette page !</h1>
+    </div>
+{% endif %}
+
 {% endblock %}

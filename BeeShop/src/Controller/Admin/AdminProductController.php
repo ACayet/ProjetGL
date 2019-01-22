@@ -31,7 +31,7 @@ class AdminProductController extends AbstractController
     }
 
     /**
-     * @Route("/admin", name="admin.produit.index") 
+     * @Route("/admin/produit", name="admin.produit.index") 
      * @return Response
      */
     public function index()
@@ -44,7 +44,7 @@ class AdminProductController extends AbstractController
     }
 
     /**
-     * @Route("/admin/create", name="admin.produit.new")
+     * @Route("/admin/produit/create", name="admin.produit.new")
      * @param Produit $prop
      * @param Request $request
      * @return Response
@@ -68,7 +68,7 @@ class AdminProductController extends AbstractController
     }
 
     /**
-     * @Route("/admin/{id}", name="admin.produit.edit", methods="GET|POST")
+     * @Route("/admin/produit/{id}", name="admin.produit.edit", methods="GET|POST")
      * @param Produit $prop
      * @param Request $request
      * @return Response
@@ -91,7 +91,7 @@ class AdminProductController extends AbstractController
     }
 
     /**
-     * @Route("/admin/{id}", name="admin.produit.delete", methods="DELETE")
+     * @Route("/admin/produit/{id}", name="admin.produit.delete", methods="DELETE")
      */
     public function delete(Produit $produit, Request $request){
         dump('suppression');

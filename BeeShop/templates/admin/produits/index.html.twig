@@ -3,7 +3,9 @@
 {% block title 'Gérer la boutique '%}
 
 {% block body %}
-    <body>
+
+{% if app.user.admin %}
+
         <section id="fiche-produit">
             <div class="container">
                 <div class="row">
@@ -47,5 +49,11 @@
                 </div>
             </div>            
         </section>
-    </body>
+
+{% else %}
+    <div class="container mt-4">
+        <h1>Vous n'avez pas les droits pour accèder à cette page !</h1>
+    </div>
+{% endif %}
+
 {% endblock %}
