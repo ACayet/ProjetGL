@@ -2,7 +2,7 @@
 
 ## Prérequis ([Voir le wiki pour l'installation](/../../wiki)) :
 
-* PHP 7.1 ou supérieur
+* PHP 7.2 ou supérieur
 * Composer
 * Mysql 8.0 ou supérieur
 
