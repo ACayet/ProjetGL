@@ -66,18 +66,27 @@
 
                             {% if app.user.admin is defined and app.user.admin=="true" %}
                                
-                              <li><a href="{{path('security_logout')}}">Admin</a></li>
+                              
+                              <ul id="menu-deroulant">
+                                <li><a href="{{path('security_logout')}}">Admin</a>
+                                  <ul>
+                                    <li><a href="#">Produit</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+
+
                             {% endif %}
                             {% if not app.user %}
                               <li><a href="{{path('security_login')}}">Connexion</a></li>
                               <li><a href="{{path('security_registration')}}">Inscription</a></li>
                             {% else %}
                               <li><a href="{{path('security_logout')}}">Déconnexion</a></li>
-                              <h1 style="color:red">Bonjour {{ app.user.username }} </h1>
+                              <li style="margin-top: 10px;">Bonjour</li>
+                              <li style="margin-top: 10px;">&nbsp</li>
+                              <li style="margin-top: 10px;">{{app.user.username}}</li>
                             {% endif %}
-                            
-                            
-
 
                           </ul>
                       </div>

@@ -217,6 +217,7 @@ ul, li, ol{
 	border-radius: 0px;
 }
 
+
 .header_style_01 .navbar,
 .header_style_01 .navbar-nav,
 .header_style_01 .navbar-default,
@@ -231,7 +232,7 @@ ul, li, ol{
 	
 }
 
-.header_style_01 .navbar-light .navbar-nav > li > a {
+.header_style_01 #menu-deroulant .navbar-light .navbar-nav > li > a {
     border-radius: 0;
     color: #ffffff;
     font-size: 16px;
