@@ -2,6 +2,10 @@
 
 {% block title article.titre %}
 
+{% block head %}
+    <!-- Site Metas -->
+    <meta name="description" content="miel bio de production artisanale depuis 1970 au sud de la France">
+{% endblock %}
 
 {% block body %}
 
@@ -10,9 +14,10 @@
 			<div class="row">
 				<div class="col-md-6">
                     <div class="message-box">
-                        <h2>{{article.titre}}</h2>
-                        <p class="maj-date"> écrit le {{ article.date|date('Y-m-d') }} par {{article.auteur}}</p>
+                        <h1>{{article.titre}}</h1>
                         <p class="lead">{{article.contenu}}</p>
+						<img src="{{asset('images/miel.png')}}" alt="miel bio">
+                        <p class="maj-date"> écrit le {{ article.date|date('Y-m-d') }} par {{article.auteur}}</p>
                     </div><!-- end messagebox -->
 				</div>
 			</div>
