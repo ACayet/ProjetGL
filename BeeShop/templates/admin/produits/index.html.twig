@@ -4,7 +4,7 @@
 
 {% block body %}
 
-{% if app.user.admin %}
+{% if app.user.admin is defined and app.user.admin %}
 
         <section id="fiche-produit">
             <div class="container">
