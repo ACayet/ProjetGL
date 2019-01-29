@@ -23,7 +23,7 @@ Un site web de vitrine et de vente pour un client
 
 ## Admin
 
-* s’authentifier 
+* s’authentifier avec son adresse mail et un mot de passe
 * page de connexion 
 * ajout d’articles 
 * supprimer un article 
@@ -42,9 +42,9 @@ Un site web de vitrine et de vente pour un client
 
 # PVM (produit minimum viable) :
 
-* Page d'accueil 
+* Page d'accueil
 * Page blog
-* Page articles en vente 
-* Page ajout articles à la vente 
-* Page inscription utilisateur 
-* Page connexion utilisateur 
+* Page de produits (pots de miel) en vente : une page présentant tous les produits et un lien vers chaque produit
+* Page ajout articles à la vente
+* Page inscription utilisateur : l'utilisateur rentre son nom, prénom, adresse mail (qu'il va utiliser pour s'authentifier), mot de passe (deux fois pour le confirmer), numéro de téléphone, adresse et ville
+* Page connexion utilisateur : l'utilisateur se connecte avec son adresse mail et son mot de passe
