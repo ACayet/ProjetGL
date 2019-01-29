@@ -5,9 +5,9 @@ namespace App\tests\Controller\Admin;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\HttpFoundation\Response;
 use App\Entity\Article;
-use Symfony\Component\DomCrawler\Crawler;
 use Symfony\Component\DomCrawler\Form;
 use Goutte\Client;
+use Symfony\Component\DomCrawler\Crawler;
 
 class AdminBlogControllerTest extends WebTestCase
 {
@@ -21,7 +21,7 @@ class AdminBlogControllerTest extends WebTestCase
 
         $this->assertGreaterThan(
             0,
-            $crawler->filter('html:contains("Gestion")')->count()
+            $crawler->filter('html:contains("blog")')->count()
         );
         
     }
@@ -45,11 +45,12 @@ class AdminBlogControllerTest extends WebTestCase
         ];
     }
 
-    /**@test */
+    /** @test */
     public function click()
     {
         $client = static::createClient();
         $client->request('GET', '/admin/blog');
+        
         $crawler = $client->request('GET', '/admin/blog');
 
         /**
@@ -67,16 +68,26 @@ class AdminBlogControllerTest extends WebTestCase
             ->eq(1)
             ->link()
          ;
-        /**
+
+         $linkDelete = $crawler
+         ->filter('a:contains("Supprimer")')
+         ->eq(1)
+         ->link()
+         ;
+
+         /**
          * cliquer sur le lien 
          */
         $crawler = $client->click($linkEdit);
         $crawler = $client->click($linkNew);
+        $crawler = $client->click($linkDelete);
+        $this->assertTrue($crawler->filter('html:contains("Supprimer")')->count() > 0);
     }
 
     /**
      * Editer un produit
-     * @test */
+     * @test 
+     * */
     public function editPage()
     {
         $client = static::createClient();
@@ -85,12 +96,14 @@ class AdminBlogControllerTest extends WebTestCase
         $fake = static::createClient();
         $fake->request('GET', 'admin/blog/100');
 
-        $this->assertTrue($client->getResponse()->isSuccessful(), 'response status is 2xx');
-        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+        //$this->assertTrue($client->getResponse()->isSuccessful(), 'response status is 2xx');
+        //$this->assertEquals(200, $client->getResponse()->getStatusCode());
+        
         $this->assertFalse($client->getResponse()->isNotFound());
         $this->assertTrue($fake->getResponse()->isNotFound());
-        $this->assertContains('produits', $client->getResponse()->getContent());
+        $this->assertContains('blog', $client->getResponse()->getContent());
 
+        
         $crawler = $client->request('GET', 'admin/blog/4');
         $this->assertGreaterThan(
             0,
@@ -117,37 +130,25 @@ class AdminBlogControllerTest extends WebTestCase
         // asserts that the response content contains a string
         $this->assertContains('admin', $client->getResponse()->getContent());
 
-      
-     
     }
 
-    /** @test */
+    /**
+     * formulaire 
+     * @test 
+     * */
     public function form()
     {
         $client = new Client();
-        //$client = static::createClient();
-
         
         $crawler = $client->request('GET', 'http://localhost:8000/admin/blog/create');
-        
-        //$client->followRedirects(true);
-        //$crawler = $client->request('GET', 'admin/blog/create');
-
-   
-        //$form = $crawler->filter('btn btn-primary')->form();
+     
         $form = $crawler->selectButton('Sauvegarder')->form();
             
-        // set some values
-        // $form['form_name[titre]'] = 'Article Test';
-        // $form['auteur'] = 'Lucas';
-        // $form['contenu'] = 'Hey there! this is a test';
-
         // submit the form
-        
         $crawler = $client->submit($form);
 
         $this->assertTrue($crawler->filter('html:contains("blog")')->count() > 0);
         $this->assertFalse($crawler->filter('html:contains("Editer")')->count() > 0); 
+        
     }
-
 }

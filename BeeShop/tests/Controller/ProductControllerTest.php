@@ -43,6 +43,7 @@ class ProductControllerTest extends WebTestCase
 
     public function click()
     {
+        
         $client = static::createClient();
         $client->request('GET', '/produits');
         $crawler = $client->request('GET', '/produits');
@@ -69,7 +70,7 @@ class ProductControllerTest extends WebTestCase
     public function show()
     {
         $client = static::createClient();
-        $client->request('GET', '/produits/miel-de-manuka-14');
+        $client->request('GET', '/produits/miel-de-manuka-a-ne-pas-supprimer-pour-les-tests-18');
 
         $fake = static::createClient();
         $fake->request('GET', '/produits/a-product-that-does-not-exit-100');
@@ -88,12 +89,12 @@ class ProductControllerTest extends WebTestCase
 
         
         $this->assertRegExp(
-            '/produits(miel-de-manuka-14)?/', 
+            '/produits(miel-de-manuka-a-ne-pas-supprimer-pour-les-tests-18)?/', 
             $client->getResponse()->getContent()
             
         );
 
-        $crawler = $client->request('GET', '/produits/miel-de-manuka-14');
+        $crawler = $client->request('GET', '/produits/miel-de-manuka-a-ne-pas-supprimer-pour-les-tests-18');
         $this->assertGreaterThan(
             0,
             $crawler->filter('html:contains("Description")')->count()
