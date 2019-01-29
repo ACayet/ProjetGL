@@ -1,8 +1,10 @@
-# Cadrage et périmètre :
+# Cahier des charges
+
+## Cadrage et périmètre
 
 Un site web de vitrine et de vente pour un client
 
-# User stories
+## User stories
 
 * En tant que passioné d'abeille je veux une page d'article pour lire des informations interessante sur les abeilles et l'apiculture
 * En tant que visiteur je veux pouvoir voir les produits en vente pour pouvoir les acheter
@@ -11,40 +13,40 @@ Un site web de vitrine et de vente pour un client
 * En tant que administrateur du site web, je veux une page d'administration des produit pour pouvoir ajouter des produits a vendre, les modifier et les supprimer
 * En tant que administrateur du site, je veux une page d'administration des article pour pouvoir ajouter des article de blog en modifier, les modifier et en supprimer
 
-# Fonctionnalités :
+## Fonctionnalités
 
-## Client
+### Client
 
-* acheter des pots de miel 
-* déposer un commentaire 
+* acheter des pots de miel : l'utilisateur reçoit un mail confirmant son achat et lui demandant d'envoyer un chèque.
+* déposer un commentaire
 * s’authentifier pour acheter et pour commenter
 * géolocaliser (comment s’y rendre avec une maps et des marqueurs) le producteur de miel
 * rechercher un article
 
-## Admin
+### Admin
 
 * s’authentifier avec son adresse mail et un mot de passe
-* page de connexion 
-* ajout d’articles 
-* supprimer un article 
-* un formulaire pour écrire des articles 
+* page de connexion
+* ajout d’articles
+* supprimer un article
+* un formulaire pour écrire des articles
 
 ## Site
 
 * envoi de mail récapitulatif aux clients qui ont acheté
 * implémentation de l’API Paypal pour l’achat
 
-# Outils :
+## Outils
 
-* PHP / Framework Symfony 
+* PHP / Framework Symfony
 * Composer pour la gestion de dépendances
 * MySQL pour la base de données
 
-# PVM (produit minimum viable) :
+## PVM (produit minimum viable)
 
 * Page d'accueil
 * Page blog
 * Page de produits (pots de miel) en vente : une page présentant tous les produits et un lien vers chaque produit
 * Page ajout articles à la vente
-* Page inscription utilisateur : l'utilisateur rentre son nom, prénom, adresse mail (qu'il va utiliser pour s'authentifier), mot de passe (deux fois pour le confirmer), numéro de téléphone, adresse et ville
+* Page inscription utilisateur : l'utilisateur rentre son nom, prénom, adresse mail (qu'il va utiliser pour s'authentifier), mot de passe (deux fois pour le confirmer), numéro de téléphone, adresse et ville.
 * Page connexion utilisateur : l'utilisateur se connecte avec son adresse mail et son mot de passe
