@@ -141,7 +141,6 @@ KwFinder est un outil qui nous propose une liste en rapport à un mot clé tapez
  ![semrush]( https://image.noelshack.com/fichiers/2019/05/2/1548777503-kwfinder2.png)
 
 
-
 ## Retour personnel sur le module
 
 ### Aurélie DIEP
@@ -155,6 +154,17 @@ A refaire, il y a plusieurs points que j'aurais fait différemment :
 
 * dans un premier temps, le choix du langage : j'aurais préféré réaliser un tel projet dans un langage tel que le Java, en utilisant Spring par exemple. En effet, il s'agit d'un langage que je maîtrise davantage et qui, d'un point de vue personnel, me servirait plus (et que j'utilise en entreprise notamment).
 * l'organisation du travail et du temps : le temps qu'on a mis (plusieurs semaines) à mettre en place un répertoire Git fonctionnel et le nombre de personnes à travailler sur le BackEnd, insuffisant.
+
+
+### Soufiane OTMANE
+
+Ce projet a été l'occassion pour moi de monter en compétence sur la notion du référencement, issu d'un DUT informatique j'ai appris à créer différents sites internet sur différents langages mais j'ai jamais eu l'occassion de traiter la notion de référencement qui est la finalité de tout site internet, en effet tous sites internet a pour but final d'engendrer du trafic. J'ai beaucoup appris sur les règles de référencements et j'ai découvert que je codais des sites internet qui allait tous dans le sens inverse des règles de référencement, par exemple lorsque je m'occupais du frontEnd au début je choisisais mes titre h1,h2...h6 par soucis de taille hors que l'une des règles du référencement est de respecté la hiarchie des balises h1,h2...h6 et que pour répondre aux soucis de taille il fallait utiliser un peu de css et modifier les tailles des balises hx. De plus ce projet m'a permis de me replonger sur le côté frontEnd d'un site internet, en effet habituer a être du côté backEnd ce projet m'as permis de renforcer mes connaissances sur le côté frontEnd et m'as permis d'apprendre a réutiliser Bootstrap qui est passé récemment à la version 4. Le fait que notre projet a pour finalité de répondre à un réel besoin d'un apiculteur a été motivant.
+
+Avec le recul, les points que j'aurai améliorer et/ou fait différemment sont : 
+
+* Je me serais investi également sur le côté backEnd
+* Concernant le cour en générale j'ai appris différents outils tel que git que je connaissais que de nom et qu'on a donc utiliser, sans ce cour je ne pense pas que j'aurai chercher à apprendre à l'utiliser. 
+
 
  
 
