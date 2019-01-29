@@ -1,45 +1,48 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    <div class="myinscription">
+        <h1 style ="margin-right : 135px;"> Inscription à Apiculture et tradition : </h1>
+        {{ form_start(form) }}
 
-    <h1> Inscription à Apiculture et tradition: </h1>
-    {{ form_start(form) }}
+        <div class="form-group">
+            {{ form_row(form.nom, {'label': 'Nom de famille', 'attr': 
+            { 'class': 'form-control', 'placeholder': 'Votre nom de famille...' }}) }}
+        </div>
+        <div class="form-group">
+        {{ form_row(form.prenom, {'label': 'Prénom', 'attr': 
+        { 'class': 'form-control', 'placeholder': 'Votre prénom...' }}) }}
+        </div>
+        <div class="form-group">
+        {{ form_row(form.email, {'label': 'Adresse email', 'attr': 
+        { 'class': 'form-control', 'placeholder': 'Votre email...' }}) }}
+        </div>
+        <div class="form-group">
+        {{ form_row(form.password, {'label': 'Mot de passe', 'attr': 
+        { 'class': 'form-control', 'placeholder': 'Votre mot de passe de minimum 5 caratères...' }}) }}
+        </div>
+        <div class="form-group">
+        {{ form_row(form.passwordConf, {'label': 'Confirmation du mot de passe', 'attr': 
+        { 'class': 'form-control', 'placeholder': 'Votre mot de passe de minimum 5 caratères...' }}) }}
+        </div>
+        <div class="form-group">
+        {{ form_row(form.telephone, {'label': 'Téléphone', 'attr': 
+        { 'class': 'form-control', 'placeholder': 'Votre numéro de téléphone...' }}) }}
+        </div>
+        <div class="form-group">
+        {{ form_row(form.adresse, {'label': 'Adresse', 'attr': 
+        { 'class': 'form-control', 'placeholder': 'Votre adresse...' }}) }}
+        </div>
+        <div class="form-group">
+        {{ form_row(form.ville, {'label': 'Ville', 'attr': 
+        { 'class': 'form-control', 'placeholder': 'Votre ville...' }}) }}
+        <button type"submit" class="btn btn-success">inscription</button>
+        <p><a href="{{path('security_login')}}">Vous avez deja un compte </a></p>
+        {{ form_end(form) }}
+        </div>
 
-    <div class="form-group">
-        {{ form_row(form.nom, {'label': 'Nom de famille', 'attr': 
-        { 'class': 'form-control', 'placeholder': 'Votre nom de famille...' }}) }}
-    </div>
-    <div class="form-group">
-    {{ form_row(form.prenom, {'label': 'Prénom', 'attr': 
-    { 'class': 'form-control', 'placeholder': 'Votre prénom...' }}) }}
-    </div>
-    <div class="form-group">
-    {{ form_row(form.email, {'label': 'Adresse email', 'attr': 
-    { 'class': 'form-control', 'placeholder': 'Votre email...' }}) }}
-    </div>
-    <div class="form-group">
-    {{ form_row(form.password, {'label': 'Mot de passe', 'attr': 
-    { 'class': 'form-control', 'placeholder': 'Votre mot de passe de minimum 5 caratères...' }}) }}
-    </div>
-    <div class="form-group">
-    {{ form_row(form.passwordConf, {'label': 'Confirmation du mot de passe', 'attr': 
-    { 'class': 'form-control', 'placeholder': 'Votre mot de passe de minimum 5 caratères...' }}) }}
-    </div>
-    <div class="form-group">
-    {{ form_row(form.telephone, {'label': 'Téléphone', 'attr': 
-    { 'class': 'form-control', 'placeholder': 'Votre numéro de téléphone...' }}) }}
-    </div>
-    <div class="form-group">
-    {{ form_row(form.adresse, {'label': 'Adresse', 'attr': 
-    { 'class': 'form-control', 'placeholder': 'Votre adresse...' }}) }}
-    </div>
-    <div class="form-group">
-    {{ form_row(form.ville, {'label': 'Ville', 'attr': 
-    { 'class': 'form-control', 'placeholder': 'Votre ville...' }}) }}
-    </div>
 
-    <button type"submit" class="btn btn-success">Envoyer</button>
-    {{ form_end(form) }}
+    </div>
 
 {% endblock %}
 

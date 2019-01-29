@@ -70,11 +70,12 @@
                               <ul id="menu-deroulant">
                                 <li><a href="{{path('security_logout')}}">Admin</a>
                                   <ul>
-                                    <li><a href="#">Produit</a></li>
-                                    <li><a href="#">Blog</a></li>
+                                    <li id="menu-deroulant navbar-nav ml-auto"><a href="{{path('admin.produit.index')}}">Produit</a></li>
+                                    <li id="menu-deroulant navbar-nav ml-auto" ><a href="{{path('admin.blog.index')}}">Blog</a></li>
                                   </ul>
                                 </li>
                               </ul>
+
 
 
                             {% endif %}
@@ -83,9 +84,9 @@
                               <li><a href="{{path('security_registration')}}">Inscription</a></li>
                             {% else %}
                               <li><a href="{{path('security_logout')}}">Déconnexion</a></li>
-                              <li style="margin-top: 10px;">Bonjour</li>
-                              <li style="margin-top: 10px;">&nbsp</li>
-                              <li style="margin-top: 10px;">{{app.user.username}}</li>
+                              <li class="hiuser">Bonjour</li>
+                              <li class="hiuser">&nbsp</li>
+                              <li class="hiuser">{{app.user.username}}</li>
                             {% endif %}
 
                           </ul>

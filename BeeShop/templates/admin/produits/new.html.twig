@@ -7,14 +7,14 @@
 {% if app.user.admin %}
 
     <div class="container mt-4">
-        <h1>Créer un nouveau produit </h1>
-        {{ include('admin/produits/_form.html.twig', {button:'Créer'} )}}
+        <h1 class="titre_admin">Créer un nouveau produit </h1>
+        {{include('admin/produits/_form.html.twig', {button:'Créer'} )}}
     </div>
     <br/>
 
 {% else %}
     <div class="container mt-4">
-        <h1>Vous n'avez pas les droits pour accèder à cette page !</h1>
+        <h1 class="titre_admin">Vous n'avez pas les droits pour accèder à cette page !</h1>
     </div>
 {% endif %}
 

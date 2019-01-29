@@ -1281,19 +1281,68 @@ section {padding: 50px 0;}
 
 .ficheconnection  {margin-top: 200px;}
 
+.bouton_ajout {
+    background: #ffc107;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    box-shadow: #ffc107;
+
+}
+
 
 /*#menu-deroulant, #menu-deroulant ul {
     list-style: none;
 }*/
 #menu-deroulant {
 /* on centre le menu dans la page */
-    text-align: center;
-    margin-top: 10px;
+/*    text-align: center;
+    margin-top: 10px;*/
+
+    color: #ffffff;
+    box-shadow: 0 4px 3px 0 rgba(5, 16, 44, .15);
+    border-radius: 10px;
+    background: #ffc107;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(255, 193, 7)
+
+
+
+    color: #ffffff;
+    box-shadow: 0 4px 3px 0 rgba(5, 16, 44, .15);
+    border-radius: 10px;
+    background: #ffc107;
+
+    color: #333333;
+    padding: 10px 15px;
+    display: inline-block;
 }
 #menu-deroulant li {
 /* on place les liens du menu horizontalement */
-    display: inline-block;
+
+    color: #ffffff;
+    box-shadow: 0 4px 3px 0 rgba(5, 16, 44, .15);
+    border-radius: 10px;
+    background: #ffc107;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(255, 193, 7)
 }
+
 #menu-deroulant ul li {
 /* on enlève ce comportement pour les liens du sous menu */
     display: inherit;
@@ -1311,6 +1360,59 @@ section {padding: 50px 0;}
     left: auto;
 }
 
+.titre_admin {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.myinscription h1 {
+    text-align: center;
+    margin-left: 33px;
+}
+
+.myinscription button {
+    margin-top: 1%;
+}
+
+.myinscription p {
+    margin-top: 20px;
+    margin-left: 30px;
+    display : inline-block;
+}
+
+
+.myinscription .form-group {
+    width: 400px;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+
+.myinscription .form-group label {
+    text-align: center;
+}
+
+.myinscription .form-group p {
+    margin-left: 140px;
+}
+
+
+
+
+.myinscription {
+    margin-top: 100px;
+    margin-left : 100px;
+}
+
+.hiuser {
+    margin-top: 6px;
+    color: black;
+    font-size: 1.2em;
+}
+
+.buttonajout {
+    background : #ffc107;
+}
 
 
 

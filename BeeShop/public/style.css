@@ -218,15 +218,15 @@ ul, li, ol{
 }
 
 
-.header_style_01 .navbar,
-.header_style_01 .navbar-nav,
-.header_style_01 .navbar-default,
-.header_style_01 .nav {
+.header_style_01 #menu-deroulant .navbar,
+.header_style_01 #menu-deroulant .navbar-nav,
+.header_style_01 #menu-deroulant .navbar-default,
+.header_style_01  #menu-deroulant .nav {
     margin-bottom: 0 !important;
 	margin-right : 30%;
 }
 
-.header_style_01 .navbar-brand {
+.header_style_01 #menu-deroulant .navbar-brand {
     padding: 0px 15px 0 15px;
 	height: auto;
 	
