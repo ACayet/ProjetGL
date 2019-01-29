@@ -75,6 +75,7 @@ class AdminBlogControllerTest extends WebTestCase
          ->link()
          ;
 
+         
          /**
          * cliquer sur le lien 
          */
