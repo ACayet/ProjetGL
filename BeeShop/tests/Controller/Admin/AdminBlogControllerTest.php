@@ -81,7 +81,6 @@ class AdminBlogControllerTest extends WebTestCase
         $crawler = $client->click($linkEdit);
         $crawler = $client->click($linkNew);
         $crawler = $client->click($linkDelete);
-        $this->assertTrue($crawler->filter('html:contains("Supprimer")')->count() > 0);
     }
 
     /**

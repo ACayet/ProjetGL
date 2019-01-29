@@ -68,11 +68,20 @@ class AdminProductControllerTest extends WebTestCase
             ->eq(1)
             ->link()
          ;
+
+         $linkDelete = $crawler
+         ->filter('a:contains("Supprimer")')
+         ->eq(1)
+         ->link()
+         ;
+
         /**
          * cliquer sur le lien 
          */
         $crawler = $client->click($linkEdit);
         $crawler = $client->click($linkNew);
+        $crawler = $client->click($linkDelete);
+        $this->assertTrue($crawler->filter('html:contains("Supprimer")')->count() > 0);
     }
 
     /**
@@ -80,8 +89,7 @@ class AdminProductControllerTest extends WebTestCase
      * @test 
      * */
     public function editPage()
-    {
-        
+    {   
         $client = static::createClient();
         $client->request('GET', 'admin/produit/18');
 
