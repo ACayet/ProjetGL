@@ -70,13 +70,77 @@ En HTML les titres s’écrivent entre balises hx (h1, h2, h3…h6). Le titre h1
 Il faut évidemment qu’ils soient uniques et il ne faut surtout pas utiliser plusieurs titres h1 car les crawler n’y comprendrons plus rien puisque cela voudrait dire que la page possède plusieurs sujets principaux.
 Par ailleurs il faut aussi éviter de choisir des titres sans liens direct avec le contenu de la page ou d’utiliser des titres vagues tels que « page 1 ».
 
-![hiéarchie hx](https://image.noelshack.com/fichiers/2019/05/2/1548772916-imgffff.png)
+![hiéarchie hx](https://image.noelshack.com/fichiers/2019/05/2/1548774512-hx.png)
 
 ### La balise meta description 
 
 En HTML il existe une balise meta description qui fournit à Google et aux autres moteurs de recherche un résumé du contenu de la page. Contrairement à un titre d’une page qui se compose de quelques mots, la meta description peut contenir 1 à 2 phrases. Il faut éviter de rédiger une méta description sans lien direct avec le contenu de la page ou d’utiliser des descriptions trop génériques telles que « Ceci est un site web ». Mais aussi de remplir les balise description de mots-clés uniquement, un seul concernant le sujet de votre page suffit.
 
 ![meta description balise](https://image.noelshack.com/fichiers/2019/05/2/1548773917-description.png)
+
+
+### Les url 
+
+Il est conseillé d’utiliser des mots-clés dans les URL. Les URL contenant du texte correspondant au contenu et à la structure du site sont plus conviviales pour les visiteurs qui parcourent le site d’autant plus que cela permettra aux visiteurs de mémorisr les URL plus facilement et seront plus susceptibles d’établir des liens vers ces URL.En effet il faut éviter des URL trop longues avec des paramètres inutiles pour l’internaute. Les utilisateurs risquent d’être intimidés par des URL extrêmement longues et contenant très peu de mots reconnaissables.
+
+![Mauvaise url](https://image.noelshack.com/fichiers/2019/05/2/1548774198-url-bad.png)
+
+Ce type d’URL peut être déconcertant et peu convivial. Les utilisateurs auraient des difficultés à mémoriser l’URL par cœur. De plus, les utilisateurs pourraient penser qu’une partie de l’URL est inutile et ils pourraient laisser de côté une partie de l’URL et corrompre ainsi le lien.Il faut garder en tête que tout le monde ne navigue pas de la même manière sur un site web et beaucoup navigue par les URL, il faut donc anticiper leurs comportements afin de rendre l’expérience des utilisateurs le plus convivial possible.
+
+![Bonne url ](https://image.noelshack.com/fichiers/2019/05/2/1548774427-url-good.png)
+
+
+### Les images 
+
+Il faut savoir qu’en HTML il existe une balise alt pour les images qui sont souvent négligés mais c’est une grosse erreur. Il faut garder en tête que les crawler sont des robots et de ce fait ils ne voient pas les images telles que nous les voyons. Les balise alt sont donc là pour donner un descriptif au robot.
+ Si vous avez le logo de votre entreprise dans l’une de vos pages il faut donc renseigner « logo HoneyShop» par exemple. L’idéal est d’avoir une balise alt contenant le mot clé de votre page.
+ 
+ ![alt balise](https://image.noelshack.com/fichiers/2019/05/2/1548774512-hx.png)
+ 
+ 
+### Les mots-clés 
+
+Il faut tout d’abord cibler des mots clés liés à notre secteur d’activité. Plus un mot clé est ciblé, plus on aura des chances de bien se positionner. La concurrence sera moindre et le trafic qui en résultera sera du trafic hautement qualifié, autrement dit des utilisateurs qui cherchent exactement ce que l’on propose. Il faut être donc précis si on utilise le mot clé « travaux » par exemple, l’internaute peut aussi bien vouloir chercher des sites qui vend du matériel de travaux que des devis.
+L’internaute qui arrivera sur notre site ne viendra donc pas forcément pour passer commande. Il faut choisir des mots-clés composés de plusieurs mots, la plupart des recherches sur les moteurs de recherche se composent de deux, trois voire quatre mots. Il faut donc ne pas hésiter à utiliser des synonymes mais surtout il faut des mots clés à notre mesure.
+Idéalement les mots-clés doivent être faiblement convoités et apporter beaucoup de trafic qualifié, mais en réalité c’est assez rare il faut donc trouver le bon compromis entre la convoitise que suscite le mot clé chez les concurrents et ce que recherchent les internautes. Certains outils existent pour nous aider dans nos choix de mots-clés tels que Google Adword plutôt utilisé pour des campagnes de publicité Google ou SemRush et kwFinder que nous allons décrire dans les points suivants.
+
+
+## Outils 
+
+
+### SemRush
+
+SemRush est un outil qui propose non seulement des mots-clés pour notre site web mais  permet également de voir pour quel mot clé nos concurrents se positionnent.
+
+Voici comment se présente SemRush, on renseigne l’URL du site pour lequel on souhaiterait avoir un audit sur les mots-clés.
+
+ ![semrush](https://image.noelshack.com/fichiers/2019/05/2/1548775615-semrush.png)
+
+En haut à gauche on a le nombre de visiteurs moyen mensuel qui viennent sur notre site en recherche organique autrement dit grâce au référencement naturel. Ensuite on a le nombre de visiteurs qui découle de référencement payant et enfin le nombre de backlinks.
+Les backlinks sont les sites qui parlent de notre site et qui nous ont cités comme source en indiquant l’URL de notre site, plus on parle de nous, plus on a de chance de générer du trafic sur notre site. On peut obtenir grâce à SemRush l’URL des sites qui parlent de nous.
+
+ ![semrush](https://image.noelshack.com/fichiers/2019/05/2/1548776023-semrrushh.png)
+ 
+ Mais le plus intéressant est la liste de mots-clés que SemRush  propose  :
+ 
+ ![semrush](https://image.noelshack.com/fichiers/2019/05/2/1548776401-semrushhhhhhh.png)
+
+SemRush met à disposition différents indicateurs concernant les mots clés. On a la position, le volume, le KD, le tarif CPC, le trafic que nous génère le mot clé, la concurrence sur le mot clé etc. On peut voir la position de notre site web en tapant tel ou tel mot clé, on peut bien évidemment régler l’outil pour qu’ils nous renvoient les mots-clés les mieux positionnés ou les moins bien positionné et ceux pour tous les indicateurs. Ils nous indiquent le volume pour lequel le mot-clé est tapé par les internautes sur Google en moyenne annuel. Le KD est le niveau de difficulté de se positionner sur un mot-clé.
+
+ ![semrush](https://image.noelshack.com/fichiers/2019/05/2/1548776458-seo.png)
+ 
+Le tarif CPC ou coût par clic est le prix à payer par clic pour le mot clé choisie si on souhaiterait faire des campagnes publicitaires sur Google avec notamment Google Adword évoqué précédemment. Autrement dit si le mot clé « gelée royale» nous intéresse et que le cout CPC est de 1.12 on devra payer 1.12 USD pour chaque clic que les internautes feront pour rentrer dans notre site via notre annonce Google, il faut donc bien choisir car la facture peut très vite monter.
+
+
+### kwFinder
+
+KwFinder est un outil qui nous propose une liste en rapport à un mot clé tapez et qui nous indique la difficulté à ce positionner dessus. Par exemple on a tapez le mot clé " miel" et l'outil nous a proposer un certain nombre de mot clé dont le mot clé "miel bio" qui était noté comme " facile" afin de ce positionner sur ce mot clé.
+
+ ![semrush](https://image.noelshack.com/fichiers/2019/05/2/1548777421-kwfinder.png)
+ 
+ ![semrush]( https://image.noelshack.com/fichiers/2019/05/2/1548777503-kwfinder2.png)
+
+
 
 ## Retour personnel sur le module
 
