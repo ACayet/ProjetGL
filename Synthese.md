@@ -70,7 +70,7 @@ En HTML les titres s’écrivent entre balises hx (h1, h2, h3…h6). Le titre h1
 Il faut évidemment qu’ils soient uniques et il ne faut surtout pas utiliser plusieurs titres h1 car les crawler n’y comprendrons plus rien puisque cela voudrait dire que la page possède plusieurs sujets principaux.
 Par ailleurs il faut aussi éviter de choisir des titres sans liens direct avec le contenu de la page ou d’utiliser des titres vagues tels que « page 1 ».
 
-![hiéarchie hx](https://image.noelshack.com/fichiers/2019/05/2/1548774512-hx.png)
+![hiéarchie hx](https://image.noelshack.com/fichiers/2019/05/4/1548955959-gl.png)
 
 ### La balise meta description 
 
@@ -95,7 +95,7 @@ Ce type d’URL peut être déconcertant et peu convivial. Les utilisateurs aura
 Il faut savoir qu’en HTML il existe une balise alt pour les images qui sont souvent négligés mais c’est une grosse erreur. Il faut garder en tête que les crawler sont des robots et de ce fait ils ne voient pas les images telles que nous les voyons. Les balise alt sont donc là pour donner un descriptif au robot.
  Si vous avez le logo de votre entreprise dans l’une de vos pages il faut donc renseigner « logo HoneyShop» par exemple. L’idéal est d’avoir une balise alt contenant le mot clé de votre page.
  
- ![alt balise](https://image.noelshack.com/fichiers/2019/05/2/1548774512-hx.png)
+ ![alt balise](https://image.noelshack.com/fichiers/2019/05/4/1548955959-gl.png)
  
  
 ### Les mots-clés 
