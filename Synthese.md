@@ -59,6 +59,8 @@ Les différents moteurs de recherche utilisent des robots ou encore appelés des
 Ces informations sont ensuite gardées en mémoire dans la base de données de Google afin de mieux traiter les requêtes des utilisateurs. En effet Google compare des millions de pages web et les classes en fonction de leurs pertinences avec le mot clé saisis par les utilisateurs.
 Mais à quoi les crawler font-ils attention ? C’est ce que nous allons voir ensemble par la suite en détail mais les crawler font attention à certains critères comme les mots-clés, les URL, les balises meta title et meta description ou encore les attributs alt des images pour ne citer qu’eux.
 
+Dans ce rapport nous allons prendre comme exemple le mot clé "miel bio" qui a été trouver grâce aux outils que nous allons présenté prochainement. Nous le ferons apparaître dans les endroits stratégiques pour améliorer son référencement naturel.
+
 ### Les Titres & les balises meta title
 
 En HTML il existe une balise title dans laquelle on indique un titre de page. Celui-ci va se trouver sur l’onglet de la page des navigateurs et apparaîtra aussi sur les résultats de recherche des moteurs de recherche.il faut d’attribuer une balise title unique à chacune des pages du site afin que Google puisse faire la différence entre les différentes pages du site. Aussi, le titre de page doit être compris entre 40 et 60 caractères espaces compris, si le titre est trop long Google n’en affichera seulement qu’une partie. Par ailleurs le mot clé doit se situe au début du titre.
@@ -66,7 +68,7 @@ En HTML il existe une balise title dans laquelle on indique un titre de page. Ce
 ![Part de marcher des moteurs de recherche en France 2017](https://image.noelshack.com/fichiers/2019/05/2/1548772676-titre.png)
 
 Il existe aussi une règle importante concernant les titres afin d’améliorer le référencement, il faut respecter la structure des titres.
-En HTML les titres s’écrivent entre balises hx (h1, h2, h3…h6). Le titre h1 est le sujet principal de la page. Il faut respecter la hiérarchie entre les différents hx et ne pas commencer sa page par un titre h2 par exemple ou sauter un niveau en commençant par un titre h1 puis h3 sans passer par un titre h2.
+En HTML les titres s’écrivent entre balises hx (h1, h2, h3…h6). Le titre h1 est le sujet principal de la page dans lequel le mot clé doit apparaitre. Il faut respecter la hiérarchie entre les différents hx et ne pas commencer sa page par un titre h2 par exemple ou sauter un niveau en commençant par un titre h1 puis h3 sans passer par un titre h2.
 Il faut évidemment qu’ils soient uniques et il ne faut surtout pas utiliser plusieurs titres h1 car les crawler n’y comprendrons plus rien puisque cela voudrait dire que la page possède plusieurs sujets principaux.
 Par ailleurs il faut aussi éviter de choisir des titres sans liens direct avec le contenu de la page ou d’utiliser des titres vagues tels que « page 1 ».
 
