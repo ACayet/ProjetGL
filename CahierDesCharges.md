@@ -17,23 +17,22 @@ Un site web de vitrine et de vente pour un client
 
 ### Client
 
-* acheter des pots de miel : l'utilisateur reçoit un mail confirmant son achat et lui demandant d'envoyer un chèque.
-* déposer un commentaire
 * s’authentifier pour acheter et pour commenter
+* acheter des pots de miel : l'utilisateur reçoit un mail confirmant son achat et lui demandant d'envoyer un chèque.
+* déposer un commentaire : une fois authentifié l'utilisateur peut déposer un commentaire sur produit ou sur un article de blog
+* rechercher un article de blog ou un produit
 * géolocaliser (comment s’y rendre avec une maps et des marqueurs) le producteur de miel
-* rechercher un article
 
 ### Admin
 
-* s’authentifier avec son adresse mail et un mot de passe
-* page de connexion
-* ajout d’articles
-* supprimer un article
-* un formulaire pour écrire des articles
+* s’authentifier avec son adresse mail et un mot de passe grâce a une page de connexion
+* ajout de produit : il a rentre un nom de produit, une description, le prix (en euros), le stock, et la quantité (en mL)
+* supprimer un article de blog et un produit
+* un formulaire pour écrire des articles de blog
 
 ## Site
 
-* envoi de mail récapitulatif aux clients qui ont acheté
+* envoi de mail récapitulatif aux clients qui ont acheté un produit
 * implémentation de l’API Paypal pour l’achat
 
 ## Outils
@@ -45,8 +44,8 @@ Un site web de vitrine et de vente pour un client
 ## PVM (produit minimum viable)
 
 * Page d'accueil
-* Page blog
+* Page blog avec des articles : visible en mode hors ligne, une page présentant l'ensemble des articles et un lien vers chaque article 
 * Page de produits (pots de miel) en vente : une page présentant tous les produits et un lien vers chaque produit
-* Page ajout articles à la vente
 * Page inscription utilisateur : l'utilisateur rentre son nom, prénom, adresse mail (qu'il va utiliser pour s'authentifier), mot de passe (deux fois pour le confirmer), numéro de téléphone, adresse et ville.
 * Page connexion utilisateur : l'utilisateur se connecte avec son adresse mail et son mot de passe
+* Page ajout de produits à vendre pour l'administrateur : page qui est réservée à l'administrateur et qui n'est donc pas accessibles aux autres utilisateurs.
