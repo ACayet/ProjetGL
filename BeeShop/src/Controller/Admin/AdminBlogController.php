@@ -12,6 +12,10 @@ use App\Repository\ArticleRepository;
 use App\Entity\Article;
 use App\Form\ArticleType;
 
+/**
+ * Controleur pour l'administration des pages de blog
+ * ajout, suppression, edition d'articles de blog
+ */
 class AdminBlogController extends AbstractController 
 {
     /**

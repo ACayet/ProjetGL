@@ -33,6 +33,9 @@ Cette ligne de code n'est pas lue par Symfony, il faut modifier l'import en rajo
 
 ## Lien entre la théorie et la pratique
 
+Ce projet nous a permis d'allier pratique et théorie que ce soit dans l'utilisation de markdown mais aussi des tests.
+Cependant, étant donné le langage de programmation choisi et le framework utilisé, il a été compliqué d'appliquer à la lettre le cours : les tests unitaires par exemple n'ont pas pu faire étant donné que Symfony réalise de nombreuses fonctionnalités de lui-même.
+
 ## Difficultés rencontrées
 
 Au cours de ce projet, nous avons rencontré différents problèmes : tout d'abord, il a fallu nous familiariser avec le Framework Symfony de PHP que nous n'avions jamais manipulé. En plus de Symfony, il a fallu utiliser d'autres outils en parallèle : l'ORM Doctrine pour le mapping avec la base de données MySQL, Composer pour les dépendances, le moteur de template Twig utilisé par PHP et Symfony pour la vue. Ces outils étant nouveaux pour nous, nous avons rencontré quelques difficultés : les bugs liés au cache à vider, les dépendances à installer etc.
@@ -42,6 +45,7 @@ De plus, nous sommes un groupe assez nombreux : il a fallu nous organiser, ce qu
 
 Le site comporte des points améliorables : toutes les fonctions que nous avions prévues de réaliser ne sont pas disponibles, celles réalisées sont cependant fonctionnelles. En effet, nous avons préféré privilégier la qualité des fonctions réalisées plutôt que la quantité.
 De plus, l'interface (le HTML/CSS) peut être également améliorées : rendre le site plus ergonomique, améliorer et faciliter la navigation...
+
 ## Front - End
 
 ### Les règles de référencement
@@ -51,7 +55,6 @@ Le second type de référencement est le référencement SEA (Search Engine Adve
 Pour savoir comment mieux référencer son site web il faut alors savoir comment marche un moteur de recherche. On s’est alors intéressé à Google car c’est le plus grand moteur de recherche du monde qui possède environ 94% de part de marché en France. Etant donné que HoneySHop est seulement implanté en France, Google a été un choix logique, d’autant plus que les autres moteurs de recherche ont les mêmes critères à quelques différences près.
 
 ![Part de marcher des moteurs de recherche en France 2017](https://image.noelshack.com/fichiers/2019/05/2/1548771773-google.png)
-
 
 ### Comment ça marche ? 
 
@@ -80,8 +83,7 @@ En HTML il existe une balise meta description qui fournit à Google et aux autre
 
 ![meta description balise](https://image.noelshack.com/fichiers/2019/05/2/1548773917-description.png)
 
-
-### Les url 
+### Les url
 
 Il est conseillé d’utiliser des mots-clés dans les URL. Les URL contenant du texte correspondant au contenu et à la structure du site sont plus conviviales pour les visiteurs qui parcourent le site d’autant plus que cela permettra aux visiteurs de mémorisr les URL plus facilement et seront plus susceptibles d’établir des liens vers ces URL.En effet il faut éviter des URL trop longues avec des paramètres inutiles pour l’internaute. Les utilisateurs risquent d’être intimidés par des URL extrêmement longues et contenant très peu de mots reconnaissables.
 
@@ -96,19 +98,16 @@ Ce type d’URL peut être déconcertant et peu convivial. Les utilisateurs aura
 
 Il faut savoir qu’en HTML il existe une balise alt pour les images qui sont souvent négligés mais c’est une grosse erreur. Il faut garder en tête que les crawler sont des robots et de ce fait ils ne voient pas les images telles que nous les voyons. Les balise alt sont donc là pour donner un descriptif au robot.
  Si vous avez le logo de votre entreprise dans l’une de vos pages il faut donc renseigner « logo HoneyShop» par exemple. L’idéal est d’avoir une balise alt contenant le mot clé de votre page.
- 
+
  ![alt balise](https://image.noelshack.com/fichiers/2019/05/4/1548955959-gl.png)
- 
- 
-### Les mots-clés 
+
+### Les mots-clés
 
 Il faut tout d’abord cibler des mots clés liés à notre secteur d’activité. Plus un mot clé est ciblé, plus on aura des chances de bien se positionner. La concurrence sera moindre et le trafic qui en résultera sera du trafic hautement qualifié, autrement dit des utilisateurs qui cherchent exactement ce que l’on propose. Il faut être donc précis si on utilise le mot clé « travaux » par exemple, l’internaute peut aussi bien vouloir chercher des sites qui vend du matériel de travaux que des devis.
 L’internaute qui arrivera sur notre site ne viendra donc pas forcément pour passer commande. Il faut choisir des mots-clés composés de plusieurs mots, la plupart des recherches sur les moteurs de recherche se composent de deux, trois voire quatre mots. Il faut donc ne pas hésiter à utiliser des synonymes mais surtout il faut des mots clés à notre mesure.
 Idéalement les mots-clés doivent être faiblement convoités et apporter beaucoup de trafic qualifié, mais en réalité c’est assez rare il faut donc trouver le bon compromis entre la convoitise que suscite le mot clé chez les concurrents et ce que recherchent les internautes. Certains outils existent pour nous aider dans nos choix de mots-clés tels que Google Adword plutôt utilisé pour des campagnes de publicité Google ou SemRush et kwFinder que nous allons décrire dans les points suivants.
 
-
-## Outils 
-
+## Outils
 
 ### SemRush
 
@@ -147,16 +146,20 @@ KwFinder est un outil qui nous propose une liste en rapport à un mot clé tapez
 
 ### Aurélie DIEP
 
-Ce projet a été formateur : j'ai pu, pour la première fois dans un projet, participer à la réalisation des fonctionnalités du site (du "back").
-Ne maîtrisant pas le PHP et le framework Symfony.
-
-Ce projet n'a cependant pas été de tout repos : en plus d'un nouveau langage à apprendre à apprendre, il a fallu s'organiser et respecter les deadlines imposées. Côté Back, nous avons particulièrement ressenti ces difficultés de manipulation du PHP : j'ai notamment rencontré de nombreux "bugs", des syntaxes un peu particulières à respecter, le cache PHP à vider... Ces erreurs n'étaient pas faciles à débuguer car les erreurs n'étaient pas forcément apparentes.
+Ce projet a été formateur : j'ai pu, pour la première fois dans un projet, participer entièrement à la réalisation des fonctionnalités du site (du "back").
+Ne maîtrisant pas le PHP et le framework Symfony, ce projet n'a cependant pas été de tout repos : en plus d'un nouveau langage à apprendre à apprendre, il a fallu s'organiser et respecter les deadlines imposées. 
+Côté Back, nous avons particulièrement ressenti ces difficultés de manipulation du PHP : j'ai notamment rencontré de nombreux "bugs", des syntaxes un peu particulières à respecter, le cache PHP à vider... Ces erreurs n'étaient pas faciles à débuguer car les erreurs n'étaient pas forcément apparentes.
 
 A refaire, il y a plusieurs points que j'aurais fait différemment :
 
-* dans un premier temps, le choix du langage : j'aurais préféré réaliser un tel projet dans un langage tel que le Java, en utilisant Spring par exemple. En effet, il s'agit d'un langage que je maîtrise davantage et qui, d'un point de vue personnel, me servirait plus (et que j'utilise en entreprise notamment).
-* l'organisation du travail et du temps : le temps qu'on a mis (plusieurs semaines) à mettre en place un répertoire Git fonctionnel et le nombre de personnes à travailler sur le BackEnd, insuffisant.
+* le choix du langage : j'aurais préféré réaliser un tel projet en Java, en utilisant le framework Spring ou SpringBoot. En effet, il s'agit d'un langage que je maîtrise davantage et qui, d'un point de vue personnel, me servirait plus (et que j'utilise en entreprise notamment). D'un point de vue personnel, je pense que le langage que nous avons choisi nous a fait perdre un peu de temps : les bugs rencontrées, le fait que nous étions tous débutants dans ce langage a fait que nous avons mis du temps à nous lancer complètement dans la réalisation du site.
+* l'organisation du travail et du temps : le temps qu'on a mis (plusieurs semaines) à mettre en place un répertoire Git fonctionnel et le nombre de personnes à travailler sur le BackEnd et à réaliser les tests, insuffisant.
+* la mise en place d'une méthode de travail comme la méthode Agile Scrum par exemple qui nous aurait permis d'être, dès le début, plus régulier et plus efficace dans la réalisation du site : des livraisons (dans notre cas, des merges sur Git) régulières de chacun des membres BackEnd et FrontEnd, des deadlines à respecter(fonctionnalités à finir avant telle ou telle date etc).
 
+#### Retour personnel sur le cours
+
+Faisant du Java Spring/SpringBoot en entreprise (malgré le fait que notre projet n'utilise pas ce langage), ce cours m'a permis de comprendre certaines notions qui n'étaient pas très claires (notamment les annotations, le Autowired, les beans etc). Cependant le cours des Patterns de Programmation a été un peu compliqué à suivre et à comprendre.
+J'ai également apprécié la liberté qui nous a été donnée dans le choix du projet.
 
 ### Soufiane OTMANE
 
@@ -165,9 +168,4 @@ Ce projet a été l'occassion pour moi de monter en compétence sur la notion du
 Avec le recul, les points que j'aurai améliorer et/ou fait différemment sont : 
 
 * Je me serais investi également sur le côté backEnd
-* Concernant le cour en générale j'ai appris différents outils tel que git que je connaissais que de nom et qu'on a donc utiliser, sans ce cour je ne pense pas que j'aurai chercher à apprendre à l'utiliser. 
-
-
- 
-
-
+* Concernant le cour en générale j'ai appris différents outils tel que git que je connaissais que de nom et qu'on a donc utiliser, sans ce cour je ne pense pas que j'aurai chercher à apprendre à l'utiliser.

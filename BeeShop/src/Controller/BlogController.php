@@ -8,6 +8,10 @@ use App\Repository\ArticleRepository;
 use App\Entity\Article;
 use Symfony\Component\HttpFoundation\Response;
 
+/**
+ * Controleur pour l'affichage du blog:
+ * liste des articles et l'affichage d'un article 
+ */
 class BlogController extends AbstractController
 {
 

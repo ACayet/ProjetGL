@@ -13,6 +13,10 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Form\FormTypeInterface;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
+/**
+ * Controleur pour l'administration des pages de produits
+ * ajout, suppression, edition de produits
+ */
 class AdminProductController extends AbstractController 
 {
     /**

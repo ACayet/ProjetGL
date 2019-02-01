@@ -6,7 +6,9 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 
-
+/**
+ * controleur pour l'affichage de l'accueil
+ */
 class HomeController extends AbstractController {
 
     /**

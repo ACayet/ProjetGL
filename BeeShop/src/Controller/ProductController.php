@@ -9,6 +9,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+/**
+ * Controleur pour l'affichage des produits :
+ * liste des produits et l'affichage d'un produit 
+ */
 class ProductController extends AbstractController
 {
 
