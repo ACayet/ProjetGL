@@ -31,7 +31,7 @@ Bonjour: Hello
 Heure: Time
 'Bienvenue sur le blog': 'Welcome on the blog'
 'Retrouvez tous nos articles ci-dessous': 'Check all our articles below'
-'écrit le': 'written by'
+'écrit le': 'written the'
 par: by
 Nom: Name
 Email: Mail
@@ -64,3 +64,13 @@ Adresse: Address
 'Votre adresse...': 'Your address...'
 Ville: City
 'Votre ville...': 'Your city...'
+
+'Nom du produit': 'Product name'
+Description: Description
+'Prix en €': 'Price in euros'
+Stock: Inventory
+'Quantité en mL': 'Quantity in mL'
+
+Titre: Title
+Auteur: Author
+Contenu: Content
