@@ -64,26 +64,18 @@
 
                               <li><a {% if (current_menu is defined and current_menu == 'properties') %} class="active" {% endif %} href="{{path('produit.index')}}">Produit</a></li>
 
-                            {% if app.user.admin is defined and app.user.admin=="true" %}
-                               
-                              
-                              <ul id="menu-deroulant">
-                                <li><a href="{{path('security_logout')}}">Admin</a>
-                                  <ul>
-                                    <li id="menu-deroulant navbar-nav ml-auto"><a href="{{path('admin.produit.index')}}">Produit</a></li>
-                                    <li id="menu-deroulant navbar-nav ml-auto" ><a href="{{path('admin.blog.index')}}">Blog</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-
-
-
-                            {% endif %}
                             {% if not app.user %}
                               <li><a href="{{path('security_login')}}">Connexion</a></li>
                               <li><a href="{{path('security_registration')}}">Inscription</a></li>
                             {% else %}
                               <li><a href="{{path('security_logout')}}">Déconnexion</a></li>
+                            {% if app.user.admin is defined and app.user.admin=="true" %}
+
+                              <li class="bouton_admin"><a href="{{path('admin.produit.index')}}">Admin Produit</a></li>
+                              <li class="bouton_admin"><a href="{{path('admin.blog.index')}}">Admin Blog</a></li>
+
+                            {% endif %}
+
                               <li class="hiuser">Bonjour</li>
                               <li class="hiuser">&nbsp</li>
                               <li class="hiuser">{{app.user.username}}</li>
@@ -100,36 +92,6 @@
             <footer class="footer">
                 <div class="container">
                     <div class="row">
-            
-                        <div class="col-md-6 col-lg-3">
-                            <div class="footer-recent clearfix">
-                                <div class="widget-title">
-                                    <h3>Articles récents</h3>
-                                </div>
-                                
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-user" aria-hidden="true"></i>
-                                        <span>Publié par  : Consectetur cupidatat </span>
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        <span> Heure: 1h du mat sa race </span>
-                                        <h2>Consectetur cupidatat aliqua nulla magna in pariatur deserunt nulla </h2>
-                                    </li>
-
-                                    <li>
-                                        <i class="fa fa-user" aria-hidden="true"></i>
-                                        <span>Publié par  : Consectetur cupidatat</span>
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        <span> Heure: 1h du mat sa race </span>
-                                        <h2>Consectetur cupidatat aliqua nulla magna in pariatur deserunt nulla in s</h2>
-                                    </li>    
-                                </ul>                    
-                            </div><!-- end clearfix -->
-                            
-                        </div><!-- end col -->
-
-                  
-
                         <div class="col-md-6 col-lg-3">
                             <div class="widget clearfix">
                                 <div class="widget-title">
@@ -152,9 +114,16 @@
                                 
                             <ul>
                                 <li>Adresse: 143 avenue de Versailles</li>
-                                <li>Téléphone: <a href="#">+336 383768080  </a></li>
-                                <li>Email: <a href="mailto:honeyshop@arthurcayet.fr">honeyshop@arthurcayet.fr</a></li>
-                            </ul>
+                                <li>Téléphone: <a href="#">+336 383768080</a></li>
+                                <li>Email: <a href="mailto:honeyshop@arthurcayet.fr">honeyshop@gmail.fr</a></li>
+                            </ul>                        
+                          </div>
+                      </div>
+                      <div class="col-md-6 col-lg-3">
+                        <div class="widget footer-contact clearfix">
+                          <div class="widget-title">
+                              <h3>Nos reseaux sociaux</h3>
+                          </div>
 
                             <ul class="social-list">
                                 <li><a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a></li>
@@ -162,9 +131,14 @@
                                 <li><a href="https://linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a></li>
                                 <li><a href="https://plus.google.com/" class="googlePlus"><i class="fa fa-google-plus"></i></a></li>
-                            </ul>                          
+                            </ul>    
                           </div>
-                      </div> 
+                        </div>
+                      </div>
+
+
+
+
                     </div> <!-- end row -->
                 </div> <!-- end container -->
             </footer> <!-- end footer -->

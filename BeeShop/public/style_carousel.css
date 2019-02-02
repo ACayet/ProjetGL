@@ -8,7 +8,7 @@
 @import url(css/font-awesome.min.css);
 
 
-body {color: #999;font-size: 15px;font-family: 'Rubik', sans-serif;line-height: 1.80857;}
+body {color: #333333;font-size: 15px;font-family: 'Rubik', sans-serif;line-height: 1.80857;}
 body.demos .section {background: url(images/bg.png) repeat top center #f2f3f5;}
 body.demos .section-title img {max-width: 280px;display: block;margin: 10px auto;}
 body.demos .service-widget h3 {border-bottom: 1px solid #ededed;font-size: 18px;padding: 20px 0;background-color: #ffffff;}
@@ -16,7 +16,7 @@ body.demos .service-widget {margin: 0 0 30px;padding: 30px;background-color: #ff
 body.demos .container-fluid {max-width: 1080px}
 
 a {color: #1f1f1f;text-decoration: none !important;outline: none !important;-webkit-transition: all .3s ease-in-out;-moz-transition: all .3s ease-in-out;-ms-transition: all .3s ease-in-out;-o-transition: all .3s ease-in-out;transition: all .3s ease-in-out;}
-h1,h2,h3,h4,h5,h6 {letter-spacing: 0;font-weight: normal; position: relative;padding: 0 0 10px 0;font-weight: normal;line-height: 120% !important;color: #1f1f1f;margin: 0}
+h1,h2,h3,h4,h5,h6 {letter-spacing: 0;font-weight: normal; position: relative;padding: 0 0 10px 0;font-weight: normal;line-height: 120% !important;color: #ffc107;margin: 0}
 h1 {font-size: 24px}
 h2 {font-size: 22px}
 h3 {font-size: 18px}
@@ -29,9 +29,12 @@ a {color: #1f1f1f;text-decoration: none;outline: none;}
 a,
 .btn {text-decoration: none !important;outline: none !important;-webkit-transition: all .3s ease-in-out;-moz-transition: all .3s ease-in-out;-ms-transition: all .3s ease-in-out;-o-transition: all .3s ease-in-out;transition: all .3s ease-in-out;}
 .btn-custom {margin-top: 20px;background-color: transparent !important;border: 2px solid #ddd;padding: 12px 40px;font-size: 16px;}
-.lead {font-size: 18px;line-height: 30px;color: #767676; /*ecriture*/margin: 0;padding: 0;}
+.lead {font-size: 18px;line-height: 30px;color: #333333; /*ecriture*/margin-bottom : 10px; padding: 0;}
 blockquote {margin: 20px 0 20px;padding: 30px;}
 ul, li, ol{margin: 0px;padding: 0px;list-style: none;}
+button {color : #ffc107;}
+.btn-primary, .btn-secondary {color :white;border-color:#ffc107;background-color: #ffc107;}
+.btn-danger {color :white;border-color:#dc3545;background-color: #dc3545;}
 
 /*------------------------------------------------------------------
     HEADER
@@ -53,14 +56,13 @@ ul, li, ol{margin: 0px;padding: 0px;list-style: none;}
 .header_style_01 .collapse{
 
     margin-right: 25%;
-
-
 }
 
 
 .header_style_01 .navbar-brand {
     padding: 0px 15px 0 15px;
 	height: auto;
+    width: 350px;
 	
 }
 
@@ -463,7 +465,7 @@ ul, li, ol{margin: 0px;padding: 0px;list-style: none;}
 }
 
 .section-title p {
-    color: #999;
+    color: #333333;
     font-weight: 400;
     font-size: 18px;
     line-height: 33px;
@@ -692,7 +694,7 @@ ul, li, ol{margin: 0px;padding: 0px;list-style: none;}
 
 .icon-wrapper p small {
     display: block;
-    color: #999;
+    color: #333333;
     margin-top: 10px;
     text-transform: none;
     font-weight: 600;
@@ -795,7 +797,7 @@ ul, li, ol{margin: 0px;padding: 0px;list-style: none;}
 }
 
 .cac a h3 {
-    color: #999;
+    color: #333333;
 }
 
 .cac h3 {
@@ -1267,7 +1269,7 @@ section {padding: 50px 0;}
 /* LISTE produit */
 
 .liste-title {margin-left: 5px; color: #FFD700;}
-.liste-title h2 {font-size: 30px; text-align: center;}
+.liste-title h2 { margin-bottom : 20px; font-size: 30px; text-align: center;}
 .liste-description {padding: 30px 0;}
 #fiche-produit .card {margin-left:20px; margin-bottom:20px; width: 18rem; display: inline-block;}
 
@@ -1372,36 +1374,36 @@ section {padding: 50px 0;}
 }
 
 .myinscription button {
-    margin-top: 1%;
+
 }
 
 .myinscription p {
-    margin-top: 20px;
-    margin-left: 30px;
-    display : inline-block;
+    margin-top: -50px;
 }
 
 
 .myinscription .form-group {
     width: 400px;
     margin-left: 30%;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .myinscription .form-group label {
     text-align: center;
+
 }
 
 .myinscription .form-group p {
     margin-left: 140px;
+    padding-top: 70px;
+    margin-left: 100px;
+    display : inline-block;
 }
-
-
-
 
 .myinscription {
     margin-top: 100px;
     margin-left : 100px;
+    margin-bottom: 100px;
 }
 
 .hiuser {
@@ -1414,5 +1416,13 @@ section {padding: 50px 0;}
     background : #ffc107;
 }
 
+.bouton_admin {
+    width: 137px;
+}
+
+.miel_image {
+    height: 300px;
+    width: 600px;
+}
 
 
