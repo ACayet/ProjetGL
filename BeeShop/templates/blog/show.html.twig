@@ -17,7 +17,7 @@
                         <h1>{{article.titre}}</h1>
                         <p class="lead">{{article.contenu}}</p>
 						<img src="{{asset('images/miel.png')}}" alt="miel bio">
-                        <p class="maj-date"> écrit le {{ article.date|date('Y-m-d') }} par {{article.auteur}}</p>
+                        <p class="maj-date"> {% trans %}écrit le{% endtrans %} {{ article.date|date('Y-m-d') }} {% trans %}par{% endtrans %} {{article.auteur}}</p>
                     </div><!-- end messagebox -->
 				</div>
 			</div>

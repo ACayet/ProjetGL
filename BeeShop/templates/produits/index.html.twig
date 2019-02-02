@@ -9,12 +9,12 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="liste-title">
-                            <h2>La boutique en ligne </h2>
+                            <h2>{% trans %}La boutique en ligne{% endtrans %} </h2>
                         </div>
                         
                         <div class="liste-description">
-                            <p> Tous nos produits sont aussi disponibles dans notre point de vente
-                                direct à un tarif préférentiel. </p>
+                            <p>{% trans %} Tous nos produits sont aussi disponibles dans notre point de vente{% endtrans %}
+                                {% trans %}direct à un tarif préférentiel.{% endtrans %} </p>
                         </div>
 
                         {% for prop in produits %}

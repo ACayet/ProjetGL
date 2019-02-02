@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="liste-title">
-                            <h1>Gestion du blog </h1>
+                            <h1>{% trans %}Gestion du blog{% endtrans %} </h1>
                         </div>
 
                         {% for message in app.flashes('success') %}
@@ -27,12 +27,12 @@
                                         <td> {{art.titre }} </td>
 
                                         <td>
-                                            <a href="{{ path('admin.blog.edit', {id: art.id}) }}" class="btn btn-secondary"> Editer </a> 
+                                            <a href="{{ path('admin.blog.edit', {id: art.id}) }}" class="btn btn-secondary"> {% trans %}Editer{% endtrans %} </a> 
                                              <form method="post" action="{{ path('admin.blog.delete', {id: art.id}) }}" 
                                                 style="display: inline-block" onsubmit="return confirm('Êtes-vous sûr de supprimer ?')">
                                                 <input type="hidden" name="_method" value="DELETE"/>
                                                 <input type="hidden" name="_token" value="{{ csrf_token('delete') }}"/>
-                                                <button class="btn btn-danger"> Supprimer</button>
+                                                <button class="btn btn-danger"> {% trans %}Supprimer{% endtrans %}</button>
                                             </form>
                                         </td>        
                                     </tr>
@@ -42,7 +42,7 @@
                         </table>
 
                         <div class="text-right">
-                            <a href="{{ path('admin.blog.new') }}" class="btn btn-primary"> Créer un nouvel article </a>
+                            <a href="{{ path('admin.blog.new') }}" class="btn btn-primary"> {% trans %}Créer un nouvel article{% endtrans %} </a>
                         </div>
 
                     </div>
@@ -52,7 +52,7 @@
 
 {% else %}
     <div class="container mt-4">
-        <h1>Vous n'avez pas les droits pour accéder à cette page !</h1>
+        <h1>{% trans %}Vous n'avez pas les droits pour accéder à cette page{% endtrans %} !</h1>
     </div>
 {% endif %}
 

@@ -17,14 +17,14 @@
 					</div>
 					<div class="col-md-offset-1">
 						<div class="panel post-panel">
-							<p> Description du produit : </p>
+							<p> {% trans %}Description du produit{% endtrans %} : </p>
 							<p> {{produit.description}} </p>
-                            <p> Quantité : {{produit.quantite}} mL </p>            
+                            <p> {% trans %}Quantité{% endtrans %}: {{produit.quantite}} mL </p>            
                         </div>
 
 						<div class="panel post-panel">
-							<h2> Prix :  {{produit.prix}} €</h2>
-							<button type="button" class="btn btn-primary btn-lg active">Acheter</button>
+							<h2> {% trans %}Prix{% endtrans %} :  {{produit.prix}} €</h2>
+							<button type="button" class="btn btn-primary btn-lg active">{% trans %}Acheter{% endtrans %}</button>
 						</div>
 					</div>
 				</div>

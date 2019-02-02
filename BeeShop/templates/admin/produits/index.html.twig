@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="liste-title">
-                            <h1>Gestion de la boutique </h1>
+                            <h1>{% trans %}Gestion de la boutique{% endtrans %} </h1>
                         </div>
 
                         {% for message in app.flashes('success') %}
@@ -42,7 +42,7 @@
                         </table>
 
                         <div class="text-right">
-                            <a href="{{ path('admin.produit.new') }}" class="btn btn-primary"> Créer un nouveau produit </a>
+                            <a href="{{ path('admin.produit.new') }}" class="btn btn-primary"> {% trans %}Créer un nouveau produit{% endtrans %} </a>
                         </div>
 
                     </div>
@@ -52,7 +52,7 @@
 
 {% else %}
     <div class="container mt-4">
-        <h1>Vous n'avez pas les droits pour accèder à cette page !</h1>
+        <h1>{% trans %}Vous n'avez pas les droits pour accèder à cette page{% endtrans %} !</h1>
     </div>
 {% endif %}
 

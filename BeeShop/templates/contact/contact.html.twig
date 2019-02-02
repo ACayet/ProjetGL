@@ -8,7 +8,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="banner">
-						<h2><span>Contactez-nous</span></h2>		
+						<h2><span>{% trans %}Contactez-nous{% endtrans %}</span></h2>		
 					</div>
 				</div>
 			</div>
@@ -20,7 +20,7 @@
             <div class="panel panel-warning" style="width:750px;margin:0px auto">
 
 
-              <div class="panel-heading">N'hésitez pas à prendre contact avec nous ! </div>
+              <div class="panel-heading">{% trans %}N'hésitez pas à prendre contact avec nous !{% endtrans %}</div>
               <div class="panel-body">
 
 
@@ -28,21 +28,21 @@
 
 
                   <div class="form-group">
-                      <label class="control-label" for="inputName">Nom</label>
+                      <label class="control-label" for="inputName">{% trans %}Nom{% endtrans %}</label>
                       <input class="form-control" data-error="Veuillez renseigner ce champ" id="inputName" placeholder="Nom"  type="text" required />
                       <div class="help-block with-errors"></div>
                   </div>
 
 
                   <div class="form-group">
-                    <label for="inputEmail" class="control-label">Email</label>
+                    <label for="inputEmail" class="control-label">{% trans %}Email{% endtrans %}</label>
                     <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
                     <div class="help-block with-errors"></div>
                   </div>
 
 
                   <div class="form-group">
-                    <label for="inputtel" class="control-label">Téléphone</label>
+                    <label for="inputtel" class="control-label">{% trans %}Téléphone{% endtrans %}</label>
                     <div class="form-group">
                       <input type="text"  data-minlength="10"  maxlength="10" class="form-control" id="inputPassword" data-error="Votre numéro de téléphone doit faire 10 chiffres" placeholder="+33600848087" required>
                       <div class="help-block with-errors"></div>
@@ -50,7 +50,7 @@
                   </div>
 
 					<div class="form-group">
-                    <label for="inputadr" class="control-label">Adresse</label>
+                    <label for="inputadr" class="control-label">{% trans %}Adresse{% endtrans %}</label>
                     <div class="form-group">
                       <input type="text"   class="form-control" id="inputPassword" data-error="Veuillez renseigner ce champ" placeholder="143 avenue de Versaille" required>
                       <div class="help-block with-errors"></div>
@@ -59,7 +59,7 @@
 				  
 				  
 				  <div class="form-group">
-                    <label for="inputcity" class="control-label">Ville</label>
+                    <label for="inputcity" class="control-label">{% trans %}Ville{% endtrans %}</label>
                     <div class="form-group">
                       <input type="text"   class="form-control" id="inputPassword" data-error="Veuillez renseigner ce champ" placeholder="Paris,Rome" required>
                       <div class="help-block with-errors"></div>
@@ -68,7 +68,7 @@
 				  
 				  
                   <div class="form-group">
-                      <label class="control-label" for="inputName">Message</label>
+                      <label class="control-label" for="inputName">{% trans %}Message{% endtrans %}</label>
                       <textarea class="form-control" data-error="Veuillez renseigner ce champ" id="inputName" placeholder="Bonjour l'équipe BeeShop..." required=""></textarea>
                       <div class="help-block with-errors"></div>
                   </div>

@@ -18,6 +18,6 @@
         <input type="hidden" name="token" value="{{ csrf_token('delete') }}" />
         
         <br/>    
-        <button class="btn btn-primary">Sauvegarder</button>
+        <button class="btn btn-primary">{% trans %}Sauvegarder{% endtrans %}</button>
         
 {{ form_end(form) }}
