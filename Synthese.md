@@ -56,7 +56,7 @@ Pour savoir comment mieux référencer son site web il faut alors savoir comment
 
 ![Part de marcher des moteurs de recherche en France 2017](https://image.noelshack.com/fichiers/2019/05/2/1548771773-google.png)
 
-### Comment ça marche ? 
+### Comment ça marche ?
 
 Les différents moteurs de recherche utilisent des robots ou encore appelés des crawler qui ont pour but de parcourir tout le web de lien en lien et de récupérer des informations sur chaque page existante.
 Ces informations sont ensuite gardées en mémoire dans la base de données de Google afin de mieux traiter les requêtes des utilisateurs. En effet Google compare des millions de pages web et les classes en fonction de leurs pertinences avec le mot clé saisis par les utilisateurs.
@@ -66,7 +66,7 @@ Dans ce rapport nous allons prendre comme exemple le mot clé "miel bio" qui a �
 
 ### Les Titres & les balises meta title
 
-En HTML il existe une balise title dans laquelle on indique un titre de page. Celui-ci va se trouver sur l’onglet de la page des navigateurs et apparaîtra aussi sur les résultats de recherche des moteurs de recherche.il faut d’attribuer une balise title unique à chacune des pages du site afin que Google puisse faire la différence entre les différentes pages du site. Aussi, le titre de page doit être compris entre 40 et 60 caractères espaces compris, si le titre est trop long Google n’en affichera seulement qu’une partie. Par ailleurs le mot clé doit se situe au début du titre.
+En HTML il existe une balise title dans laquelle on indique un titre de page. Celui-ci va se trouver sur l’onglet de la page des navigateurs et apparaîtra aussi sur les résultats de recherche des moteurs de recherche. Il faut d’attribuer une balise title unique à chacune des pages du site afin que Google puisse faire la différence entre les différentes pages du site. Aussi, le titre de page doit être compris entre 40 et 60 caractères espaces compris, si le titre est trop long Google n’en affichera seulement qu’une partie. Par ailleurs le mot clé doit se situe au début du titre.
 
 ![Part de marcher des moteurs de recherche en France 2017](https://image.noelshack.com/fichiers/2019/05/2/1548772676-titre.png)
 
@@ -77,7 +77,7 @@ Par ailleurs il faut aussi éviter de choisir des titres sans liens direct avec 
 
 ![hiéarchie hx](https://image.noelshack.com/fichiers/2019/05/4/1548955959-gl.png)
 
-### La balise meta description 
+### La balise meta description
 
 En HTML il existe une balise meta description qui fournit à Google et aux autres moteurs de recherche un résumé du contenu de la page. Contrairement à un titre d’une page qui se compose de quelques mots, la meta description peut contenir 1 à 2 phrases. Il faut éviter de rédiger une méta description sans lien direct avec le contenu de la page ou d’utiliser des descriptions trop génériques telles que « Ceci est un site web ». Mais aussi de remplir les balise description de mots-clés uniquement, un seul concernant le sujet de votre page suffit.
 
@@ -89,12 +89,11 @@ Il est conseillé d’utiliser des mots-clés dans les URL. Les URL contenant du
 
 ![Mauvaise url](https://image.noelshack.com/fichiers/2019/05/2/1548774198-url-bad.png)
 
-Ce type d’URL peut être déconcertant et peu convivial. Les utilisateurs auraient des difficultés à mémoriser l’URL par cœur. De plus, les utilisateurs pourraient penser qu’une partie de l’URL est inutile et ils pourraient laisser de côté une partie de l’URL et corrompre ainsi le lien.Il faut garder en tête que tout le monde ne navigue pas de la même manière sur un site web et beaucoup navigue par les URL, il faut donc anticiper leurs comportements afin de rendre l’expérience des utilisateurs le plus convivial possible.
+Ce type d’URL peut être déconcertant et peu convivial. Les utilisateurs auraient des difficultés à mémoriser l’URL par cœur. De plus, les utilisateurs pourraient penser qu’une partie de l’URL est inutile et ils pourraient laisser de côté une partie de l’URL et corrompre ainsi le lien. Il faut garder en tête que tout le monde ne navigue pas de la même manière sur un site web et beaucoup navigue par les URL, il faut donc anticiper leurs comportements afin de rendre l’expérience des utilisateurs le plus convivial possible.
 
 ![Bonne url ](https://image.noelshack.com/fichiers/2019/05/2/1548774427-url-good.png)
 
-
-### Les images 
+### Les images
 
 Il faut savoir qu’en HTML il existe une balise alt pour les images qui sont souvent négligés mais c’est une grosse erreur. Il faut garder en tête que les crawler sont des robots et de ce fait ils ne voient pas les images telles que nous les voyons. Les balise alt sont donc là pour donner un descriptif au robot.
  Si vous avez le logo de votre entreprise dans l’une de vos pages il faut donc renseigner « logo HoneyShop» par exemple. L’idéal est d’avoir une balise alt contenant le mot clé de votre page.
@@ -132,22 +131,20 @@ SemRush met à disposition différents indicateurs concernant les mots clés. On
  
 Le tarif CPC ou coût par clic est le prix à payer par clic pour le mot clé choisie si on souhaiterait faire des campagnes publicitaires sur Google avec notamment Google Adword évoqué précédemment. Autrement dit si le mot clé « gelée royale» nous intéresse et que le cout CPC est de 1.12 on devra payer 1.12 USD pour chaque clic que les internautes feront pour rentrer dans notre site via notre annonce Google, il faut donc bien choisir car la facture peut très vite monter.
 
-
 ### kwFinder
 
 KwFinder est un outil qui nous propose une liste en rapport à un mot clé tapez et qui nous indique la difficulté à ce positionner dessus. Par exemple on a tapez le mot clé " miel" et l'outil nous a proposer un certain nombre de mot clé dont le mot clé "miel bio" qui était noté comme " facile" afin de ce positionner sur ce mot clé.
 
  ![semrush](https://image.noelshack.com/fichiers/2019/05/2/1548777421-kwfinder.png)
- 
- ![semrush]( https://image.noelshack.com/fichiers/2019/05/2/1548777503-kwfinder2.png)
 
+ ![semrush]( https://image.noelshack.com/fichiers/2019/05/2/1548777503-kwfinder2.png)
 
 ## Retour personnel sur le module
 
 ### Aurélie DIEP
 
 Ce projet a été formateur : j'ai pu, pour la première fois dans un projet, participer entièrement à la réalisation des fonctionnalités du site (du "back").
-Ne maîtrisant pas le PHP et le framework Symfony, ce projet n'a cependant pas été de tout repos : en plus d'un nouveau langage à apprendre à apprendre, il a fallu s'organiser et respecter les deadlines imposées. 
+Ne maîtrisant pas le PHP et le framework Symfony, ce projet n'a cependant pas été de tout repos : en plus d'un nouveau langage à apprendre à apprendre, il a fallu s'organiser et respecter les deadlines imposées.
 Côté Back, nous avons particulièrement ressenti ces difficultés de manipulation du PHP : j'ai notamment rencontré de nombreux "bugs", des syntaxes un peu particulières à respecter, le cache PHP à vider... Ces erreurs n'étaient pas faciles à débuguer car les erreurs n'étaient pas forcément apparentes.
 
 A refaire, il y a plusieurs points que j'aurais fait différemment :
@@ -165,7 +162,11 @@ J'ai également apprécié la liberté qui nous a été donnée dans le choix du
 
 Ce projet a été l'occassion pour moi de monter en compétence sur la notion du référencement, issu d'un DUT informatique j'ai appris à créer différents sites internet sur différents langages mais j'ai jamais eu l'occassion de traiter la notion de référencement qui est la finalité de tout site internet, en effet tous sites internet a pour but final d'engendrer du trafic. J'ai beaucoup appris sur les règles de référencements et j'ai découvert que je codais des sites internet qui allait tous dans le sens inverse des règles de référencement, par exemple lorsque je m'occupais du frontEnd au début je choisisais mes titre h1,h2...h6 par soucis de taille hors que l'une des règles du référencement est de respecté la hiarchie des balises h1,h2...h6 et que pour répondre aux soucis de taille il fallait utiliser un peu de css et modifier les tailles des balises hx. De plus ce projet m'a permis de me replonger sur le côté frontEnd d'un site internet, en effet habituer a être du côté backEnd ce projet m'as permis de renforcer mes connaissances sur le côté frontEnd et m'as permis d'apprendre a réutiliser Bootstrap qui est passé récemment à la version 4. Le fait que notre projet a pour finalité de répondre à un réel besoin d'un apiculteur a été motivant.
 
-Avec le recul, les points que j'aurai améliorer et/ou fait différemment sont : 
+Avec le recul, les points que j'aurai améliorer et/ou fait différemment sont :
 
 * Je me serais investi également sur le côté backEnd
 * Concernant le cour en générale j'ai appris différents outils tel que git que je connaissais que de nom et qu'on a donc utiliser, sans ce cour je ne pense pas que j'aurai chercher à apprendre à l'utiliser.
+
+### Arthur Cayet
+
+Ce projet a été l'occasion pour moi d'apprendre le framework symfony que je ne connaissait pas. J'ai appris a 
