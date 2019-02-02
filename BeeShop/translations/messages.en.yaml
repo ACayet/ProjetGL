@@ -58,11 +58,8 @@ Prénom: 'First name'
 'Mot de passe': Password
 'Votre mot de passe de minimum 5 caratères...': 'Your 5 character minimum password...'
 'Confirmation du mot de passe': 'Password confirmation'
-Téléphone: Phone
 'Votre numéro de téléphone...': 'Your phone number...'
-Adresse: Address
 'Votre adresse...': 'Your address...'
-Ville: City
 'Votre ville...': 'Your city...'
 
 'Nom du produit': 'Product name'
