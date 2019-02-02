@@ -26,7 +26,7 @@ class BlogController extends AbstractController
     }
 
     /**
-     * @Route("/blog", name="blog")
+     * @Route("/{_locale}/blog", name="blog")
      * @return Response
      */
     public function index():Response
@@ -40,7 +40,7 @@ class BlogController extends AbstractController
     }
 
     /**
-     * @Route("/blog/{slug}-{id}", name="art.show", requirements={"slug":"[a-z0-9\-]*"})
+     * @Route("/{_locale}/blog/{slug}-{id}", name="art.show", requirements={"slug":"[a-z0-9\-]*"})
      * @param Article $article
      * @return Response
      */

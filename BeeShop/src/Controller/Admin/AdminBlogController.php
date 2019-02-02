@@ -35,7 +35,7 @@ class AdminBlogController extends AbstractController
     }
 
     /**
-     * @Route("/admin/blog", name="admin.blog.index") 
+     * @Route("/{_locale}/admin/blog", name="admin.blog.index") 
      * @return Response
      */
     public function index()
@@ -48,7 +48,7 @@ class AdminBlogController extends AbstractController
     }
 
     /**
-     * @Route("/admin/blog/create", name="admin.blog.new")
+     * @Route("/{_locale}/admin/blog/create", name="admin.blog.new")
      * @param Article $article
      * @param Request $request
      * @return Response
@@ -72,7 +72,7 @@ class AdminBlogController extends AbstractController
     }
 
     /**
-     * @Route("/admin/blog/{id}", name="admin.blog.edit", methods="GET|POST")
+     * @Route("/{_locale}/admin/blog/{id}", name="admin.blog.edit", methods="GET|POST")
      * @param Article $article
      * @param Request $request
      * @return Response
@@ -95,7 +95,7 @@ class AdminBlogController extends AbstractController
     }
 
     /**
-     * @Route("/admin/blog/{id}", name="admin.blog.delete", methods="DELETE")
+     * @Route("/{_locale}/admin/blog/{id}", name="admin.blog.delete", methods="DELETE")
      */
     public function delete(Article $article, Request $request){
        // dump('suppression');

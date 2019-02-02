@@ -28,7 +28,7 @@ class ProductController extends AbstractController
     }
 
     /**
-     * @Route("/produits", name="produit.index")
+     * @Route("/{_locale}/produits", name="produit.index")
      * @return Response
      */
     public function index(): Response
@@ -42,7 +42,7 @@ class ProductController extends AbstractController
     }
 
     /**
-     * @Route("/produits/{slug}-{id}", name="prop.show", requirements={"slug":"[a-z0-9\-]*"})
+     * @Route("/{_locale}/produits/{slug}-{id}", name="prop.show", requirements={"slug":"[a-z0-9\-]*"})
      * @param Produit $prop
      * @return Response
      */

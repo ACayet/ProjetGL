@@ -2,7 +2,7 @@
 
 {% block body %}
 
-    <h1> Inscription à Apiculture et tradition: </h1>
+    <h1> {% trans %}Inscription à{% endtrans %} HoneyShop: </h1>
     {{ form_start(form) }}
 
     <div class="form-group">
@@ -38,7 +38,7 @@
     { 'class': 'form-control', 'placeholder': 'Votre ville...' }}) }}
     </div>
 
-    <button type"submit" class="btn btn-success">Envoyer</button>
+    <button type"submit" class="btn btn-success">{% trans %}Envoyer{% endtrans %}</button>
     {{ form_end(form) }}
 
 {% endblock %}
