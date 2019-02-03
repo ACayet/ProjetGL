@@ -37,7 +37,7 @@
                 {{ form_row(form.ville, {'label': 'Ville', 'attr': 
                 { 'class': 'form-control', 'placeholder': 'Votre ville...' }}) }}
             </div>
-            <button type"submit" class="btn btn-success">{% trans %}S'inscrire{% trans %}</button>
+            <button type"submit" class="btn btn-success">{% trans %}S'inscrire{% endtrans %}</button>
             <p><a href="{{path('security_login')}}">Vous avez deja un compte</a></p>
         {{ form_end(form) }}
     </div>
