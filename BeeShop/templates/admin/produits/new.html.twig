@@ -8,13 +8,13 @@
 
     <div class="container mt-4">
         <h1>{% trans %}Créer un nouveau produit{% endtrans %} </h1>
-        {{ include('admin/produits/_form.html.twig', {button:'Créer'} )}}
+        {{include('admin/produits/_form.html.twig', {button:'Créer'} )}}
     </div>
     <br/>
 
 {% else %}
     <div class="container mt-4">
-        <h1>{% trans %}Vous n'avez pas les droits pour accèder à cette page{% endtrans %} !</h1>
+        <h1 class="titre_admin">{% trans %}Vous n'avez pas les droits pour accèder à cette page{% endtrans %} !</h1>
     </div>
 {% endif %}
 

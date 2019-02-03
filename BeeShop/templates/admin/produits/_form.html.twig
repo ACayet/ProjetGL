@@ -1,17 +1,15 @@
 {% form_theme form 'bootstrap_4_layout.html.twig' %}
 
 {{ form_start(form) }}
-
+    <div class="myajout container">
         <div class="row">
-            <div class="col-md-6"> {{ form_row(form.nomProduit) }}</div>
-            <div class="col-md-6"> {{ form_row(form.description) }}</div>
+            <div class="col-md-6"> {{form_row(form.nomProduit)}}</div>
+            <div class="col-md-5"> {{form_row(form.description)}}</div>
         </div>  
 
         <div class="row">
             <div class="col-md-4"> {{form_row(form.prix)}} </div>
-            
             <div class="col-md-4"> {{form_row(form.stock)}} </div>
-            
             <div class="col-md-4"> {{form_row(form.quantite)}} </div>
         </div> 
         {{ form_widget(form) }}

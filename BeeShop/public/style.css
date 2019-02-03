@@ -217,21 +217,22 @@ ul, li, ol{
 	border-radius: 0px;
 }
 
-.header_style_01 .navbar,
-.header_style_01 .navbar-nav,
-.header_style_01 .navbar-default,
-.header_style_01 .nav {
+
+.header_style_01 #menu-deroulant .navbar,
+.header_style_01 #menu-deroulant .navbar-nav,
+.header_style_01 #menu-deroulant .navbar-default,
+.header_style_01  #menu-deroulant .nav {
     margin-bottom: 0 !important;
 	margin-right : 30%;
 }
 
-.header_style_01 .navbar-brand {
+.header_style_01 #menu-deroulant .navbar-brand {
     padding: 0px 15px 0 15px;
 	height: auto;
 	
 }
 
-.header_style_01 .navbar-light .navbar-nav > li > a {
+.header_style_01 #menu-deroulant .navbar-light .navbar-nav > li > a {
     border-radius: 0;
     color: #ffffff;
     font-size: 16px;
@@ -982,7 +983,7 @@ ul, li, ol{
 }
 
 .footer {
-    padding: 90px 0 80px !important;
+    padding: 30px 0 30px !important;
     color: #999;
     background-color: #393939;
 }
@@ -1898,7 +1899,7 @@ ul, li, ol{
 
 
 .banner-bg-1{
-	background: url(uploads/fotolia-miel.jpeg);
+	background: url(images/fotolia-miel.jpeg);
 	padding: 120px 0;	
 	background-clip: initial;
 	background-color: rgba(0, 0, 0, 0);
