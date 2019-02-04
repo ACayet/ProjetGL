@@ -64,6 +64,6 @@ Les fichiers les plus importants sont placés dans les dossiers adequats a la ra
   * `/Form` : contient la structure des formulaires realisé avec le gestionnaire de formulaire de symfony (le formulaire de connexion n'est pas dans ce fichier)
   * `/Repository` : contient les fichiers qui definissent les fonctions permettant de realiser des requetes sur la base de données pour chaque table/classes.
   * `/Migrations` : contient les fichiers resultant des migrations realisé de l'application c'est a dire les diffrentes modifications apporté a la stucture de la base de données apres sa creation initiale.
-* `/var` contient un dossiers interresant : les logs de l'application permettant de debugger plus efficacement l'application. Ce dossier est ignoré par git
+* `/var` contient un dossiers interresant : les logs de l'application permettant de debugger plus efficacement l'application. Ce dossier est ignoré par git.
 
 f
