@@ -50,6 +50,7 @@ La réalisation des tests n'a pas été de tout repos : en effet, Symfony réali
 
 Le site comporte des points améliorables : toutes les fonctions que nous avions prévues de réaliser ne sont pas disponibles, celles réalisées sont cependant fonctionnelles. En effet, nous avons préféré privilégier la qualité des fonctions réalisées plutôt que la quantité.
 De plus, l'interface (le HTML/CSS) peut être également améliorées : rendre le site plus ergonomique, améliorer et faciliter la navigation...
+Il manque certaines fonctionnalités essentiels d'un site web d'ecommerce comme le panier, le paiement, un systeme pour envoyer des emails aux clients, etc...
 
 ## Front - End
 
