@@ -6,18 +6,32 @@ Un site web de vitrine et de vente pour un client
 
 ## User stories
 
-* En tant que passioné d'abeille je veux une page d'article pour lire des informations interessante sur les abeilles et l'apiculture
-* En tant que visiteur je veux pouvoir voir les produits en vente pour pouvoir les acheter
-* En tant que client du site, je veux pouvoir m'inscrire pour ne pas avoir a resaisir mes informations entre chaque commandes et avoir un historique de commande
-* En tant que client du site, je veux pouvoir me connecter pour ne pas avoir a re renseigner mes informations personnels entre chaque commande
-* En tant que administrateur du site web, je veux une page d'administration des produit pour pouvoir ajouter des produits a vendre, les modifier et les supprimer
-* En tant que administrateur du site, je veux une page d'administration des article pour pouvoir ajouter des article de blog en modifier, les modifier et en supprimer
+### Fonctionnalités réalisés
+
+* Comme je suis connecté et administrateur du site, quand je suis sur n'importe quel page du site, je peux acceder aux pages d'administration des produits et du blog depuis la barre de menu en haut de l'ecran.
+* En tant que passioné d'abeille je veux une page d'article pour lire des informations interessante sur les abeilles et l'apiculture.
+* En tant que visiteur je veux pouvoir voir les produits en vente.
+* En tant que client du site, je veux pouvoir m'inscrire pour ne pas avoir a resaisir mes informations entre chaque commandes et avoir un historique de commande.
+* En tant que client du site, je veux pouvoir me connecter pour ne pas avoir a re renseigner mes informations personnels entre chaque commande.
+* En tant que administrateur du site web, je veux une page d'administration des produit pour pouvoir ajouter des produits a vendre, les modifier et les supprimer.
+* En tant que administrateur du site, je veux une page d'administration des article pour pouvoir ajouter des article de blog en modifier, les modifier et en supprimer.
+
+### Besoins futures
+
+* Comme je suis un futur client, quand je suis sur la page d'un produit en vente je peux l'acheter.
+* Comme je suis un acheteur, quand j'achete un produit je peux payer avec paypal.
+
+### Bugs
+
+* Comme suis sur la page d'accueil, quand je passe ma souris sur le bouton du carroussel pour aller voir les produits ou le blog je peux voir le texte ressortir sur un fond blanc.
+* Comme je suis un client anglais quand je me connecte je veux pouvoir comprendre le formulaire dans ma langue
 
 ## Fonctionnalités
 
 ### Client
 
 * s’authentifier pour acheter et pour commenter
+* S'inscrire pour sauvegarder mes informations et ne pas avoir a les resaisir a chaque fois que je fais un achat. je dois pour cela renseigné mon prenom, mon nom de famille, mon adresse email, mon mot de passe, confirmer mon mot de passe, ma ville, et mon adresse.
 * acheter des pots de miel : l'utilisateur reçoit un mail confirmant son achat et lui demandant d'envoyer un chèque.
 * déposer un commentaire : une fois authentifié l'utilisateur peut déposer un commentaire sur produit ou sur un article de blog
 * rechercher un article de blog ou un produit
