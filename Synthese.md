@@ -38,10 +38,13 @@ Cependant, étant donné le langage de programmation choisi et le framework util
 
 ## Difficultés rencontrées
 
-Au cours de ce projet, nous avons rencontré différents problèmes : tout d'abord, il a fallu nous familiariser avec le Framework Symfony de PHP que nous n'avions jamais manipulé. En plus de Symfony, il a fallu utiliser d'autres outils en parallèle : l'ORM Doctrine pour le mapping avec la base de données MySQL, Composer pour les dépendances, le moteur de template Twig utilisé par PHP et Symfony pour la vue. Ces outils étant nouveaux pour nous, nous avons rencontré quelques difficultés : les bugs liés au cache à vider, les dépendances à installer etc.
-De plus, nous sommes un groupe assez nombreux : il a fallu nous organiser, ce qui a été, par moment, assez compliqué. En effet, nous avançons tous à des rythmes très différents notamment entre les groupes Back et Front.
-On a aussi eux des difficultes pour ce familiarise avec git C'est la premiere fois que tout le monde utilise les branches de la bonne façon.
-On a voulu heberger le site pour essayer de mettre en place
+Au cours de ce projet, nous avons rencontré différents problèmes : tout d'abord, il a fallu nous familiariser avec le Framework Symfony de PHP que nous n'avions jamais manipulé. En plus de Symfony, il a fallu utiliser d'autres outils en parallèle : l'ORM Doctrine pour le mapping avec la base de données MySQL, Composer pour les dépendances, le moteur de template Twig utilisé par PHP et Symfony pour la vue. Ces outils étant nouveaux pour nous, nous avons rencontré quelques difficultés : les bugs liés au cache à vider, les dépendances à installer etc. Par exemple, il nous est arrivé de rester bloquer plusieurs jours voire semaines à débuguer un code qui se révélait être bon depuis le départ, il fallait juste vider le cache (commande php bin/console cache:clear). Ces petites erreurs liées au manque de d'expérience vis à vis du langage nous a fait perdre du temps au début du projet.
+
+Nous avons mis plusieurs semaines avant de faire un répertoire Git fonctionnel : certains membres ne maitrisaient pas du tout les commandes.
+
+De plus, nous sommes un groupe assez nombreux : il a fallu nous organiser, ce qui a été, par moment, assez compliqué. En effet, nous avançons tous à des rythmes très différents notamment entre les groupes Back et Front. Au début du projet, l'équipe Front avançait beaucoup plus vite que l'équipe Back : en effet, ils maitrisaient déjà le HTML et CSS. Ils avaient déjà fait deux pages tandis que le Back peinait à faire les premières fonctionnalités. Cependant au fil des semaines, le Back a réussi à rattraper le retard : petit à petit, nous nous sommes habitués au langage PHP et avons pu être plus efficace, si bien qu'au final les finitions de CSS ont pris plus de temps à finir que les fonctionnalités.
+
+La réalisation des tests n'a pas été de tout repos : en effet, Symfony réalise de nombreuses fonctionnalités pour nous, il est donc diffcile de tester unitairement notre code. Il a fallu tester les redirections, les codes d'erreurs (tester que le statut soit bien de 200 etc.) et cela en respectant une syntaxe bien particulière.
 
 ## Points améliorables
 
@@ -109,9 +112,9 @@ Il faut tout d’abord cibler des mots clés liés à notre secteur d’activit�
 L’internaute qui arrivera sur notre site ne viendra donc pas forcément pour passer commande. Il faut choisir des mots-clés composés de plusieurs mots, la plupart des recherches sur les moteurs de recherche se composent de deux, trois voire quatre mots. Il faut donc ne pas hésiter à utiliser des synonymes mais surtout il faut des mots clés à notre mesure.
 Idéalement les mots-clés doivent être faiblement convoités et apporter beaucoup de trafic qualifié, mais en réalité c’est assez rare il faut donc trouver le bon compromis entre la convoitise que suscite le mot clé chez les concurrents et ce que recherchent les internautes. Certains outils existent pour nous aider dans nos choix de mots-clés tels que Google Adword plutôt utilisé pour des campagnes de publicité Google ou SemRush et kwFinder que nous allons décrire dans les points suivants.
 
-## Outils
+### Outils
 
-### SemRush
+#### SemRush
 
 SemRush est un outil qui propose non seulement des mots-clés pour notre site web mais  permet également de voir pour quel mot clé nos concurrents se positionnent.
 
@@ -123,18 +126,18 @@ En haut à gauche on a le nombre de visiteurs moyen mensuel qui viennent sur not
 Les backlinks sont les sites qui parlent de notre site et qui nous ont cités comme source en indiquant l’URL de notre site, plus on parle de nous, plus on a de chance de générer du trafic sur notre site. On peut obtenir grâce à SemRush l’URL des sites qui parlent de nous.
 
  ![semrush](https://image.noelshack.com/fichiers/2019/05/2/1548776023-semrrushh.png)
- 
+
  Mais le plus intéressant est la liste de mots-clés que SemRush  propose  :
- 
+
  ![semrush](https://image.noelshack.com/fichiers/2019/05/2/1548776401-semrushhhhhhh.png)
 
 SemRush met à disposition différents indicateurs concernant les mots clés. On a la position, le volume, le KD, le tarif CPC, le trafic que nous génère le mot clé, la concurrence sur le mot clé etc. On peut voir la position de notre site web en tapant tel ou tel mot clé, on peut bien évidemment régler l’outil pour qu’ils nous renvoient les mots-clés les mieux positionnés ou les moins bien positionné et ceux pour tous les indicateurs. Ils nous indiquent le volume pour lequel le mot-clé est tapé par les internautes sur Google en moyenne annuel. Le KD est le niveau de difficulté de se positionner sur un mot-clé.
 
  ![semrush](https://image.noelshack.com/fichiers/2019/05/2/1548776458-seo.png)
- 
+
 Le tarif CPC ou coût par clic est le prix à payer par clic pour le mot clé choisie si on souhaiterait faire des campagnes publicitaires sur Google avec notamment Google Adword évoqué précédemment. Autrement dit si le mot clé « gelée royale» nous intéresse et que le cout CPC est de 1.12 on devra payer 1.12 USD pour chaque clic que les internautes feront pour rentrer dans notre site via notre annonce Google, il faut donc bien choisir car la facture peut très vite monter.
 
-### kwFinder
+#### kwFinder
 
 KwFinder est un outil qui nous propose une liste en rapport à un mot clé tapez et qui nous indique la difficulté à ce positionner dessus. Par exemple on a tapez le mot clé " miel" et l'outil nous a proposer un certain nombre de mot clé dont le mot clé "miel bio" qui était noté comme " facile" afin de ce positionner sur ce mot clé.
 
@@ -148,15 +151,13 @@ KwFinder est un outil qui nous propose une liste en rapport à un mot clé tapez
 
 Ce projet a été formateur : j'ai pu, pour la première fois dans un projet, participer entièrement à la réalisation des fonctionnalités du site (du "back").
 Ne maîtrisant pas le PHP et le framework Symfony, ce projet n'a cependant pas été de tout repos : en plus d'un nouveau langage à apprendre à apprendre, il a fallu s'organiser et respecter les deadlines imposées.
-Côté Back, nous avons particulièrement ressenti ces difficultés de manipulation du PHP : j'ai notamment rencontré de nombreux "bugs", des syntaxes un peu particulières à respecter, le cache PHP à vider... Ces erreurs n'étaient pas faciles à débuguer car les erreurs n'étaient pas forcément apparentes.
+Côté Back, nous avons particulièrement ressenti ces difficultés de manipulation du PHP : j'ai notamment rencontré de nombreux "bugs", des syntaxes un peu particulières à respecter, le cache PHP à vider... Ces erreurs n'étaient pas faciles à débuguer car elles ne sont pas forcément apparentes.
 
 A refaire, il y a plusieurs points que j'aurais fait différemment :
 
-* le choix du langage : j'aurais préféré réaliser un tel projet en Java, en utilisant le framework Spring ou SpringBoot. En effet, il s'agit d'un langage que je maîtrise davantage et qui, d'un point de vue personnel, me servirait plus (et que j'utilise en entreprise notamment). D'un point de vue personnel, je pense que le langage que nous avons choisi nous a fait perdre un peu de temps : les bugs rencontrées, le fait que nous étions tous débutants dans ce langage a fait que nous avons mis du temps à nous lancer complètement dans la réalisation du site.
-* l'organisation du travail et du temps : le temps qu'on a mis (plusieurs semaines) à mettre en place un répertoire Git fonctionnel et le nombre de personnes à travailler sur le BackEnd et à réaliser les tests, insuffisant.
+* le choix du langage : j'aurais préféré réaliser un tel projet en Java, en utilisant le framework Spring ou SpringBoot. En effet, il s'agit d'un langage que je maîtrise davantage et qui, d'un point de vue personnel, me sert plus (et que j'utilise en entreprise notamment). Je pense en effet que le langage que nous avons choisi nous a fait perdre un peu de temps au début : les bugs rencontrées, le fait que nous étions tous débutants dans ce langage a fait que nous avons mis du temps à nous lancer complètement dans la réalisation du site.
+* l'organisation du travail et du temps : le temps qu'on a mis (plusieurs séances) à mettre en place un répertoire Git fonctionnel et le nombre de personnes à travailler sur le BackEnd et à réaliser les tests, insuffisant.
 * la mise en place d'une méthode de travail comme la méthode Agile Scrum par exemple qui nous aurait permis d'être, dès le début, plus régulier et plus efficace dans la réalisation du site : des livraisons (dans notre cas, des merges sur Git) régulières de chacun des membres BackEnd et FrontEnd, des deadlines à respecter(fonctionnalités à finir avant telle ou telle date etc).
-
-#### Retour personnel sur le cours
 
 Faisant du Java Spring/SpringBoot en entreprise (malgré le fait que notre projet n'utilise pas ce langage), ce cours m'a permis de comprendre certaines notions qui n'étaient pas très claires (notamment les annotations, le Autowired, les beans etc). Cependant le cours des Patterns de Programmation a été un peu compliqué à suivre et à comprendre.
 J'ai également apprécié la liberté qui nous a été donnée dans le choix du projet.
@@ -172,4 +173,22 @@ Avec le recul, les points que j'aurai améliorer et/ou fait différemment sont :
 
 ### Arthur Cayet
 
-Ce projet a été l'occasion pour moi d'apprendre le framework symfony que je ne connaissait pas. J'ai appris a 
+Ce projet a été une bonne expérience pour moi, il ressemblait beaucoup au projet de fin d'année de l'année dernière puisque qu'il s'agissait de réaliser un projet de A a Z (cahier des charges, spécifications techniques, documentation, gestion du repo git ...)
+
+J'ai pu comprendre comment fonctionnait git et particulièrement les branches que je n'avais jamais utilisées et j'ai expliqué aux autres membre du groupe comment utiliser git. J'ai quand même deux regrets de ne pas avoir pu installer d'outils de qualimétrie comme sonarqube sur mon hebergement, car il utilise java. Ou encore ne pas avoir réussi a faire fonctionner le déploiement continue, malgré de beaucoup de recherches réalisés à propos des hooks git.
+
+Ce projet a été l'occasion pour moi d'apprendre le framework symfony que je ne connaissais pas. J'ai pu toucher a beaucoup de choses que ce soit le front end avec les traductions et le template twig, le back end avec un peu de test et de création de formulaire ou encore la documentation.
+
+Il y a quelques choses que j'aurais fait différemment après réflexion :
+
+* J'aurais aimé plus faire de back parce que j'ai le sentiment que symfony peut etre un outil très utile aussi bien dans le monde professionel que personnel.
+
+* J'aurais aussi realisé la documentation plus au fur et à mesure de l'avancer du projet.
+
+J'ai trouvé dommage que l'on parle si peu de docker dans le cours parce que je trouve la technologie très interressante, mais assez difficile à comprendre et à mettre en place proprement.
+
+### Martin Bruger
+
+Mes impressions générales sur notre projet Web sont positives. En effet, travailler sur un projet avec un véritable client est un challenge et cela m’a motivé pour donner le meilleur de moi-même. De plus, ce projet est l’occasion pour moi d’apprendre l’outil Git. Au début, cela a été difficile d’utiliser cet outil mais mes camarades m’ont appris comment bien l’utiliser. Je réalise aujourd’hui l’utilité de cet outil pour les projets informatiques.
+
+Ce projet m’a aussi permis de perfectionner mes compétences en front End avec notamment l’utilisation du Framework Bootstrap et l’utilisation du moteur de Template Twig. Ce projet m’a aussi permis de perfectionner mes compétences dans le travail d’équipe, j’ai dû faire preuve de communication plus particulièrement avec l’équipe backend pour que mon code puisse être exploité correctement.

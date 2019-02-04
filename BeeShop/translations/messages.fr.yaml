@@ -48,7 +48,6 @@ Envoyer: Envoyer
 'Tous nos produits sont aussi disponibles dans notre point de vente': 'Tous nos produits sont aussi disponibles dans notre point de vente'
 'direct à un tarif préférentiel.': 'direct à un tarif préférentiel.'
 'Inscription à': 'Inscription à'
-
 'Nom de famille': 'Nom de famille'
 'Votre nom de famille...': 'Votre nom de famille...'
 Prénom: Prénom
@@ -61,13 +60,29 @@ Prénom: Prénom
 'Votre numéro de téléphone...': 'Votre numéro de téléphone...'
 'Votre adresse...': 'Votre adresse...'
 'Votre ville...': 'Votre ville...'
-
 'Nom du produit': 'Nom du produit'
 Description: Description
 'Prix en €': 'Prix en €'
 Stock: Stock
 'Quantité en mL': 'Quantité en mL'
-
 Titre: Titre
 Auteur: Auteur
 Contenu: Contenu
+'+ Ajouter un produit': '+ Ajouter un produit'
+'Liens utiles': 'Liens utiles'
+'Nos reseaux sociaux': 'Nos reseaux sociaux'
+'Venez decrouvrir notre blog !': 'Venez decrouvrir notre blog !'
+'Venez visiter notre site. Vous pouvez commander directement des articles depuis notre boutique.': 'Venez visiter notre site. Vous pouvez commander directement des articles depuis notre boutique.'
+'Notre savoir-faire vous garantit l''excellence en terme de qualité.': 'Notre savoir-faire vous garantit l''excellence en terme de qualité.'
+'N''oubliez pas d''aller sur notre blog pour toutes les actualités !': 'N''oubliez pas d''aller sur notre blog pour toutes les actualités !'
+'Nous sommes à votre service pour vous proposer les produits de meilleure qualité possible :': 'Nous sommes à votre service pour vous proposer les produits de meilleure qualité possible :'
+'Du miel sans aucun ajout': 'Du miel sans aucun ajout'
+'Une valeur sure': 'Une valeur sure'
+'Nous vous garantissons une qualité supérieure': 'Nous vous garantissons une qualité supérieure'
+'Du miel made in france': 'Du miel made in france'
+'Pourquoi acheter du miel Français ?': 'Pourquoi acheter du miel Français ?'
+'Pour développer l''apiculture française, sauver les abeilles et ainsi sauvegarder le potentiel de pollinisation si vital à notre agriculture. Pour garantir l''achat de produits de qualité : miel, gelée royale pure, bonbons au miel, pains d''épices, nonnettes grâce à la vente en ligne. Pour utiliser pleinement le formidable potentiel des terroirs français et le': 'Pour développer l''apiculture française, sauver les abeilles et ainsi sauvegarder le potentiel de pollinisation si vital à notre agriculture. Pour garantir l''achat de produits de qualité : miel, gelée royale pure, bonbons au miel, pains d''épices, nonnettes grâce à la vente en ligne. Pour utiliser pleinement le formidable potentiel des terroirs français et le'
+'savoir-faire traditionnel des producteurs de miel': 'savoir-faire traditionnel des producteurs de miel'
+'Je n''ai pas de compte': 'Je n''ai pas de compte'
+'S''inscrire': 'S''inscrire'
+'Vous avez deja un compte': 'Vous avez deja un compte'

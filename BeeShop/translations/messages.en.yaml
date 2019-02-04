@@ -48,7 +48,6 @@ Envoyer: Send
 'Tous nos produits sont aussi disponibles dans notre point de vente': 'All our products are available in our physical store'
 'direct à un tarif préférentiel.': 'at an attractive price.'
 'Inscription à': 'Sign up to'
-
 'Nom de famille': 'Last name'
 'Votre nom de famille...': 'Your last name...'
 Prénom: 'First name'
@@ -61,13 +60,29 @@ Prénom: 'First name'
 'Votre numéro de téléphone...': 'Your phone number...'
 'Votre adresse...': 'Your address...'
 'Votre ville...': 'Your city...'
-
 'Nom du produit': 'Product name'
 Description: Description
 'Prix en €': 'Price in euros'
 Stock: Inventory
 'Quantité en mL': 'Quantity in mL'
-
 Titre: Title
 Auteur: Author
 Contenu: Content
+'+ Ajouter un produit': '+ Add a product'
+'Liens utiles': 'Useful links'
+'Nos reseaux sociaux': 'Our social networks'
+'Venez decrouvrir notre blog !': 'Come discover our blog !'
+'Venez visiter notre site. Vous pouvez commander directement des articles depuis notre boutique.': 'Come and visit our site. You can order directly articles from our E-Shop'
+'Notre savoir-faire vous garantit l''excellence en terme de qualité.': 'Our knowledge assures you high quality services'
+'N''oubliez pas d''aller sur notre blog pour toutes les actualités !': 'Don''t forget to check our blog to be aware of all news !'
+'Nous sommes à votre service pour vous proposer les produits de meilleure qualité possible :': 'We are at you services to propose the best quality products possible :'
+'Du miel sans aucun ajout': 'No add''s honey'
+'Une valeur sure': 'A safe value'
+'Nous vous garantissons une qualité supérieure': 'Guaranteed high quality'
+'Du miel made in france': 'Made in France honey'
+'Pourquoi acheter du miel Français ?': 'Why buying French honey'
+'Pour développer l''apiculture française, sauver les abeilles et ainsi sauvegarder le potentiel de pollinisation si vital à notre agriculture. Pour garantir l''achat de produits de qualité : miel, gelée royale pure, bonbons au miel, pains d''épices, nonnettes grâce à la vente en ligne. Pour utiliser pleinement le formidable potentiel des terroirs français et le': 'To developp french beekeeping, save dying bees, and so on save the capacity of pollination vital to our agriculture. To ensure the buying of quality products : honey, pure royal jelly, honey candies, gingerbread and nonnettes thanks to online shopping. To fully use the wonderfull potential of french local products and the'
+'savoir-faire traditionnel des producteurs de miel': 'traditionnal know-how of honey producers'
+'Je n''ai pas de compte': 'I don''t have an account'
+'S''inscrire': 'Sign up'
+'Vous avez deja un compte': 'I already have an account'

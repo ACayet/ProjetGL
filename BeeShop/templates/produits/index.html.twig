@@ -20,7 +20,7 @@
                         {% for prop in produits %}
                             <div class="card col-sm-3">
                                 <a href="{{ path('prop.show', {id: prop.idProduit, slug: prop.slug}) }}">
-                                    <img class="card-img-op img-fluid" src="images/miel.jpg">
+                                    <img class="card-img-op img-fluid" src="{{asset('images/miel.jpg')}}">
                                 </a>
 
                                 <div class="card-body"> 

@@ -24,9 +24,9 @@
           <!-- Bootstrap CSS -->
           <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
           <!-- Site CSS -->
-          <link rel="stylesheet" href="{{asset('style.css')}}">
+          <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
-          <link rel="stylesheet" href="{{asset('style_carousel.css') }}">
+          <link rel="stylesheet" href="{{asset('css/style_carousel.css')}}">
           <!-- Responsive CSS -->
           <link rel="stylesheet" href="{{asset('css/responsive.css')}}" />
           <!-- Custom CSS -->
@@ -49,30 +49,36 @@
                     <div class="container">
                         <div class="navbar-header">
                             <a class="navbar-brand" href="{{path('home')}}"><img src="{{ asset('images/logos/bee93.png') }}" alt="image"></a>
-                                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="sr-only">soso</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
+                            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="sr-only">soso</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
                         </div>
 
                         <div class="collapse navbar-collapse" id="navbar">
-                          <ul class="navbar-nav ml-auto">
-                              <li><a href="{{path('home')}}">{% trans %}Accueil{% endtrans %}</a></li>
-                              <li><a {% if (current_menu is defined and current_menu == 'articles') %} class="active" {% endif %} href="{{path('blog')}}">Blog</a></li>
+                            <ul class="navbar-nav ml-auto">
+                                <li><a href="{{path('home')}}">{% trans %}Accueil{% endtrans %}</a></li>
+                                <li><a {% if (current_menu is defined and current_menu == 'articles') %} class="active" {% endif %} href="{{path('blog')}}">Blog</a></li>
 
-                              <li><a {% if (current_menu is defined and current_menu == 'properties') %} class="active" {% endif %} href="{{path('produit.index')}}">{% trans %}Produit{% endtrans %}</a></li>
+                                <li><a {% if (current_menu is defined and current_menu == 'properties') %} class="active" {% endif %} href="{{path('produit.index')}}">{% trans %}Produit{% endtrans %}</a></li>
 
-                            
                             {% if not app.user %}
-                              <li><a href="{{path('security_login')}}">{% trans %}Connexion{% endtrans %}</a></li>
-                              <li><a href="{{path('security_registration')}}">{% trans %}Inscription{% endtrans %}</a></li>
+                                <li><a href="{{path('security_login')}}">{% trans %}Connexion{% endtrans %}</a></li>
+                                <li><a href="{{path('security_registration')}}">{% trans %}Inscription{% endtrans %}</a></li>
                             {% else %}
-                              <li><a href="{{path('security_logout')}}">{% trans %}Déconnexion{% endtrans %}</a></li>
-                              <h1 style="color:red">{% trans %}Bonjour{% endtrans %} {{ app.user.username }}</h1>
-                            {% endif %}
+                                <li><a href="{{path('security_logout')}}">{% trans %}Déconnexion{% endtrans %}</a></li>
+                                
+                            {% if app.user.admin is defined and app.user.admin=="true" %}
 
+                                <li class="bouton_admin"><a href="{{path('admin.produit.index')}}">Admin Produit</a></li>
+                                <li class="bouton_admin"><a href="{{path('admin.blog.index')}}">Admin Blog</a></li>
+
+                            {% endif %}
+                                <h2 class="hiuser">{% trans %}Bonjour{% endtrans %} {{ app.user.username }}</h2>
+                                
+                            {% endif %}
 
                           </ul>
                       </div>
@@ -81,97 +87,61 @@
           </header>
 
         {% block body %}{% endblock %}
-
-        {% block footer %}  
+        
+{% block footer %}  
             <footer class="footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-md-6 col-lg-4">
                             <div class="widget clearfix">
                                 <div class="widget-title">
-                                    <img src="{{asset('images/logos/bee93.jpg')}}" alt="" />
-                                </div>
-                                <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>                        
-                            </div> <!-- end clearfix -->
-                        </div> <!-- end col -->
-
-                        <div class="col-md-6 col-lg-3">
-                            <div class="widget clearfix">
-                                <div class="widget-title">
-                                    <h3>Liens utiles</h3>
+                                    <h3>{% trans %}Liens utiles{% endtrans %}</h3>
                                 </div>
 
                                 <ul class="footer-links hov">
                                     <li><a href="{{path('home')}}">{% trans %}Accueil{% endtrans %} <span class="icon icon-arrow-right2"></span></a></li>
                                     <li><a href="{{path('blog')}}">Blog <span class="icon icon-arrow-right2"></span></a></li>
                                     <li><a {% if (current_menu is defined and current_menu == 'properties') %} active {% endif %} href="{{path('produit.index')}}" >{% trans %}Produit{% endtrans %} <span class="icon icon-arrow-right2"></span></a></li>                                    
-                                    <li><a href="#">Contact <span class="icon icon-arrow-right2"></span></a></li>
+                                    {# <li><a href="#">Contact <span class="icon icon-arrow-right2"></span></a></li> #}
                                 </ul><!-- end links -->
                             </div><!-- end clearfix -->
-                       </div><!-- end col -->
+                        </div><!-- end col -->
                     
-                        <div class="col-md-6 col-lg-3">
-                            <div class="footer-recent clearfix">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="widget footer-contact clearfix">
                                 <div class="widget-title">
-                                    <h3>{% trans %}Article récent{% endtrans %}</h3>
+                                    <h3>{% trans %}Nous-Contacter{% endtrans %}</h3>
                                 </div>
                                 
                                 <ul>
-                                    <li>
-                                        <i class="fa fa-user" aria-hidden="true"></i>
-                                        <span>{% trans %}Publié par{% endtrans %}: Consectetur cupidatat </span>
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        <span>{% trans %}Heure{% endtrans %}: 1h du mat sa race </span>
-                                        <h2>Consectetur cupidatat aliqua nulla magna in pariatur deserunt nulla </h2>
-                                    </li>
-
-                                    <li>
-                                        <i class="fa fa-user" aria-hidden="true"></i>
-                                        <span>{% trans %}Publié par{% endtrans %}: Consectetur cupidatat</span>
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        <span>{% trans %}Heure{% endtrans %}: 1h du mat sa race </span>
-                                        <h2>Consectetur cupidatat aliqua nulla magna in pariatur deserunt nulla in s</h2>
-                                    </li>
-
-                                    <li>
-                                        <i class="fa fa-user" aria-hidden="true"></i>
-                                        <span>{% trans %}Publié par{% endtrans %}: Consectetur cupidatat</span>
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        <span>{% trans %}Heure{% endtrans %}: 1h du mat sa race </span>
-                                        <h2>Consectetur cupidatat aliqua nulla magna in pariatur deserunt nulla in s</h2>
-                                    </li>
+                                    <li>{% trans %}Adresse: 143 avenue de Versailles{% endtrans %}</li>
+                                    <li>{% trans %}Téléphone: {% endtrans %}<a href="tel:+33666666666"> +33 6 66 66 66 66 </a></li>
+                                    <li>{% trans %}Email: {% endtrans %}<a href="mailto:honeyshop@arthurcayet.fr"> honeyshop@arthurcayet.fr</a></li>
                                 </ul>                    
-                            </div><!-- end clearfix -->
-                        </div><!-- end col -->
-
-                        <div class="col-md-6 col-lg-3">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
                             <div class="widget footer-contact clearfix">
                                 <div class="widget-title">
-                                <h3>{% trans %}Nous-Contacter{% endtrans %}</h3>
-                            </div>
-                                
-                            <ul>
-                                <li>{% trans %}Adresse: 143 avenue de Versailles{% endtrans %}</li>
-                                <li>{% trans %}Téléphone: {% endtrans %}<a href="#">+33 638376800  </a></li>
-                                <li>{% trans %}Email: {% endtrans %}<a href="mailto:honeyshop@arthurcayet.fr">honeyshop@arthurcayet.fr</a></li>
-                            </ul>
+                                    <h3>{% trans %}Nos reseaux sociaux{% endtrans %}</h3>
+                                </div>
 
-                            <ul class="social-list">
-                                <li><a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="https://plus.google.com/" class="googlePlus"><i class="fa fa-google-plus"></i></a></li>
-                            </ul>                          
-                          </div>
-                      </div> 
-                    </div> <!-- end row -->
-                </div> <!-- end container -->
+                                <ul class="social-list">
+                                    <li><a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://plus.google.com/" class="googlePlus"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </footer> <!-- end footer -->
           
             <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
         
-        {% endblock %}
+        {% endblock %}    
 
         {% block javascripts %}
             <!-- ALL JS FILES -->
