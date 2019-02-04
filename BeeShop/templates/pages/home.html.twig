@@ -31,7 +31,7 @@
 							<div class="slider-content-area">
 								<div class="slide-text">
 									<h1 class="homepage-three-title">Blog</h1>
-									<h2>Venez decrouvrir notre blog !</h2>
+									<h2>{% trans %}Venez decrouvrir notre blog !{% endtrans %}</h2>
 									<div class="slider-content-btn">
 										<a class="btn11" {% if (current_menu is defined and current_menu == 'articles') %} active {% endif %} href="{{path('blog')}}"><span>blog</span><div class="transition"></div></a>
 									</div>
@@ -51,10 +51,10 @@
                     <div class="message-box">
                      
                         <h2>{% trans %}Bienvenue sur{% endtrans %} HoneyShop</h2>
-                        <p> Venez visiter notre site. Vous pouvez commander directement des articles depuis notre boutique.</p>
+                        <p> {% trans %}Venez visiter notre site. Vous pouvez commander directement des articles depuis notre boutique.{% endtrans %}</p>
 						<p>  </p>
-                        <p> Notre savoir-faire vous garantit l'excellence en terme de qualité.
-						N'oubliez pas d'aller sur notre blog pour toutes les actualités !</p>
+                        <p> {% trans %}Notre savoir-faire vous garantit l'excellence en terme de qualité.{% endtrans %}
+						{% trans %}N'oubliez pas d'aller sur notre blog pour toutes les actualités !{% endtrans %}</p>
 
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
@@ -73,12 +73,12 @@
 				<div class="col-md-6">
                     <div class="message-box">
                         <h2>{% trans %}Notre service{% endtrans %}</h2>
-                        <p class="lead">Nous sommes à votre service pour vous proposer les produits de meilleure qualité possible :</p>
+                        <p class="lead">{% trans %}Nous sommes à votre service pour vous proposer les produits de meilleure qualité possible :{% endtrans %}</p>
 
                         <ul>
-							<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Du miel sans aucun ajout </li>
-							<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Une valeur sure </li>
-							<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Nous vous garantissons une qualité supérieure</li>
+							<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>{% trans %}Du miel sans aucun ajout{% endtrans %} </li>
+							<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>{% trans %}Une valeur sure{% endtrans %} </li>
+							<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>{% trans %}Nous vous garantissons une qualité supérieure{% endtrans %}</li>
 						</ul>
 
                        
@@ -87,12 +87,12 @@
 				
                 <div class="col-md-6">
                     <div class="message-box">
-                        <h2>Du miel made in france</h2>
-                        <p class="lead">Pourquoi acheter du miel Français ?</p>
+                        <h2>{% trans %}Du miel made in france{% endtrans %}</h2>
+                        <p class="lead">{% trans %}Pourquoi acheter du miel Français ?{% endtrans %}</p>
 
                         <p> 
-						Pour développer l'apiculture française, sauver les abeilles et ainsi sauvegarder le potentiel de pollinisation si vital à notre agriculture. Pour garantir l'achat de produits de qualité : miel, gelée royale pure, bonbons au miel, pains d'épices, nonnettes grâce à la vente en ligne. Pour utiliser pleinement le formidable potentiel des terroirs français et le 
-						savoir-faire traditionnel des producteurs de miel
+						{% trans %}Pour développer l'apiculture française, sauver les abeilles et ainsi sauvegarder le potentiel de pollinisation si vital à notre agriculture. Pour garantir l'achat de produits de qualité : miel, gelée royale pure, bonbons au miel, pains d'épices, nonnettes grâce à la vente en ligne. Pour utiliser pleinement le formidable potentiel des terroirs français et le {% endtrans %}
+						{% trans %}savoir-faire traditionnel des producteurs de miel{% endtrans %}
 						</p>
 
     
