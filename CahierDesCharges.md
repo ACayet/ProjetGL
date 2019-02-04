@@ -44,8 +44,26 @@ Un site web de vitrine et de vente pour un client
 ## PVM (produit minimum viable)
 
 * Page d'accueil
-* Page blog avec des articles : visible en mode hors ligne, une page présentant l'ensemble des articles et un lien vers chaque article 
+* Page blog avec des articles : visible en mode hors ligne, une page présentant l'ensemble des articles et un lien vers chaque article
 * Page de produits (pots de miel) en vente : une page présentant tous les produits et un lien vers chaque produit
 * Page inscription utilisateur : l'utilisateur rentre son nom, prénom, adresse mail (qu'il va utiliser pour s'authentifier), mot de passe (deux fois pour le confirmer), numéro de téléphone, adresse et ville.
 * Page connexion utilisateur : l'utilisateur se connecte avec son adresse mail et son mot de passe
 * Page ajout de produits à vendre pour l'administrateur : page qui est réservée à l'administrateur et qui n'est donc pas accessibles aux autres utilisateurs.
+
+## Architecture
+
+Les fichiers les plus importants sont placés dans les dossiers adequats a la racine du dossier Beeshop:
+
+* `/templates` : contient les fichiers .twig permettant l'affichages des pages de l'application et certains traitement d'affichages
+* `/tests` : contient les tests de l'application realisé avec phpunit.
+* `/translations` : contient les dictionnaires des differentes langues où tous les messages statiques de l'application sont traduits. Un fichier par langue.
+* `/public` : contient les ressouces de l'applications css, polices, images et fichiers javascript
+* `/src` : contient differents sous dossiers
+  * `/Controller` : contient les controllers de l'application realisant les differents traitement affectation de variables, sessions...
+  * `/Entity` : contient les fichiers qui definissent le schema de la base de données pour l'ORM doctrine.
+  * `/Form` : contient la structure des formulaires realisé avec le gestionnaire de formulaire de symfony (le formulaire de connexion n'est pas dans ce fichier)
+  * `/Repository` : contient les fichiers qui definissent les fonctions permettant de realiser des requetes sur la base de données pour chaque table/classes.
+  * `/Migrations` : contient les fichiers resultant des migrations realisé de l'application c'est a dire les diffrentes modifications apporté a la stucture de la base de données apres sa creation initiale.
+* `/var` contient un dossiers interresant : les logs de l'application permettant de debugger plus efficacement l'application. Ce dossier est ignoré par git
+
+f
