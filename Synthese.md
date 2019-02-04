@@ -153,7 +153,7 @@ Côté Back, nous avons particulièrement ressenti ces difficultés de manipulat
 
 A refaire, il y a plusieurs points que j'aurais fait différemment :
 
-* le choix du langage : j'aurais préféré réaliser un tel projet en Java, en utilisant le framework Spring ou SpringBoot. En effet, il s'agit d'un langage que je maîtrise davantage et qui, d'un point de vue personnel, me servirai plus (et que j'utilise en entreprise notamment). D'un point de vue personnel, je pense que le langage que nous avons choisi nous a fait perdre un peu de temps : les bugs rencontrées, le fait que nous étions tous débutants dans ce langage a fait que nous avons mis du temps à nous lancer complètement dans la réalisation du site.
+* le choix du langage : j'aurais préféré réaliser un tel projet en Java, en utilisant le framework Spring ou SpringBoot. En effet, il s'agit d'un langage que je maîtrise davantage et qui, d'un point de vue personnel, me servirai plus (et que j'utilise en entreprise notamment). Je pense en effet que le langage que nous avons choisi nous a fait perdre un peu de temps : les bugs rencontrées, le fait que nous étions tous débutants dans ce langage a fait que nous avons mis du temps à nous lancer complètement dans la réalisation du site.
 * l'organisation du travail et du temps : le temps qu'on a mis (plusieurs semaines) à mettre en place un répertoire Git fonctionnel et le nombre de personnes à travailler sur le BackEnd et à réaliser les tests, insuffisant.
 * la mise en place d'une méthode de travail comme la méthode Agile Scrum par exemple qui nous aurait permis d'être, dès le début, plus régulier et plus efficace dans la réalisation du site : des livraisons (dans notre cas, des merges sur Git) régulières de chacun des membres BackEnd et FrontEnd, des deadlines à respecter(fonctionnalités à finir avant telle ou telle date etc).
 
@@ -172,3 +172,7 @@ Avec le recul, les points que j'aurai améliorer et/ou fait différemment sont :
 ### Arthur Cayet
 
 Ce projet a été l'occasion pour moi d'apprendre le framework symfony que je ne connaissait pas. J'ai appris a 
+
+### Martin Bruger 
+Mes impressions générales sur notre projet Web sont positives. En effet, travailler sur un projet avec un véritable client est un challenge et cela m’a motivé pour donner le meilleur de moi-même. De plus, ce projet est l’occasion pour moi d’apprendre l’outil Git. Au début, cela a été difficile d’utiliser cet outil mais mes camarades m’ont appris comment bien l’utiliser. Je réalise aujourd’hui l’utilité de cet outil pour les projets informatiques.
+Ce projet m’a aussi permis de perfectionner mes compétences en front End avec notamment l’utilisation du Framework Bootstrap et l’utilisation du moteur de Template Twig. Ce projet m’a aussi permis de perfectionner mes compétences dans le travail d’équipe, j’ai dû faire preuve de communication plus particulièrement avec l’équipe backend pour que mon code puisse être exploité correctement.
