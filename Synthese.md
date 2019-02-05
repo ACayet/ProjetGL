@@ -194,19 +194,19 @@ Ce projet a été l'occassion pour moi de monter en compétence sur la notion du
 Avec le recul, les points que j'aurai améliorer et/ou fait différemment sont :
 
 * Je me serais investi également sur le côté backEnd
-* Concernant le cour en générale j'ai appris différents outils tel que git que je connaissais que de nom et qu'on a donc utiliser, sans ce cour je ne pense pas que j'aurai chercher à apprendre à l'utiliser.
+* Concernant le cour en générale j'ai appris différents outils tel que Git que je connaissais que de nom et qu'on a donc utilisé, sans ce cour je ne pense pas que j'aurai chercher à apprendre à l'utiliser.
 
 ### Arthur Cayet
 
-Ce projet a été une bonne expérience pour moi, il ressemblait beaucoup au projet de fin d'année de l'année dernière puisque qu'il s'agissait de réaliser un projet de A a Z (cahier des charges, spécifications techniques, documentation, gestion du repo git ...)
+Ce projet a été une bonne expérience pour moi, il ressemblait beaucoup au projet de fin d'année de l'an dernière puisque qu'il s'agissait de réaliser un projet de A a Z (cahier des charges, spécifications techniques, documentation, gestion du repo git ...)
 
-J'ai pu comprendre comment fonctionnait git et particulièrement les branches que je n'avais jamais utilisées et j'ai expliqué aux autres membre du groupe comment utiliser git. J'ai quand même deux regrets de ne pas avoir pu installer d'outils de qualimétrie comme sonarqube sur mon hebergement, car il utilise java. Ou encore ne pas avoir réussi a faire fonctionner le déploiement continue, malgré de beaucoup de recherches réalisés à propos des hooks git.
+J'ai pu comprendre comment fonctionnait Git et particulièrement les branches que je n'avais jamais utilisées et j'ai expliqué aux autres membre du groupe comment utiliser git. J'ai quand même deux regrets de ne pas avoir pu installer d'outils de qualimétrie comme sonarqube sur mon hebergement, car il utilise java. Ou encore ne pas avoir réussi a faire fonctionner le déploiement continue, malgré de beaucoup de recherches réalisés à propos des hooks git.
 
 Ce projet a été l'occasion pour moi d'apprendre le framework symfony que je ne connaissais pas. J'ai pu toucher a beaucoup de choses que ce soit le front end avec les traductions et le template twig, le back end avec un peu de test et de création de formulaire ou encore la documentation.
 
 Il y a quelques choses que j'aurais fait différemment après réflexion :
 
-* J'aurais aimé plus faire de back parce que j'ai le sentiment que symfony peut etre un outil très utile aussi bien dans le monde professionel que personnel.
+* J'aurais aimé plus faire de Back parce que j'ai le sentiment que Symfony peut etre un outil très utile aussi bien dans le monde professionel que personnel.
 
 * J'aurais aussi realisé la documentation plus au fur et à mesure de l'avancer du projet.
 
