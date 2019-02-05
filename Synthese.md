@@ -42,6 +42,8 @@ Cependant, étant donné le langage de programmation choisi et le framework util
 
 Pour la charte graphique, nous avons privilégié les couleurs jaune, marron et noir : des couleurs chaudes qui rappellent le miel, les abeilles et donc les thèmes du site.
 
+Le site est réalisé en HTML Bootstrap pour des raisons de simplicité et d'esthétique (design responsive).
+
 ### Les règles de référencement
 
 Tout d’abord, il faut savoir qu’il existe deux types de référencement, le référencement naturel plus communément appelé le référencement SEO (Search Engine Optimization) qui a pour but d’améliorer le classement de votre site dans les résultats de recherche des différents moteurs de recherche tel que Google, Yahoo ou Bing.
@@ -50,7 +52,7 @@ Pour savoir comment mieux référencer son site web il faut alors savoir comment
 
 ![Part de marcher des moteurs de recherche en France 2017](https://image.noelshack.com/fichiers/2019/05/2/1548771773-google.png)
 
-### Comment ça marche ?
+#### Comment ça marche ?
 
 Les différents moteurs de recherche utilisent des robots ou encore appelés des crawler qui ont pour but de parcourir tout le web de lien en lien et de récupérer des informations sur chaque page existante.
 Ces informations sont ensuite gardées en mémoire dans la base de données de Google afin de mieux traiter les requêtes des utilisateurs. En effet Google compare des millions de pages web et les classes en fonction de leurs pertinences avec le mot clé saisis par les utilisateurs.
@@ -58,7 +60,7 @@ Mais à quoi les crawler font-ils attention ? C’est ce que nous allons voir en
 
 Dans ce rapport nous allons prendre comme exemple le mot clé "miel bio" qui a été trouver grâce aux outils que nous allons présenté prochainement. Nous le ferons apparaître dans les endroits stratégiques pour améliorer son référencement naturel.
 
-### Les Titres & les balises meta title
+#### Les Titres & les balises meta title
 
 En HTML il existe une balise title dans laquelle on indique un titre de page. Celui-ci va se trouver sur l’onglet de la page des navigateurs et apparaîtra aussi sur les résultats de recherche des moteurs de recherche. Il faut d’attribuer une balise title unique à chacune des pages du site afin que Google puisse faire la différence entre les différentes pages du site. Aussi, le titre de page doit être compris entre 40 et 60 caractères espaces compris, si le titre est trop long Google n’en affichera seulement qu’une partie. Par ailleurs le mot clé doit se situe au début du titre.
 
@@ -71,13 +73,13 @@ Par ailleurs il faut aussi éviter de choisir des titres sans liens direct avec 
 
 ![hiéarchie hx](https://image.noelshack.com/fichiers/2019/05/4/1548955959-gl.png)
 
-### La balise meta description
+#### La balise meta description
 
 En HTML il existe une balise meta description qui fournit à Google et aux autres moteurs de recherche un résumé du contenu de la page. Contrairement à un titre d’une page qui se compose de quelques mots, la meta description peut contenir 1 à 2 phrases. Il faut éviter de rédiger une méta description sans lien direct avec le contenu de la page ou d’utiliser des descriptions trop génériques telles que « Ceci est un site web ». Mais aussi de remplir les balise description de mots-clés uniquement, un seul concernant le sujet de votre page suffit.
 
 ![meta description balise](https://image.noelshack.com/fichiers/2019/05/2/1548773917-description.png)
 
-### Les url
+#### Les url
 
 Il est conseillé d’utiliser des mots-clés dans les URL. Les URL contenant du texte correspondant au contenu et à la structure du site sont plus conviviales pour les visiteurs qui parcourent le site d’autant plus que cela permettra aux visiteurs de mémorisr les URL plus facilement et seront plus susceptibles d’établir des liens vers ces URL.En effet il faut éviter des URL trop longues avec des paramètres inutiles pour l’internaute. Les utilisateurs risquent d’être intimidés par des URL extrêmement longues et contenant très peu de mots reconnaissables.
 
@@ -87,22 +89,22 @@ Ce type d’URL peut être déconcertant et peu convivial. Les utilisateurs aura
 
 ![Bonne url ](https://image.noelshack.com/fichiers/2019/05/2/1548774427-url-good.png)
 
-### Les images
+#### Les images
 
 Il faut savoir qu’en HTML il existe une balise alt pour les images qui sont souvent négligés mais c’est une grosse erreur. Il faut garder en tête que les crawler sont des robots et de ce fait ils ne voient pas les images telles que nous les voyons. Les balise alt sont donc là pour donner un descriptif au robot.
  Si vous avez le logo de votre entreprise dans l’une de vos pages il faut donc renseigner « logo HoneyShop» par exemple. L’idéal est d’avoir une balise alt contenant le mot clé de votre page.
 
  ![alt balise](https://image.noelshack.com/fichiers/2019/05/4/1548955959-gl.png)
 
-### Les mots-clés
+#### Les mots-clés
 
 Il faut tout d’abord cibler des mots clés liés à notre secteur d’activité. Plus un mot clé est ciblé, plus on aura des chances de bien se positionner. La concurrence sera moindre et le trafic qui en résultera sera du trafic hautement qualifié, autrement dit des utilisateurs qui cherchent exactement ce que l’on propose. Il faut être donc précis si on utilise le mot clé « travaux » par exemple, l’internaute peut aussi bien vouloir chercher des sites qui vend du matériel de travaux que des devis.
 L’internaute qui arrivera sur notre site ne viendra donc pas forcément pour passer commande. Il faut choisir des mots-clés composés de plusieurs mots, la plupart des recherches sur les moteurs de recherche se composent de deux, trois voire quatre mots. Il faut donc ne pas hésiter à utiliser des synonymes mais surtout il faut des mots clés à notre mesure.
 Idéalement les mots-clés doivent être faiblement convoités et apporter beaucoup de trafic qualifié, mais en réalité c’est assez rare il faut donc trouver le bon compromis entre la convoitise que suscite le mot clé chez les concurrents et ce que recherchent les internautes. Certains outils existent pour nous aider dans nos choix de mots-clés tels que Google Adword plutôt utilisé pour des campagnes de publicité Google ou SemRush et kwFinder que nous allons décrire dans les points suivants.
 
-### Outils
+#### Outils
 
-#### SemRush
+##### SemRush
 
 SemRush est un outil qui propose non seulement des mots-clés pour notre site web mais  permet également de voir pour quel mot clé nos concurrents se positionnent.
 
@@ -125,7 +127,7 @@ SemRush met à disposition différents indicateurs concernant les mots clés. On
 
 Le tarif CPC ou coût par clic est le prix à payer par clic pour le mot clé choisie si on souhaiterait faire des campagnes publicitaires sur Google avec notamment Google Adword évoqué précédemment. Autrement dit si le mot clé « gelée royale» nous intéresse et que le cout CPC est de 1.12 on devra payer 1.12 USD pour chaque clic que les internautes feront pour rentrer dans notre site via notre annonce Google, il faut donc bien choisir car la facture peut très vite monter.
 
-#### kwFinder
+##### kwFinder
 
 KwFinder est un outil qui nous propose une liste en rapport à un mot clé tapez et qui nous indique la difficulté à ce positionner dessus. Par exemple on a tapez le mot clé " miel" et l'outil nous a proposer un certain nombre de mot clé dont le mot clé "miel bio" qui était noté comme " facile" afin de ce positionner sur ce mot clé.
 
