@@ -38,6 +38,10 @@ Cependant, étant donné le langage de programmation choisi et le framework util
 
 ## Front - End
 
+### Charte graphique
+
+Pour la charte graphique, nous avons privilégié les couleurs jaune, marron et noir : des couleurs chaudes qui rappellent le miel, les abeilles et donc les thèmes du site.
+
 ### Les règles de référencement
 
 Tout d’abord, il faut savoir qu’il existe deux types de référencement, le référencement naturel plus communément appelé le référencement SEO (Search Engine Optimization) qui a pour but d’améliorer le classement de votre site dans les résultats de recherche des différents moteurs de recherche tel que Google, Yahoo ou Bing.
@@ -150,7 +154,7 @@ Pour cela nous avons paramétrer des locales (fichiers `messages.en.yaml` et  `m
 
 ## Difficultés rencontrées
 
-Au cours de ce projet, nous avons rencontré différents problèmes : tout d'abord, il a fallu nous familiariser avec le Framework Symfony de PHP que nous n'avions jamais manipulé. En plus de Symfony, il a fallu utiliser d'autres outils en parallèle : l'ORM Doctrine pour le mapping avec la base de données MySQL, Composer pour les dépendances, le moteur de template Twig utilisé par PHP et Symfony pour la vue. Ces outils étant nouveaux pour nous, nous avons rencontré quelques difficultés : les bugs liés au cache à vider, les dépendances à installer etc. Par exemple, il nous est arrivé de rester bloquer plusieurs jours voire semaines à débuguer un code qui se révélait être bon depuis le départ, il fallait juste vider le cache (commande php bin/console cache:clear). Ces petites erreurs liées au manque de d'expérience vis à vis du langage nous a fait perdre du temps au début du projet.
+Au cours de ce projet, nous avons rencontré différents problèmes : tout d'abord, il a fallu nous familiariser avec le Framework Symfony de PHP que nous n'avions jamais manipulé. En plus de Symfony, il a fallu utiliser d'autres outils en parallèle : l'ORM Doctrine pour le mapping avec la base de données MySQL, Composer pour les dépendances, le moteur de template Twig utilisé par PHP et Symfony pour la vue. Ces outils étant nouveaux pour nous, nous avons rencontré quelques difficultés : les bugs liés au cache à vider, les dépendances à installer etc. Par exemple, il nous est arrivé de rester bloquer plusieurs jours voire semaines à débuguer un code qui se révélait être bon depuis le départ, il fallait juste vider le cache (commande `php bin/console cache:clear`). Ces petites erreurs liées au manque de d'expérience vis à vis du langage nous a fait perdre du temps au début du projet.
 
 Nous avons mis plusieurs semaines avant de faire un répertoire Git fonctionnel : certains membres ne maitrisaient pas du tout les commandes.
 
