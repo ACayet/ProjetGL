@@ -36,22 +36,6 @@ Cette ligne de code n'est pas lue par Symfony, il faut modifier l'import en rajo
 Ce projet nous a permis d'allier pratique et théorie que ce soit dans l'utilisation de markdown mais aussi des tests.
 Cependant, étant donné le langage de programmation choisi et le framework utilisé, il a été compliqué d'appliquer à la lettre le cours : les tests unitaires par exemple n'ont pas pu faire étant donné que Symfony réalise de nombreuses fonctionnalités de lui-même.
 
-## Difficultés rencontrées
-
-Au cours de ce projet, nous avons rencontré différents problèmes : tout d'abord, il a fallu nous familiariser avec le Framework Symfony de PHP que nous n'avions jamais manipulé. En plus de Symfony, il a fallu utiliser d'autres outils en parallèle : l'ORM Doctrine pour le mapping avec la base de données MySQL, Composer pour les dépendances, le moteur de template Twig utilisé par PHP et Symfony pour la vue. Ces outils étant nouveaux pour nous, nous avons rencontré quelques difficultés : les bugs liés au cache à vider, les dépendances à installer etc. Par exemple, il nous est arrivé de rester bloquer plusieurs jours voire semaines à débuguer un code qui se révélait être bon depuis le départ, il fallait juste vider le cache (commande php bin/console cache:clear). Ces petites erreurs liées au manque de d'expérience vis à vis du langage nous a fait perdre du temps au début du projet.
-
-Nous avons mis plusieurs semaines avant de faire un répertoire Git fonctionnel : certains membres ne maitrisaient pas du tout les commandes.
-
-De plus, nous sommes un groupe assez nombreux : il a fallu nous organiser, ce qui a été, par moment, assez compliqué. En effet, nous avançons tous à des rythmes très différents notamment entre les groupes Back et Front. Au début du projet, l'équipe Front avançait beaucoup plus vite que l'équipe Back : en effet, ils maitrisaient déjà le HTML et CSS. Ils avaient déjà fait deux pages tandis que le Back peinait à faire les premières fonctionnalités. Cependant au fil des semaines, le Back a réussi à rattraper le retard : petit à petit, nous nous sommes habitués au langage PHP et avons pu être plus efficace, si bien qu'au final les finitions de CSS ont pris plus de temps à finir que les fonctionnalités.
-
-La réalisation des tests n'a pas été de tout repos : en effet, Symfony réalise de nombreuses fonctionnalités pour nous, il est donc diffcile de tester unitairement notre code. Il a fallu tester les redirections, les codes d'erreurs (tester que le statut soit bien de 200 etc.) et cela en respectant une syntaxe bien particulière.
-
-## Points améliorables
-
-Le site comporte des points améliorables : toutes les fonctions que nous avions prévues de réaliser ne sont pas disponibles, celles réalisées sont cependant fonctionnelles. En effet, nous avons préféré privilégier la qualité des fonctions réalisées plutôt que la quantité.
-De plus, l'interface (le HTML/CSS) peut être également améliorées : rendre le site plus ergonomique, améliorer et faciliter la navigation...
-Il manque certaines fonctionnalités essentiels d'un site web d'ecommerce comme le panier, le paiement, un systeme pour envoyer des emails aux clients, etc...
-
 ## Front - End
 
 ### Les règles de référencement
@@ -145,6 +129,35 @@ KwFinder est un outil qui nous propose une liste en rapport à un mot clé tapez
 
  ![semrush]( https://image.noelshack.com/fichiers/2019/05/2/1548777503-kwfinder2.png)
 
+## BackEnd
+
+### Tests
+
+Il est difficile de tester unitairement notre code : en  effet, Symfony réalise de nombreuses fonctionnalités pour nous. Nous avons donc réalisé des tests fonctionnels en utilisant le framework PHPUnit : nous avons testé les redirections, les code retours (200).
+
+### Fonctionnalités réalisées
+
+* Blog : liste d'articles
+* Boutique : Liste de produits
+* Connexion et inscription
+* Fonctionnalités administrateur : ajout, suppression et édition d'un article de blog et d'un produit.
+
+## Difficultés rencontrées
+
+Au cours de ce projet, nous avons rencontré différents problèmes : tout d'abord, il a fallu nous familiariser avec le Framework Symfony de PHP que nous n'avions jamais manipulé. En plus de Symfony, il a fallu utiliser d'autres outils en parallèle : l'ORM Doctrine pour le mapping avec la base de données MySQL, Composer pour les dépendances, le moteur de template Twig utilisé par PHP et Symfony pour la vue. Ces outils étant nouveaux pour nous, nous avons rencontré quelques difficultés : les bugs liés au cache à vider, les dépendances à installer etc. Par exemple, il nous est arrivé de rester bloquer plusieurs jours voire semaines à débuguer un code qui se révélait être bon depuis le départ, il fallait juste vider le cache (commande php bin/console cache:clear). Ces petites erreurs liées au manque de d'expérience vis à vis du langage nous a fait perdre du temps au début du projet.
+
+Nous avons mis plusieurs semaines avant de faire un répertoire Git fonctionnel : certains membres ne maitrisaient pas du tout les commandes.
+
+De plus, nous sommes un groupe assez nombreux : il a fallu nous organiser, ce qui a été, par moment, assez compliqué. En effet, nous avançons tous à des rythmes très différents notamment entre les groupes Back et Front. Au début du projet, l'équipe Front avançait beaucoup plus vite que l'équipe Back : en effet, ils maitrisaient déjà le HTML et CSS. Ils avaient déjà fait deux pages tandis que le Back peinait à faire les premières fonctionnalités. Cependant au fil des semaines, le Back a réussi à rattraper le retard : petit à petit, nous nous sommes habitués au langage PHP et avons pu être plus efficace, si bien qu'au final les finitions de CSS ont pris plus de temps à finir que les fonctionnalités.
+
+La réalisation des tests n'a pas été de tout repos : en effet, Symfony réalise de nombreuses fonctionnalités pour nous, il est donc diffcile de tester unitairement notre code. Il a fallu tester les redirections, les codes d'erreurs (tester que le statut soit bien de 200 etc.) et cela en respectant une syntaxe bien particulière.
+
+## Points améliorables
+
+Le site comporte des points améliorables : toutes les fonctions que nous avions prévues de réaliser ne sont pas disponibles, celles réalisées sont cependant fonctionnelles. En effet, nous avons préféré privilégier la qualité des fonctions réalisées plutôt que la quantité.
+De plus, l'interface (le HTML/CSS) peut être également améliorées : rendre le site plus ergonomique, améliorer et faciliter la navigation...
+Il manque certaines fonctionnalités essentiels d'un site web d'ecommerce comme le panier, le paiement, un systeme pour envoyer des emails aux clients, etc...
+
 ## Retour personnel sur le module
 
 ### Aurélie DIEP
@@ -185,7 +198,7 @@ Il y a quelques choses que j'aurais fait différemment après réflexion :
 
 * J'aurais aussi realisé la documentation plus au fur et à mesure de l'avancer du projet.
 
-J'ai trouvé dommage que l'on parle si peu de docker dans le cours parce que je trouve la technologie très interressante, mais assez difficile à comprendre et à mettre en place proprement.
+J'ai trouvé dommage que l'on parle si peu de docker dans le cours parce que je trouve la technologie très interessante, mais assez difficile à comprendre et à mettre en place proprement.
 
 ### Martin Bruger
 
