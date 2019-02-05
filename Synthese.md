@@ -142,6 +142,12 @@ Il est difficile de tester unitairement notre code : en  effet, Symfony réalise
 * Connexion et inscription
 * Fonctionnalités administrateur : ajout, suppression et édition d'un article de blog et d'un produit.
 
+Pour l'instant,le seul moyen de créér un compte administrateur est de l'insérer en "dur", dans la base de données.
+
+### Fonction bonus : la traduction en anglais
+
+Pour cela nous avons paramétrer des locales (fichiers `messages.en.yaml` et  `messages.fr.yaml`) et modifier les fichiers twig pour spécifier les parties à traduits grâce à des balises `trans`et `endtrans`.
+
 ## Difficultés rencontrées
 
 Au cours de ce projet, nous avons rencontré différents problèmes : tout d'abord, il a fallu nous familiariser avec le Framework Symfony de PHP que nous n'avions jamais manipulé. En plus de Symfony, il a fallu utiliser d'autres outils en parallèle : l'ORM Doctrine pour le mapping avec la base de données MySQL, Composer pour les dépendances, le moteur de template Twig utilisé par PHP et Symfony pour la vue. Ces outils étant nouveaux pour nous, nous avons rencontré quelques difficultés : les bugs liés au cache à vider, les dépendances à installer etc. Par exemple, il nous est arrivé de rester bloquer plusieurs jours voire semaines à débuguer un code qui se révélait être bon depuis le départ, il fallait juste vider le cache (commande php bin/console cache:clear). Ces petites erreurs liées au manque de d'expérience vis à vis du langage nous a fait perdre du temps au début du projet.
