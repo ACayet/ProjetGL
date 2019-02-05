@@ -1,4 +1,4 @@
-# Cahier des charges
+# Documentation
 
 ## Cadrage et périmètre
 
@@ -26,9 +26,11 @@ Un site web de vitrine et de vente pour un client
 * Comme suis sur la page d'accueil, quand je passe ma souris sur le bouton du carroussel pour aller voir les produits ou le blog je peux voir le texte ressortir sur un fond blanc.
 * Comme je suis un client anglais quand je me connecte je veux pouvoir comprendre le formulaire dans ma langue
 
-## Fonctionnalités
+## Cahier des charges 
 
-### Client
+### Fonctionnalités
+
+#### Client
 
 * s’authentifier pour acheter et pour commenter
 * S'inscrire pour sauvegarder mes informations et ne pas avoir a les resaisir a chaque fois que je fais un achat. je dois pour cela renseigné mon prenom, mon nom de famille, mon adresse email, mon mot de passe, confirmer mon mot de passe, ma ville, et mon adresse.
@@ -37,25 +39,25 @@ Un site web de vitrine et de vente pour un client
 * rechercher un article de blog ou un produit
 * géolocaliser (comment s’y rendre avec une maps et des marqueurs) le producteur de miel
 
-### Admin
+#### Admin
 
 * s’authentifier avec son adresse mail et un mot de passe grâce a une page de connexion
 * ajout de produit : il a rentre un nom de produit, une description, le prix (en euros), le stock, et la quantité (en mL)
 * supprimer un article de blog et un produit
 * un formulaire pour écrire des articles de blog
 
-## Site
+#### Site
 
 * envoi de mail récapitulatif aux clients qui ont acheté un produit
 * implémentation de l’API Paypal pour l’achat
 
-## Outils
+### Outils
 
 * PHP / Framework Symfony
 * Composer pour la gestion de dépendances
 * MySQL pour la base de données
 
-## PVM (produit minimum viable)
+### PVM (produit minimum viable)
 
 * Page d'accueil
 * Page blog avec des articles : visible en mode hors ligne, une page présentant l'ensemble des articles et un lien vers chaque article
@@ -79,5 +81,3 @@ Les fichiers les plus importants sont placés dans les dossiers adequats a la ra
   * `/Repository` : contient les fichiers qui definissent les fonctions permettant de realiser des requetes sur la base de données pour chaque table/classes.
   * `/Migrations` : contient les fichiers resultant des migrations realisé de l'application c'est a dire les diffrentes modifications apporté a la stucture de la base de données apres sa creation initiale.
 * `/var` contient un dossiers interresant : les logs de l'application permettant de debugger plus efficacement l'application. Ce dossier est ignoré par git.
-
-f
